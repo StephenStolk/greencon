@@ -4,7 +4,10 @@
     <!-- <link rel="icon" type="image/svg+xml" href="/vite.svg" /> -->
     <script src="https://cdn.tailwindcss.com"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.css"  rel="stylesheet" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.css"
+      rel="stylesheet"
+    />
     <title>Greencon-2025</title>
     <!-- <script
       type="module"
@@ -1101,6 +1104,37 @@
         }
       }
     </style>
+    <script>
+      function updateCountdown() {
+        const deadline = new Date("March 6, 2025 00:00:00").getTime();
+        const now = new Date().getTime();
+        const timeRemaining = deadline - now;
+
+        const days = Math.floor(timeRemaining / (1000 * 60 * 60 * 24));
+        const hours = Math.floor(
+          (timeRemaining % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+        );
+        const minutes = Math.floor(
+          (timeRemaining % (1000 * 60 * 60)) / (1000 * 60)
+        );
+        const seconds = Math.floor((timeRemaining % (1000 * 60)) / 1000);
+
+        document.getElementById("days").innerText = days;
+        document.getElementById("hours").innerText = hours;
+        document.getElementById("minutes").innerText = minutes;
+        document.getElementById("seconds").innerText = seconds;
+
+        if (timeRemaining < 0) {
+          clearInterval(countdownInterval);
+          document.getElementById("days").innerText = "0";
+          document.getElementById("hours").innerText = "0";
+          document.getElementById("minutes").innerText = "0";
+          document.getElementById("seconds").innerText = "0";
+        }
+      }
+
+      const countdownInterval = setInterval(updateCountdown, 1000);
+    </script>
   </head>
   <body>
     <div id="root">
@@ -1548,6 +1582,7 @@
             </div>
           </div>
         </section>
+
         <div
           class="flex flex-col items-center justify-center bg-white rounded-xl shadow-lg border border-gray-200 w-11/12 sm:w-1/2 mx-auto mt-8 mb-28"
         >
@@ -1558,22 +1593,22 @@
           </h1>
           <div class="flex space-x-4 sm:space-x-8 text-xl font-semibold mb-8">
             <div class="flex flex-col items-center bg-gray-100 p-4 rounded-xl">
-              <span class="text-4xl text-[#3c5a96]">176</span
-              ><span class="text-gray-500 mt-2 text-sm">Days</span>
+              <span id="days" class="text-4xl text-[#3c5a96]">176</span>
+              <span class="text-gray-500 mt-2 text-sm">Days</span>
             </div>
             <div
               class="flex flex-col items-center bg-gray-100 px-4 py-4 rounded-xl"
             >
-              <span class="text-4xl text-[#3c5a96]">13</span
-              ><span class="text-gray-500 mt-2 text-sm">Hours</span>
+              <span id="hours" class="text-4xl text-[#3c5a96]">13</span>
+              <span class="text-gray-500 mt-2 text-sm">Hours</span>
             </div>
             <div class="flex flex-col items-center bg-gray-100 p-4 rounded-xl">
-              <span class="text-4xl text-[#3c5a96]">53</span
-              ><span class="text-gray-500 mt-2 text-sm">Minutes</span>
+              <span id="minutes" class="text-4xl text-[#3c5a96]">53</span>
+              <span class="text-gray-500 mt-2 text-sm">Minutes</span>
             </div>
             <div class="flex flex-col items-center bg-gray-100 p-4 rounded-xl">
-              <span class="text-4xl text-[#3c5a96]">40</span
-              ><span class="text-gray-500 mt-2 text-sm">Seconds</span>
+              <span id="seconds" class="text-4xl text-[#3c5a96]">40</span>
+              <span class="text-gray-500 mt-2 text-sm">Seconds</span>
             </div>
           </div>
         </div>
@@ -1597,7 +1632,9 @@
               >
                 <li><a href="./index.html" class="hover:underline">Home</a></li>
                 <li>
-                  <a href="./AboutVit.html" class="hover:underline">About VIT</a>
+                  <a href="./AboutVit.html" class="hover:underline"
+                    >About VIT</a
+                  >
                 </li>
                 <li>
                   <a
@@ -1642,7 +1679,9 @@
                   >
                 </li>
                 <li>
-                  <a href="./ContactUs.html" class="hover:underline">Contact Us</a>
+                  <a href="./ContactUs.html" class="hover:underline"
+                    >Contact Us</a
+                  >
                 </li>
               </ul>
             </div>
