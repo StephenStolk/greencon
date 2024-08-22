@@ -1,26 +1,1997 @@
-<html lang="en"><head>
+<html lang="en">
+  <head>
     <script type="module">
-import RefreshRuntime from "/@react-refresh"
-RefreshRuntime.injectIntoGlobalHook(window)
-window.$RefreshReg$ = () => {}
-window.$RefreshSig$ = () => (type) => type
-window.__vite_plugin_react_preamble_installed__ = true
-</script>
+      import RefreshRuntime from "/@react-refresh";
+      RefreshRuntime.injectIntoGlobalHook(window);
+      window.$RefreshReg$ = () => {};
+      window.$RefreshSig$ = () => (type) => type;
+      window.__vite_plugin_react_preamble_installed__ = true;
+    </script>
 
     <script type="module" src="/@vite/client"></script>
 
-    <meta charset="UTF-8">
-    <link rel="icon" type="image/svg+xml" href="/vite.svg">
+    <meta charset="UTF-8" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.css"
+      rel="stylesheet"
+    />
     <script src="https://cdn.tailwindcss.com"></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Greencon-2025</title>
-  <style>/* ! tailwindcss v3.4.5 | MIT License | https://tailwindcss.com */*,::after,::before{box-sizing:border-box;border-width:0;border-style:solid;border-color:#e5e7eb}::after,::before{--tw-content:''}:host,html{line-height:1.5;-webkit-text-size-adjust:100%;-moz-tab-size:4;tab-size:4;font-family:ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";font-feature-settings:normal;font-variation-settings:normal;-webkit-tap-highlight-color:transparent}body{margin:0;line-height:inherit}hr{height:0;color:inherit;border-top-width:1px}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,pre,samp{font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;font-feature-settings:normal;font-variation-settings:normal;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{text-indent:0;border-color:inherit;border-collapse:collapse}button,input,optgroup,select,textarea{font-family:inherit;font-feature-settings:inherit;font-variation-settings:inherit;font-size:100%;font-weight:inherit;line-height:inherit;letter-spacing:inherit;color:inherit;margin:0;padding:0}button,select{text-transform:none}button,input:where([type=button]),input:where([type=reset]),input:where([type=submit]){-webkit-appearance:button;background-color:transparent;background-image:none}:-moz-focusring{outline:auto}:-moz-ui-invalid{box-shadow:none}progress{vertical-align:baseline}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}blockquote,dd,dl,figure,h1,h2,h3,h4,h5,h6,hr,p,pre{margin:0}fieldset{margin:0;padding:0}legend{padding:0}menu,ol,ul{list-style:none;margin:0;padding:0}dialog{padding:0}textarea{resize:vertical}input::placeholder,textarea::placeholder{opacity:1;color:#9ca3af}[role=button],button{cursor:pointer}:disabled{cursor:default}audio,canvas,embed,iframe,img,object,svg,video{display:block;vertical-align:middle}img,video{max-width:100%;height:auto}[hidden]{display:none}*, ::before, ::after{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }::backdrop{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0, 0, 0, 0);white-space:nowrap;border-width:0}.fixed{position:fixed}.relative{position:relative}.left-0{left:0px}.right-0{right:0px}.top-0{top:0px}.z-50{z-index:50}.order-1{order:1}.order-2{order:2}.order-3{order:3}.mx-10{margin-left:2.5rem;margin-right:2.5rem}.mx-auto{margin-left:auto;margin-right:auto}.my-2{margin-top:0.5rem;margin-bottom:0.5rem}.mb-20{margin-bottom:5rem}.mb-5{margin-bottom:1.25rem}.mb-6{margin-bottom:1.5rem}.me-3{margin-inline-end:0.75rem}.ms-auto{margin-inline-start:auto}.mt-1{margin-top:0.25rem}.mt-10{margin-top:2.5rem}.mt-2{margin-top:0.5rem}.mt-5{margin-top:1.25rem}.flex{display:flex}.inline-flex{display:inline-flex}.grid{display:grid}.hidden{display:none}.h-0\.5{height:0.125rem}.h-10{height:2.5rem}.h-12{height:3rem}.h-20{height:5rem}.h-28{height:7rem}.h-3{height:0.75rem}.h-6{height:1.5rem}.h-8{height:2rem}.h-\[calc\(100\%-1rem\)\]{height:calc(100% - 1rem)}.max-h-full{max-height:100%}.w-10{width:2.5rem}.w-3{width:0.75rem}.w-40{width:10rem}.w-44{width:11rem}.w-6{width:1.5rem}.w-8{width:2rem}.w-\[20\%\]{width:20%}.w-\[50\%\]{width:50%}.w-full{width:100%}.max-w-2xl{max-width:42rem}.max-w-screen-xl{max-width:1280px}.grid-flow-col{grid-auto-flow:column}.grid-rows-3{grid-template-rows:repeat(3, minmax(0, 1fr))}.flex-row{flex-direction:row}.flex-col{flex-direction:column}.flex-wrap{flex-wrap:wrap}.items-center{align-items:center}.justify-center{justify-content:center}.justify-between{justify-content:space-between}.justify-around{justify-content:space-around}.gap-4{gap:1rem}.space-x-6 > :not([hidden]) ~ :not([hidden]){--tw-space-x-reverse:0;margin-right:calc(1.5rem * var(--tw-space-x-reverse));margin-left:calc(1.5rem * calc(1 - var(--tw-space-x-reverse)))}.space-y-4 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(1rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(1rem * var(--tw-space-y-reverse))}.overflow-y-auto{overflow-y:auto}.overflow-x-hidden{overflow-x:hidden}.rounded{border-radius:0.25rem}.rounded-lg{border-radius:0.5rem}.rounded-md{border-radius:0.375rem}.rounded-xl{border-radius:0.75rem}.rounded-t{border-top-left-radius:0.25rem;border-top-right-radius:0.25rem}.border-2{border-width:2px}.border-b{border-bottom-width:1px}.border-t-2{border-top-width:2px}.border-\[\#addfca\]{--tw-border-opacity:1;border-color:rgb(173 223 202 / var(--tw-border-opacity))}.border-black{--tw-border-opacity:1;border-color:rgb(0 0 0 / var(--tw-border-opacity))}.bg-\[\#35575a\]{--tw-bg-opacity:1;background-color:rgb(53 87 90 / var(--tw-bg-opacity))}.bg-\[\#addfca\]{--tw-bg-opacity:1;background-color:rgb(173 223 202 / var(--tw-bg-opacity))}.bg-transparent{background-color:transparent}.bg-white{--tw-bg-opacity:1;background-color:rgb(255 255 255 / var(--tw-bg-opacity))}.p-2{padding:0.5rem}.p-4{padding:1rem}.p-8{padding:2rem}.px-1{padding-left:0.25rem;padding-right:0.25rem}.px-4{padding-left:1rem;padding-right:1rem}.py-1{padding-top:0.25rem;padding-bottom:0.25rem}.py-2{padding-top:0.5rem;padding-bottom:0.5rem}.py-3{padding-top:0.75rem;padding-bottom:0.75rem}.py-6{padding-top:1.5rem;padding-bottom:1.5rem}.text-center{text-align:center}.text-start{text-align:start}.text-2xl{font-size:1.5rem;line-height:2rem}.text-3xl{font-size:1.875rem;line-height:2.25rem}.text-base{font-size:1rem;line-height:1.5rem}.text-lg{font-size:1.125rem;line-height:1.75rem}.text-sm{font-size:0.875rem;line-height:1.25rem}.text-xl{font-size:1.25rem;line-height:1.75rem}.font-bold{font-weight:700}.font-light{font-weight:300}.font-medium{font-weight:500}.font-normal{font-weight:400}.font-semibold{font-weight:600}.uppercase{text-transform:uppercase}.leading-relaxed{line-height:1.625}.text-\[\#2b4a4d\]{--tw-text-opacity:1;color:rgb(43 74 77 / var(--tw-text-opacity))}.text-\[\#35575a\]{--tw-text-opacity:1;color:rgb(53 87 90 / var(--tw-text-opacity))}.text-gray-200{--tw-text-opacity:1;color:rgb(229 231 235 / var(--tw-text-opacity))}.text-gray-400{--tw-text-opacity:1;color:rgb(156 163 175 / var(--tw-text-opacity))}.text-gray-500{--tw-text-opacity:1;color:rgb(107 114 128 / var(--tw-text-opacity))}.text-gray-600{--tw-text-opacity:1;color:rgb(75 85 99 / var(--tw-text-opacity))}.text-gray-700{--tw-text-opacity:1;color:rgb(55 65 81 / var(--tw-text-opacity))}.text-gray-800{--tw-text-opacity:1;color:rgb(31 41 55 / var(--tw-text-opacity))}.text-gray-900{--tw-text-opacity:1;color:rgb(17 24 39 / var(--tw-text-opacity))}.shadow{--tw-shadow:0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 1px 3px 0 var(--tw-shadow-color), 0 1px 2px -1px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-lg{--tw-shadow:0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-md{--tw-shadow:0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-xl{--tw-shadow:0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 20px 25px -5px var(--tw-shadow-color), 0 8px 10px -6px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-gray-950{--tw-shadow-color:#030712;--tw-shadow:var(--tw-shadow-colored)}.transition-colors{transition-property:color, background-color, border-color, fill, stroke, -webkit-text-decoration-color;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke, -webkit-text-decoration-color;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.duration-300{transition-duration:300ms}.hover\:bg-gray-200:hover{--tw-bg-opacity:1;background-color:rgb(229 231 235 / var(--tw-bg-opacity))}.hover\:bg-gray-300:hover{--tw-bg-opacity:1;background-color:rgb(209 213 219 / var(--tw-bg-opacity))}.hover\:text-\[\#3c5a96\]:hover{--tw-text-opacity:1;color:rgb(60 90 150 / var(--tw-text-opacity))}.hover\:text-gray-900:hover{--tw-text-opacity:1;color:rgb(17 24 39 / var(--tw-text-opacity))}.hover\:underline:hover{-webkit-text-decoration-line:underline;text-decoration-line:underline}.focus\:outline-none:focus{outline:2px solid transparent;outline-offset:2px}.focus\:ring-2:focus{--tw-ring-offset-shadow:var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);--tw-ring-shadow:var(--tw-ring-inset) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color);box-shadow:var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000)}.focus\:ring-gray-200:focus{--tw-ring-opacity:1;--tw-ring-color:rgb(229 231 235 / var(--tw-ring-opacity))}@media (min-width: 640px){.sm\:mx-auto{margin-left:auto;margin-right:auto}.sm\:flex{display:flex}.sm\:w-\[10\%\]{width:10%}.sm\:flex-row{flex-direction:row}.sm\:items-center{align-items:center}.sm\:justify-start{justify-content:flex-start}.sm\:justify-between{justify-content:space-between}.sm\:text-center{text-align:center}.sm\:text-3xl{font-size:1.875rem;line-height:2.25rem}.sm\:text-base{font-size:1rem;line-height:1.5rem}.sm\:text-xl{font-size:1.25rem;line-height:1.75rem}}@media (min-width: 768px){.md\:inset-0{inset:0px}.md\:order-1{order:1}.md\:order-2{order:2}.md\:order-3{order:3}.md\:mb-0{margin-bottom:0px}.md\:mt-0{margin-top:0px}.md\:flex{display:flex}.md\:hidden{display:none}.md\:flex-1{flex:1 1 0%}.md\:flex-row{flex-direction:row}.md\:justify-between{justify-content:space-between}.md\:p-5{padding:1.25rem}.md\:px-8{padding-left:2rem;padding-right:2rem}.md\:text-base{font-size:1rem;line-height:1.5rem}}@media (min-width: 1024px){.lg\:h-20{height:5rem}.lg\:py-8{padding-top:2rem;padding-bottom:2rem}}@media (prefers-color-scheme: dark){.dark\:border-gray-600{--tw-border-opacity:1;border-color:rgb(75 85 99 / var(--tw-border-opacity))}.dark\:bg-gray-900{--tw-bg-opacity:1;background-color:rgb(17 24 39 / var(--tw-bg-opacity))}.dark\:text-\[\#2b4a4d\]{--tw-text-opacity:1;color:rgb(43 74 77 / var(--tw-text-opacity))}.dark\:text-gray-200{--tw-text-opacity:1;color:rgb(229 231 235 / var(--tw-text-opacity))}.dark\:text-white{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity))}.dark\:hover\:bg-gray-600:hover{--tw-bg-opacity:1;background-color:rgb(75 85 99 / var(--tw-bg-opacity))}.dark\:hover\:text-white:hover{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity))}}</style><style type="text/css" data-vite-dev-id="D:/vitconf/src/index.css">@tailwind base;
-@tailwind components;
-@tailwind utilities;</style></head>
+    <style>
+      /* ! tailwindcss v3.4.5 | MIT License | https://tailwindcss.com */
+      *,
+      ::after,
+      ::before {
+        box-sizing: border-box;
+        border-width: 0;
+        border-style: solid;
+        border-color: #e5e7eb;
+      }
+      ::after,
+      ::before {
+        --tw-content: "";
+      }
+      :host,
+      html {
+        line-height: 1.5;
+        -webkit-text-size-adjust: 100%;
+        -moz-tab-size: 4;
+        tab-size: 4;
+        font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji",
+          "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+        font-feature-settings: normal;
+        font-variation-settings: normal;
+        -webkit-tap-highlight-color: transparent;
+      }
+      body {
+        margin: 0;
+        line-height: inherit;
+      }
+      hr {
+        height: 0;
+        color: inherit;
+        border-top-width: 1px;
+      }
+      abbr:where([title]) {
+        -webkit-text-decoration: underline dotted;
+        text-decoration: underline dotted;
+      }
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        font-size: inherit;
+        font-weight: inherit;
+      }
+      a {
+        color: inherit;
+        text-decoration: inherit;
+      }
+      b,
+      strong {
+        font-weight: bolder;
+      }
+      code,
+      kbd,
+      pre,
+      samp {
+        font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+          "Liberation Mono", "Courier New", monospace;
+        font-feature-settings: normal;
+        font-variation-settings: normal;
+        font-size: 1em;
+      }
+      small {
+        font-size: 80%;
+      }
+      sub,
+      sup {
+        font-size: 75%;
+        line-height: 0;
+        position: relative;
+        vertical-align: baseline;
+      }
+      sub {
+        bottom: -0.25em;
+      }
+      sup {
+        top: -0.5em;
+      }
+      table {
+        text-indent: 0;
+        border-color: inherit;
+        border-collapse: collapse;
+      }
+      button,
+      input,
+      optgroup,
+      select,
+      textarea {
+        font-family: inherit;
+        font-feature-settings: inherit;
+        font-variation-settings: inherit;
+        font-size: 100%;
+        font-weight: inherit;
+        line-height: inherit;
+        letter-spacing: inherit;
+        color: inherit;
+        margin: 0;
+        padding: 0;
+      }
+      button,
+      select {
+        text-transform: none;
+      }
+      button,
+      input:where([type="button"]),
+      input:where([type="reset"]),
+      input:where([type="submit"]) {
+        -webkit-appearance: button;
+        background-color: transparent;
+        background-image: none;
+      }
+      :-moz-focusring {
+        outline: auto;
+      }
+      :-moz-ui-invalid {
+        box-shadow: none;
+      }
+      progress {
+        vertical-align: baseline;
+      }
+      ::-webkit-inner-spin-button,
+      ::-webkit-outer-spin-button {
+        height: auto;
+      }
+      [type="search"] {
+        -webkit-appearance: textfield;
+        outline-offset: -2px;
+      }
+      ::-webkit-search-decoration {
+        -webkit-appearance: none;
+      }
+      ::-webkit-file-upload-button {
+        -webkit-appearance: button;
+        font: inherit;
+      }
+      summary {
+        display: list-item;
+      }
+      blockquote,
+      dd,
+      dl,
+      figure,
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6,
+      hr,
+      p,
+      pre {
+        margin: 0;
+      }
+      fieldset {
+        margin: 0;
+        padding: 0;
+      }
+      legend {
+        padding: 0;
+      }
+      menu,
+      ol,
+      ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+      dialog {
+        padding: 0;
+      }
+      textarea {
+        resize: vertical;
+      }
+      input::placeholder,
+      textarea::placeholder {
+        opacity: 1;
+        color: #9ca3af;
+      }
+      [role="button"],
+      button {
+        cursor: pointer;
+      }
+      :disabled {
+        cursor: default;
+      }
+      audio,
+      canvas,
+      embed,
+      iframe,
+      img,
+      object,
+      svg,
+      video {
+        display: block;
+        vertical-align: middle;
+      }
+      img,
+      video {
+        max-width: 100%;
+        height: auto;
+      }
+      [hidden] {
+        display: none;
+      }
+      *,
+      ::before,
+      ::after {
+        --tw-border-spacing-x: 0;
+        --tw-border-spacing-y: 0;
+        --tw-translate-x: 0;
+        --tw-translate-y: 0;
+        --tw-rotate: 0;
+        --tw-skew-x: 0;
+        --tw-skew-y: 0;
+        --tw-scale-x: 1;
+        --tw-scale-y: 1;
+        --tw-pan-x: ;
+        --tw-pan-y: ;
+        --tw-pinch-zoom: ;
+        --tw-scroll-snap-strictness: proximity;
+        --tw-gradient-from-position: ;
+        --tw-gradient-via-position: ;
+        --tw-gradient-to-position: ;
+        --tw-ordinal: ;
+        --tw-slashed-zero: ;
+        --tw-numeric-figure: ;
+        --tw-numeric-spacing: ;
+        --tw-numeric-fraction: ;
+        --tw-ring-inset: ;
+        --tw-ring-offset-width: 0px;
+        --tw-ring-offset-color: #fff;
+        --tw-ring-color: rgb(59 130 246 / 0.5);
+        --tw-ring-offset-shadow: 0 0 #0000;
+        --tw-ring-shadow: 0 0 #0000;
+        --tw-shadow: 0 0 #0000;
+        --tw-shadow-colored: 0 0 #0000;
+        --tw-blur: ;
+        --tw-brightness: ;
+        --tw-contrast: ;
+        --tw-grayscale: ;
+        --tw-hue-rotate: ;
+        --tw-invert: ;
+        --tw-saturate: ;
+        --tw-sepia: ;
+        --tw-drop-shadow: ;
+        --tw-backdrop-blur: ;
+        --tw-backdrop-brightness: ;
+        --tw-backdrop-contrast: ;
+        --tw-backdrop-grayscale: ;
+        --tw-backdrop-hue-rotate: ;
+        --tw-backdrop-invert: ;
+        --tw-backdrop-opacity: ;
+        --tw-backdrop-saturate: ;
+        --tw-backdrop-sepia: ;
+        --tw-contain-size: ;
+        --tw-contain-layout: ;
+        --tw-contain-paint: ;
+        --tw-contain-style: ;
+      }
+      ::backdrop {
+        --tw-border-spacing-x: 0;
+        --tw-border-spacing-y: 0;
+        --tw-translate-x: 0;
+        --tw-translate-y: 0;
+        --tw-rotate: 0;
+        --tw-skew-x: 0;
+        --tw-skew-y: 0;
+        --tw-scale-x: 1;
+        --tw-scale-y: 1;
+        --tw-pan-x: ;
+        --tw-pan-y: ;
+        --tw-pinch-zoom: ;
+        --tw-scroll-snap-strictness: proximity;
+        --tw-gradient-from-position: ;
+        --tw-gradient-via-position: ;
+        --tw-gradient-to-position: ;
+        --tw-ordinal: ;
+        --tw-slashed-zero: ;
+        --tw-numeric-figure: ;
+        --tw-numeric-spacing: ;
+        --tw-numeric-fraction: ;
+        --tw-ring-inset: ;
+        --tw-ring-offset-width: 0px;
+        --tw-ring-offset-color: #fff;
+        --tw-ring-color: rgb(59 130 246 / 0.5);
+        --tw-ring-offset-shadow: 0 0 #0000;
+        --tw-ring-shadow: 0 0 #0000;
+        --tw-shadow: 0 0 #0000;
+        --tw-shadow-colored: 0 0 #0000;
+        --tw-blur: ;
+        --tw-brightness: ;
+        --tw-contrast: ;
+        --tw-grayscale: ;
+        --tw-hue-rotate: ;
+        --tw-invert: ;
+        --tw-saturate: ;
+        --tw-sepia: ;
+        --tw-drop-shadow: ;
+        --tw-backdrop-blur: ;
+        --tw-backdrop-brightness: ;
+        --tw-backdrop-contrast: ;
+        --tw-backdrop-grayscale: ;
+        --tw-backdrop-hue-rotate: ;
+        --tw-backdrop-invert: ;
+        --tw-backdrop-opacity: ;
+        --tw-backdrop-saturate: ;
+        --tw-backdrop-sepia: ;
+        --tw-contain-size: ;
+        --tw-contain-layout: ;
+        --tw-contain-paint: ;
+        --tw-contain-style: ;
+      }
+      .sr-only {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        white-space: nowrap;
+        border-width: 0;
+      }
+      .fixed {
+        position: fixed;
+      }
+      .relative {
+        position: relative;
+      }
+      .left-0 {
+        left: 0px;
+      }
+      .right-0 {
+        right: 0px;
+      }
+      .top-0 {
+        top: 0px;
+      }
+      .z-50 {
+        z-index: 50;
+      }
+      .order-1 {
+        order: 1;
+      }
+      .order-2 {
+        order: 2;
+      }
+      .order-3 {
+        order: 3;
+      }
+      .mx-10 {
+        margin-left: 2.5rem;
+        margin-right: 2.5rem;
+      }
+      .mx-auto {
+        margin-left: auto;
+        margin-right: auto;
+      }
+      .my-2 {
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+      }
+      .mb-20 {
+        margin-bottom: 5rem;
+      }
+      .mb-5 {
+        margin-bottom: 1.25rem;
+      }
+      .mb-6 {
+        margin-bottom: 1.5rem;
+      }
+      .me-3 {
+        margin-inline-end: 0.75rem;
+      }
+      .ms-auto {
+        margin-inline-start: auto;
+      }
+      .mt-1 {
+        margin-top: 0.25rem;
+      }
+      .mt-10 {
+        margin-top: 2.5rem;
+      }
+      .mt-2 {
+        margin-top: 0.5rem;
+      }
+      .mt-5 {
+        margin-top: 1.25rem;
+      }
+      .flex {
+        display: flex;
+      }
+      .inline-flex {
+        display: inline-flex;
+      }
+      .grid {
+        display: grid;
+      }
+      .hidden {
+        display: none;
+      }
+      .h-0\.5 {
+        height: 0.125rem;
+      }
+      .h-10 {
+        height: 2.5rem;
+      }
+      .h-12 {
+        height: 3rem;
+      }
+      .h-20 {
+        height: 5rem;
+      }
+      .h-28 {
+        height: 7rem;
+      }
+      .h-3 {
+        height: 0.75rem;
+      }
+      .h-6 {
+        height: 1.5rem;
+      }
+      .h-8 {
+        height: 2rem;
+      }
+      .h-\[calc\(100\%-1rem\)\] {
+        height: calc(100% - 1rem);
+      }
+      .max-h-full {
+        max-height: 100%;
+      }
+      .w-10 {
+        width: 2.5rem;
+      }
+      .w-3 {
+        width: 0.75rem;
+      }
+      .w-40 {
+        width: 10rem;
+      }
+      .w-44 {
+        width: 11rem;
+      }
+      .w-6 {
+        width: 1.5rem;
+      }
+      .w-8 {
+        width: 2rem;
+      }
+      .w-\[20\%\] {
+        width: 20%;
+      }
+      .w-\[50\%\] {
+        width: 50%;
+      }
+      .w-full {
+        width: 100%;
+      }
+      .max-w-2xl {
+        max-width: 42rem;
+      }
+      .max-w-screen-xl {
+        max-width: 1280px;
+      }
+      .grid-flow-col {
+        grid-auto-flow: column;
+      }
+      .grid-rows-3 {
+        grid-template-rows: repeat(3, minmax(0, 1fr));
+      }
+      .flex-row {
+        flex-direction: row;
+      }
+      .flex-col {
+        flex-direction: column;
+      }
+      .flex-wrap {
+        flex-wrap: wrap;
+      }
+      .items-center {
+        align-items: center;
+      }
+      .justify-center {
+        justify-content: center;
+      }
+      .justify-between {
+        justify-content: space-between;
+      }
+      .justify-around {
+        justify-content: space-around;
+      }
+      .gap-4 {
+        gap: 1rem;
+      }
+      .space-x-6 > :not([hidden]) ~ :not([hidden]) {
+        --tw-space-x-reverse: 0;
+        margin-right: calc(1.5rem * var(--tw-space-x-reverse));
+        margin-left: calc(1.5rem * calc(1 - var(--tw-space-x-reverse)));
+      }
+      .space-y-4 > :not([hidden]) ~ :not([hidden]) {
+        --tw-space-y-reverse: 0;
+        margin-top: calc(1rem * calc(1 - var(--tw-space-y-reverse)));
+        margin-bottom: calc(1rem * var(--tw-space-y-reverse));
+      }
+      .overflow-y-auto {
+        overflow-y: auto;
+      }
+      .overflow-x-hidden {
+        overflow-x: hidden;
+      }
+      .rounded {
+        border-radius: 0.25rem;
+      }
+      .rounded-lg {
+        border-radius: 0.5rem;
+      }
+      .rounded-md {
+        border-radius: 0.375rem;
+      }
+      .rounded-xl {
+        border-radius: 0.75rem;
+      }
+      .rounded-t {
+        border-top-left-radius: 0.25rem;
+        border-top-right-radius: 0.25rem;
+      }
+      .border-2 {
+        border-width: 2px;
+      }
+      .border-b {
+        border-bottom-width: 1px;
+      }
+      .border-t-2 {
+        border-top-width: 2px;
+      }
+      .border-\[\#addfca\] {
+        --tw-border-opacity: 1;
+        border-color: rgb(173 223 202 / var(--tw-border-opacity));
+      }
+      .border-black {
+        --tw-border-opacity: 1;
+        border-color: rgb(0 0 0 / var(--tw-border-opacity));
+      }
+      .bg-\[\#35575a\] {
+        --tw-bg-opacity: 1;
+        background-color: rgb(53 87 90 / var(--tw-bg-opacity));
+      }
+      .bg-\[\#addfca\] {
+        --tw-bg-opacity: 1;
+        background-color: rgb(173 223 202 / var(--tw-bg-opacity));
+      }
+      .bg-transparent {
+        background-color: transparent;
+      }
+      .bg-white {
+        --tw-bg-opacity: 1;
+        background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+      }
+      .p-2 {
+        padding: 0.5rem;
+      }
+      .p-4 {
+        padding: 1rem;
+      }
+      .p-8 {
+        padding: 2rem;
+      }
+      .px-1 {
+        padding-left: 0.25rem;
+        padding-right: 0.25rem;
+      }
+      .px-4 {
+        padding-left: 1rem;
+        padding-right: 1rem;
+      }
+      .py-1 {
+        padding-top: 0.25rem;
+        padding-bottom: 0.25rem;
+      }
+      .py-2 {
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+      }
+      .py-3 {
+        padding-top: 0.75rem;
+        padding-bottom: 0.75rem;
+      }
+      .py-6 {
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
+      }
+      .text-center {
+        text-align: center;
+      }
+      .text-start {
+        text-align: start;
+      }
+      .text-2xl {
+        font-size: 1.5rem;
+        line-height: 2rem;
+      }
+      .text-3xl {
+        font-size: 1.875rem;
+        line-height: 2.25rem;
+      }
+      .text-base {
+        font-size: 1rem;
+        line-height: 1.5rem;
+      }
+      .text-lg {
+        font-size: 1.125rem;
+        line-height: 1.75rem;
+      }
+      .text-sm {
+        font-size: 0.875rem;
+        line-height: 1.25rem;
+      }
+      .text-xl {
+        font-size: 1.25rem;
+        line-height: 1.75rem;
+      }
+      .font-bold {
+        font-weight: 700;
+      }
+      .font-light {
+        font-weight: 300;
+      }
+      .font-medium {
+        font-weight: 500;
+      }
+      .font-normal {
+        font-weight: 400;
+      }
+      .font-semibold {
+        font-weight: 600;
+      }
+      .uppercase {
+        text-transform: uppercase;
+      }
+      .leading-relaxed {
+        line-height: 1.625;
+      }
+      .text-\[\#2b4a4d\] {
+        --tw-text-opacity: 1;
+        color: rgb(43 74 77 / var(--tw-text-opacity));
+      }
+      .text-\[\#35575a\] {
+        --tw-text-opacity: 1;
+        color: rgb(53 87 90 / var(--tw-text-opacity));
+      }
+      .text-gray-200 {
+        --tw-text-opacity: 1;
+        color: rgb(229 231 235 / var(--tw-text-opacity));
+      }
+      .text-gray-400 {
+        --tw-text-opacity: 1;
+        color: rgb(156 163 175 / var(--tw-text-opacity));
+      }
+      .text-gray-500 {
+        --tw-text-opacity: 1;
+        color: rgb(107 114 128 / var(--tw-text-opacity));
+      }
+      .text-gray-600 {
+        --tw-text-opacity: 1;
+        color: rgb(75 85 99 / var(--tw-text-opacity));
+      }
+      .text-gray-700 {
+        --tw-text-opacity: 1;
+        color: rgb(55 65 81 / var(--tw-text-opacity));
+      }
+      .text-gray-800 {
+        --tw-text-opacity: 1;
+        color: rgb(31 41 55 / var(--tw-text-opacity));
+      }
+      .text-gray-900 {
+        --tw-text-opacity: 1;
+        color: rgb(17 24 39 / var(--tw-text-opacity));
+      }
+      .shadow {
+        --tw-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1),
+          0 1px 2px -1px rgb(0 0 0 / 0.1);
+        --tw-shadow-colored: 0 1px 3px 0 var(--tw-shadow-color),
+          0 1px 2px -1px var(--tw-shadow-color);
+        box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),
+          var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+      }
+      .shadow-lg {
+        --tw-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1),
+          0 4px 6px -4px rgb(0 0 0 / 0.1);
+        --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color),
+          0 4px 6px -4px var(--tw-shadow-color);
+        box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),
+          var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+      }
+      .shadow-md {
+        --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1),
+          0 2px 4px -2px rgb(0 0 0 / 0.1);
+        --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color),
+          0 2px 4px -2px var(--tw-shadow-color);
+        box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),
+          var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+      }
+      .shadow-xl {
+        --tw-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1),
+          0 8px 10px -6px rgb(0 0 0 / 0.1);
+        --tw-shadow-colored: 0 20px 25px -5px var(--tw-shadow-color),
+          0 8px 10px -6px var(--tw-shadow-color);
+        box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),
+          var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+      }
+      .shadow-gray-950 {
+        --tw-shadow-color: #030712;
+        --tw-shadow: var(--tw-shadow-colored);
+      }
+      .transition-colors {
+        transition-property: color, background-color, border-color, fill, stroke,
+          -webkit-text-decoration-color;
+        transition-property: color, background-color, border-color,
+          text-decoration-color, fill, stroke;
+        transition-property: color, background-color, border-color,
+          text-decoration-color, fill, stroke, -webkit-text-decoration-color;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        transition-duration: 150ms;
+      }
+      .duration-300 {
+        transition-duration: 300ms;
+      }
+      .hover\:bg-gray-200:hover {
+        --tw-bg-opacity: 1;
+        background-color: rgb(229 231 235 / var(--tw-bg-opacity));
+      }
+      .hover\:bg-gray-300:hover {
+        --tw-bg-opacity: 1;
+        background-color: rgb(209 213 219 / var(--tw-bg-opacity));
+      }
+      .hover\:text-\[\#3c5a96\]:hover {
+        --tw-text-opacity: 1;
+        color: rgb(60 90 150 / var(--tw-text-opacity));
+      }
+      .hover\:text-gray-900:hover {
+        --tw-text-opacity: 1;
+        color: rgb(17 24 39 / var(--tw-text-opacity));
+      }
+      .hover\:underline:hover {
+        -webkit-text-decoration-line: underline;
+        text-decoration-line: underline;
+      }
+      .focus\:outline-none:focus {
+        outline: 2px solid transparent;
+        outline-offset: 2px;
+      }
+      .focus\:ring-2:focus {
+        --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0
+          var(--tw-ring-offset-width) var(--tw-ring-offset-color);
+        --tw-ring-shadow: var(--tw-ring-inset) 0 0 0
+          calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color);
+        box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow),
+          var(--tw-shadow, 0 0 #0000);
+      }
+      .focus\:ring-gray-200:focus {
+        --tw-ring-opacity: 1;
+        --tw-ring-color: rgb(229 231 235 / var(--tw-ring-opacity));
+      }
+      @media (min-width: 640px) {
+        .sm\:mx-auto {
+          margin-left: auto;
+          margin-right: auto;
+        }
+        .sm\:flex {
+          display: flex;
+        }
+        .sm\:w-\[10\%\] {
+          width: 10%;
+        }
+        .sm\:flex-row {
+          flex-direction: row;
+        }
+        .sm\:items-center {
+          align-items: center;
+        }
+        .sm\:justify-start {
+          justify-content: flex-start;
+        }
+        .sm\:justify-between {
+          justify-content: space-between;
+        }
+        .sm\:text-center {
+          text-align: center;
+        }
+        .sm\:text-3xl {
+          font-size: 1.875rem;
+          line-height: 2.25rem;
+        }
+        .sm\:text-base {
+          font-size: 1rem;
+          line-height: 1.5rem;
+        }
+        .sm\:text-xl {
+          font-size: 1.25rem;
+          line-height: 1.75rem;
+        }
+      }
+      @media (min-width: 768px) {
+        .md\:inset-0 {
+          inset: 0px;
+        }
+        .md\:order-1 {
+          order: 1;
+        }
+        .md\:order-2 {
+          order: 2;
+        }
+        .md\:order-3 {
+          order: 3;
+        }
+        .md\:mb-0 {
+          margin-bottom: 0px;
+        }
+        .md\:mt-0 {
+          margin-top: 0px;
+        }
+        .md\:flex {
+          display: flex;
+        }
+        .md\:hidden {
+          display: none;
+        }
+        .md\:flex-1 {
+          flex: 1 1 0%;
+        }
+        .md\:flex-row {
+          flex-direction: row;
+        }
+        .md\:justify-between {
+          justify-content: space-between;
+        }
+        .md\:p-5 {
+          padding: 1.25rem;
+        }
+        .md\:px-8 {
+          padding-left: 2rem;
+          padding-right: 2rem;
+        }
+        .md\:text-base {
+          font-size: 1rem;
+          line-height: 1.5rem;
+        }
+      }
+      @media (min-width: 1024px) {
+        .lg\:h-20 {
+          height: 5rem;
+        }
+        .lg\:py-8 {
+          padding-top: 2rem;
+          padding-bottom: 2rem;
+        }
+      }
+      @media (prefers-color-scheme: dark) {
+        .dark\:border-gray-600 {
+          --tw-border-opacity: 1;
+          border-color: rgb(75 85 99 / var(--tw-border-opacity));
+        }
+        .dark\:bg-gray-900 {
+          --tw-bg-opacity: 1;
+          background-color: rgb(17 24 39 / var(--tw-bg-opacity));
+        }
+        .dark\:text-\[\#2b4a4d\] {
+          --tw-text-opacity: 1;
+          color: rgb(43 74 77 / var(--tw-text-opacity));
+        }
+        .dark\:text-gray-200 {
+          --tw-text-opacity: 1;
+          color: rgb(229 231 235 / var(--tw-text-opacity));
+        }
+        .dark\:text-white {
+          --tw-text-opacity: 1;
+          color: rgb(255 255 255 / var(--tw-text-opacity));
+        }
+        .dark\:hover\:bg-gray-600:hover {
+          --tw-bg-opacity: 1;
+          background-color: rgb(75 85 99 / var(--tw-bg-opacity));
+        }
+        .dark\:hover\:text-white:hover {
+          --tw-text-opacity: 1;
+          color: rgb(255 255 255 / var(--tw-text-opacity));
+        }
+      }
+    </style>
+    <style type="text/css" data-vite-dev-id="D:/vitconf/src/index.css">
+      @tailwind base;
+      @tailwind components;
+      @tailwind utilities;
+    </style>
+  </head>
   <body>
-    <div id="root"><div class="flex flex-col md:flex-row items-center p-4 shadow-lg"><img src="/logos/vitlogo-blue.jpg" alt="VIT logo" class="w-40 h-20 rounded md:order-1 order-2 mt-2 md:mt-0"><div class="md:flex-1 text-center md:order-2 order-1"><h1 class="text-lg sm:text-3xl font-bold text-gray-800">Green Revolution in Electronics Engineering and Networks Conference 2025</h1><h2 class="text-md sm:text-xl mt-1 text-gray-600">(GREENCON 2025) | MARCH, 2025</h2><p class="text-sm sm:text-base mt-1 font-light text-gray-600">Vellore Institute of Technology (VIT, Chennai India) organizes GREENCON 2025</p></div><img src="/images/greencon.png" alt="Greencon logo" class="w-44 h-28 md:order-3 order-3 mt-2 md:mt-0"></div><nav class="bg-[#addfca] shadow-xl shadow-gray-950 rounded-xl"><div class="max-w-screen-xl mx-auto px-4 md:px-8"><div class="flex justify-between items-center py-3"><div class="md:hidden"><button data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-gray-500 rounded-lg focus:outline-none focus:ring-2 focus:ring-gray-200" aria-controls="navbar-default" aria-expanded="false"><span class="sr-only">Open main menu</span><svg class="w-6 h-6" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg></button></div><div class="hidden md:flex space-x-6" id="navbar-default"><a href="/" class="text-gray-700 hover:text-[#3c5a96] hover:bg-gray-200 px-1 py-1 transition-colors duration-300 font-medium">Home</a><a href="/about-vit" class="text-gray-700 hover:text-[#3c5a96] hover:bg-gray-200 px-1 py-1 transition-colors duration-300 font-medium">About VIT</a><button data-modal-target="default-modal" data-modal-toggle="default-modal" class="text-gray-700 hover:text-[#3c5a96] transition-colors duration-300 font-medium hover:bg-gray-200 px-1 py-1 ">Registration</button><button data-modal-target="default-modal" data-modal-toggle="default-modal" class="text-gray-700 hover:text-[#3c5a96] transition-colors duration-300 font-medium hover:bg-gray-200 px-1 py-1 ">Advisory Board</button><button data-modal-target="default-modal" data-modal-toggle="default-modal" class="text-gray-700 hover:text-[#3c5a96] transition-colors duration-300 font-medium hover:bg-gray-200 px-1 py-1 ">Conference Speakers</button><a href="/call-for-papers" class="text-gray-700 hover:text-[#3c5a96] transition-colors duration-300 font-medium hover:bg-gray-200 px-1 py-1 ">Call for Papers</a><button data-modal-target="default-modal" data-modal-toggle="default-modal" class="text-gray-700 hover:text-[#3c5a96] transition-colors duration-300 font-medium hover:bg-gray-200 px-1 py-1 ">Paper Submission</button><a href="/organizing-committee" class="text-gray-700 hover:text-[#3c5a96] transition-colors duration-300 font-medium hover:bg-gray-200 px-1 py-1 ">Organizing Committee</a><a href="/contact-us" class="text-gray-700 hover:text-[#3c5a96] transition-colors duration-300 font-medium hover:bg-gray-200 px-1 py-1 ">Contact Us</a></div></div></div></nav><div id="default-modal" tabindex="-1" aria-hidden="true" class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full"><div class="relative p-4 w-full max-w-2xl max-h-full"><div class="relative bg-white rounded-lg shadow dark:bg-gray-900"><div class="flex items-center justify-between p-4 md:p-5 border-b rounded-t dark:border-gray-600"><h3 class="text-xl font-semibold text-gray-900 dark:text-white">Pages</h3><button type="button" class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white" data-modal-hide="default-modal"><svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"></path></svg><span class="sr-only">Close modal</span></button></div><div class="p-4 md:p-5 space-y-4"><p class="text-base leading-relaxed text-gray-200 dark:text-gray-200">Updating soon......</p></div></div></div></div><div class="App"><div class="max-w-screen-xl flex flex-wrap flex-col items-center justify-center mx-auto"><h1 class="mt-10 text-3xl font-bold uppercase text-[#35575a]">Tracks</h1><div class="mt-2 h-0.5 w-[20%] sm:w-[10%] bg-[#35575a] rounded-md"></div><div class="w-full"><div class="flex flex-wrap flex-col items-center justify-center mt-10 mb-20"><h2 class="text-3xl font-semibold text-center ">Sustainable Innovations in VLSI Devices, Circuits, and Systems</h2><h3 class="text-2xl font-normal text-center ">Track Chairs</h3><div class="mt-2 h-0.5 w-[50%] bg-[#35575a] rounded-md"></div><div class="flex flex-row flex-wrap mt-5 justify-around  items-center w-full border-2 border-black"><div class="flex flex-col mx-10 mt-10 mb-5 items-center"><img src="/images/prathiba.jpeg" alt="Dr. Prathiba A" class="w-40 border-2 border-black"><div class="text-center mt-5 text-xl w-full"><div class="font-semibold">Dr. Prathiba A</div><div>VIT Chennai</div></div></div><div class="flex flex-col mx-10 mt-10 mb-5 items-center"><img src="/images/umadevi.jpg" alt="Dr. Umadevi S" class="w-40 border-2 border-black"><div class="text-center mt-5 text-xl w-full"><div class="font-semibold">Dr. Umadevi S</div><div>VIT Chennai</div></div></div></div><h3 class="mt-10 w-full text-center text-2xl bg-[#addfca] text-[#2b4a4d] py-2 font-bold">Topics</h3><ul class="text-start w-full"><li class="text-xl my-2 hover:bg-gray-300 p-2 font-medium shadow-md">Innovative Material and Devices Technologies</li><li class="text-xl my-2 hover:bg-gray-300 p-2 font-medium shadow-md">Quantum Computing for VLSI</li><li class="text-xl my-2 hover:bg-gray-300 p-2 font-medium shadow-md">Emerging Processors for System Design</li><li class="text-xl my-2 hover:bg-gray-300 p-2 font-medium shadow-md">Analog IC Design, RF and Mixed Signal IC Design</li><li class="text-xl my-2 hover:bg-gray-300 p-2 font-medium shadow-md">Advances in CAD for VLSI</li><li class="text-xl my-2 hover:bg-gray-300 p-2 font-medium shadow-md">Automated Electronic Design Techniques for VLSI Systems</li><li class="text-xl my-2 hover:bg-gray-300 p-2 font-medium shadow-md">Innovative Memory Solutions in Advanced VLSI Systems</li><li class="text-xl my-2 hover:bg-gray-300 p-2 font-medium shadow-md">Testing and Verification of VLSI circuits</li><li class="text-xl my-2 hover:bg-gray-300 p-2 font-medium shadow-md">Cutting-Edge MEMS devices and Microfluidic Technologies</li><li class="text-xl my-2 hover:bg-gray-300 p-2 font-medium shadow-md">Advancements in VLSI Hardware for AI and Machine Learning</li><li class="text-xl my-2 hover:bg-gray-300 p-2 font-medium shadow-md">Hardware and System Security</li><li class="text-xl my-2 hover:bg-gray-300 p-2 font-medium shadow-md">Neuromorphic Computing – Spiking Neural Networks, Neuron models</li><li class="text-xl my-2 hover:bg-gray-300 p-2 font-medium shadow-md">Energy-efficient Reliable System Design</li></ul></div><div class="flex flex-wrap flex-col items-center justify-center mt-10 mb-20"><h2 class="text-3xl font-semibold text-center ">Microwave and Antenna Green Networks and Emerging Technologies( MAGNET)</h2><h3 class="text-2xl font-normal text-center ">Track Chairs</h3><div class="mt-2 h-0.5 w-[50%] bg-[#35575a] rounded-md"></div><div class="flex flex-row flex-wrap mt-5 justify-around  items-center w-full border-2 border-black"><div class="flex flex-col mx-10 mt-10 mb-5 items-center"><img src="/images/ushakiran.jpg" alt="Dr. Usha Kiran Kommuri" class="w-40 border-2 border-black"><div class="text-center mt-5 text-xl w-full"><div class="font-semibold">Dr. Usha Kiran Kommuri</div><div>VIT Chennai</div></div></div><div class="flex flex-col mx-10 mt-10 mb-5 items-center"><img src="/images/organizing-committee/niraj.jpg" alt="Dr. Niraj Kumar" class="w-40 border-2 border-black"><div class="text-center mt-5 text-xl w-full"><div class="font-semibold">Dr. Niraj Kumar</div><div>VIT Chennai</div></div></div></div><h3 class="mt-10 w-full text-center text-2xl bg-[#addfca] text-[#2b4a4d] py-2 font-bold">Topics</h3><ul class="text-start w-full"><li class="text-xl my-2 hover:bg-gray-300 p-2 font-medium shadow-md">Flexible, Wearable and Implantable antennas</li><li class="text-xl my-2 hover:bg-gray-300 p-2 font-medium shadow-md">Intelligent reflector surfaces for 5G/6G Mobile Networking</li><li class="text-xl my-2 hover:bg-gray-300 p-2 font-medium shadow-md">Metamaterial, metasurface , FSS and EBG structures</li><li class="text-xl my-2 hover:bg-gray-300 p-2 font-medium shadow-md">RF energy harvesting and wireless power transfer antennas</li><li class="text-xl my-2 hover:bg-gray-300 p-2 font-medium shadow-md">3D printed Microwave devices and antennas</li><li class="text-xl my-2 hover:bg-gray-300 p-2 font-medium shadow-md">Ultra-wideband (UWB) antennas and Dielecric Resonator antenna</li><li class="text-xl my-2 hover:bg-gray-300 p-2 font-medium shadow-md">Antennas for NexGen Networks: Mobile, Vehicular Communications and UAVs in 5G/6G and Beyond</li><li class="text-xl my-2 hover:bg-gray-300 p-2 font-medium shadow-md">RF technologies, antennas and devices for space and defence applications</li><li class="text-xl my-2 hover:bg-gray-300 p-2 font-medium shadow-md">Reconfigurable antennas, adaptive arrays, active and smart antennas</li><li class="text-xl my-2 hover:bg-gray-300 p-2 font-medium shadow-md">MIMO, Beamforming techniques and phased array antennas for 5G</li><li class="text-xl my-2 hover:bg-gray-300 p-2 font-medium shadow-md">Antennas for Underwater communication</li><li class="text-xl my-2 hover:bg-gray-300 p-2 font-medium shadow-md">Integrating RCS Reduction Strategies in Green Engineering</li><li class="text-xl my-2 hover:bg-gray-300 p-2 font-medium shadow-md">Quantum Computing and AI/ML for Advancing Antenna Design and Optimization</li><li class="text-xl my-2 hover:bg-gray-300 p-2 font-medium shadow-md">Computational Electromagnetics for Microwave and Antenna Design</li><li class="text-xl my-2 hover:bg-gray-300 p-2 font-medium shadow-md">Passive/Active Microwave, mm-Wave and THz components and circuits</li><li class="text-xl my-2 hover:bg-gray-300 p-2 font-medium shadow-md">Compact and Miniaturized TWT Devices for Emerging Technologies</li></ul></div><div class="flex flex-wrap flex-col items-center justify-center mt-10 mb-20"><h2 class="text-3xl font-semibold text-center ">Green Innovations in Photonics &amp; Optical Communication</h2><h3 class="text-2xl font-normal text-center ">Track Chairs</h3><div class="mt-2 h-0.5 w-[50%] bg-[#35575a] rounded-md"></div><div class="flex flex-row flex-wrap mt-5 justify-around  items-center w-full border-2 border-black"><div class="flex flex-col mx-10 mt-10 mb-5 items-center"><img src="/images/sivasubramanian.jpg" alt="Dr. Sivasubramanian A" class="w-40 border-2 border-black"><div class="text-center mt-5 text-xl w-full"><div class="font-semibold">Dr. Sivasubramanian A</div><div>VIT Chennai</div></div></div><div class="flex flex-col mx-10 mt-10 mb-5 items-center"><img src="/images/ilavarasan.jpg" alt="Dr. Ilavarasan T" class="w-40 border-2 border-black"><div class="text-center mt-5 text-xl w-full"><div class="font-semibold">Dr. Ilavarasan T</div><div>VIT Chennai</div></div></div></div><h3 class="mt-10 w-full text-center text-2xl bg-[#addfca] text-[#2b4a4d] py-2 font-bold">Topics</h3><ul class="text-start w-full"><li class="text-xl my-2 hover:bg-gray-300 p-2 font-medium shadow-md">Energy-Efficient Optical Networks for Carbon Footprint Reduction</li><li class="text-xl my-2 hover:bg-gray-300 p-2 font-medium shadow-md">Green Photonics: Advancements in Eco-Friendly Light-Based Technologies</li><li class="text-xl my-2 hover:bg-gray-300 p-2 font-medium shadow-md">Low-Power Optical Communication Systems for Green ICT</li><li class="text-xl my-2 hover:bg-gray-300 p-2 font-medium shadow-md">Photonic Integration for Green Data Centers</li><li class="text-xl my-2 hover:bg-gray-300 p-2 font-medium shadow-md">Optical Communication in Smart Grids and Green Energy</li><li class="text-xl my-2 hover:bg-gray-300 p-2 font-medium shadow-md">Photonic Materials for Eco-Friendly Device Fabrication</li><li class="text-xl my-2 hover:bg-gray-300 p-2 font-medium shadow-md">Emerging Green Photonics in Smart Cities</li><li class="text-xl my-2 hover:bg-gray-300 p-2 font-medium shadow-md">Energy-Efficient Optical Amplifiers and Repeaters</li><li class="text-xl my-2 hover:bg-gray-300 p-2 font-medium shadow-md">Optical Communication Technologies for Low-Energy IoT Solutions</li><li class="text-xl my-2 hover:bg-gray-300 p-2 font-medium shadow-md">Underwater Optical Communication for Sustainable Marine Technologies</li><li class="text-xl my-2 hover:bg-gray-300 p-2 font-medium shadow-md">Eco-Conscious Free Space Optical technology</li><li class="text-xl my-2 hover:bg-gray-300 p-2 font-medium shadow-md">Quantum Photonics and Applications for Sustainable Technologies</li><li class="text-xl my-2 hover:bg-gray-300 p-2 font-medium shadow-md">Energy-Efficient Optical Signal Processing &amp; Microwave Photonics</li><li class="text-xl my-2 hover:bg-gray-300 p-2 font-medium shadow-md">Eco-Friendly Optical Sensors for Environmental Monitoring and Sustainability</li><li class="text-xl my-2 hover:bg-gray-300 p-2 font-medium shadow-md">Ultrafast Photonics and Nonlinear fiber optics</li></ul></div><div class="flex flex-wrap flex-col items-center justify-center mt-10 mb-20"><h2 class="text-3xl font-semibold text-center ">Signal and Image Processing for Sustainable development</h2><h3 class="text-2xl font-normal text-center ">Track Chairs</h3><div class="mt-2 h-0.5 w-[50%] bg-[#35575a] rounded-md"></div><div class="flex flex-row flex-wrap mt-5 justify-around  items-center w-full border-2 border-black"><div class="flex flex-col mx-10 mt-10 mb-5 items-center"><img src="/images/vijayarajan.jpg" alt="Dr. Vijayarajan R" class="w-40 border-2 border-black"><div class="text-center mt-5 text-xl w-full"><div class="font-semibold">Dr. Vijayarajan R</div><div>VIT Chennai</div></div></div><div class="flex flex-col mx-10 mt-10 mb-5 items-center"><img src="/images/sss.jpg" alt="Dr. Sankar Ganesh S" class="w-40 border-2 border-black"><div class="text-center mt-5 text-xl w-full"><div class="font-semibold">Dr. Sankar Ganesh S</div><div>VIT Chennai</div></div></div></div><h3 class="mt-10 w-full text-center text-2xl bg-[#addfca] text-[#2b4a4d] py-2 font-bold">Topics</h3><ul class="text-start w-full"><li class="text-xl my-2 hover:bg-gray-300 p-2 font-medium shadow-md">Audio and Acoustic Signal Processing</li><li class="text-xl my-2 hover:bg-gray-300 p-2 font-medium shadow-md">AI for Speech and Language Processing</li><li class="text-xl my-2 hover:bg-gray-300 p-2 font-medium shadow-md">Signal/Image Processing for Healthcare Applications</li><li class="text-xl my-2 hover:bg-gray-300 p-2 font-medium shadow-md">AI for Signal/ Image Processing and Computer Vision</li><li class="text-xl my-2 hover:bg-gray-300 p-2 font-medium shadow-md">Ethical Healthcare Intelligence</li><li class="text-xl my-2 hover:bg-gray-300 p-2 font-medium shadow-md">Reproducible/Responsible AI for Signal and Image Processing</li><li class="text-xl my-2 hover:bg-gray-300 p-2 font-medium shadow-md">Sensor Array and Multichannel Signal Processing</li><li class="text-xl my-2 hover:bg-gray-300 p-2 font-medium shadow-md">Computer Vision for Smart Cities</li><li class="text-xl my-2 hover:bg-gray-300 p-2 font-medium shadow-md">Image Processing for Sustainable and Precision Farming</li><li class="text-xl my-2 hover:bg-gray-300 p-2 font-medium shadow-md">Signal/Image Processing for Autonomous Robot Navigation and Process Automation	</li><li class="text-xl my-2 hover:bg-gray-300 p-2 font-medium shadow-md">Signal Processing for Radar and Sonar Applications</li></ul></div><div class="flex flex-wrap flex-col items-center justify-center mt-10 mb-20"><h2 class="text-3xl font-semibold text-center ">Sustainable Intelligent Systems</h2><h3 class="text-2xl font-normal text-center ">Track Chairs</h3><div class="mt-2 h-0.5 w-[50%] bg-[#35575a] rounded-md"></div><div class="flex flex-row flex-wrap mt-5 justify-around  items-center w-full border-2 border-black"><div class="flex flex-col mx-10 mt-10 mb-5 items-center"><img src="/images/organizing-committee/gugapriya.jpg" alt="Dr. Gugapriya G" class="w-40 border-2 border-black"><div class="text-center mt-5 text-xl w-full"><div class="font-semibold">Dr. Gugapriya G</div><div>VIT Chennai</div></div></div><div class="flex flex-col mx-10 mt-10 mb-5 items-center"><img src="/images/organizing-committee/abraham.jpg" alt="Dr. Abraham Sudharson Ponraj" class="w-40 border-2 border-black"><div class="text-center mt-5 text-xl w-full"><div class="font-semibold">Dr. Abraham Sudharson Ponraj</div><div>VIT Chennai</div></div></div></div><h3 class="mt-10 w-full text-center text-2xl bg-[#addfca] text-[#2b4a4d] py-2 font-bold">Topics</h3><ul class="text-start w-full"><li class="text-xl my-2 hover:bg-gray-300 p-2 font-medium shadow-md">Energy-efficient embedded systems</li><li class="text-xl my-2 hover:bg-gray-300 p-2 font-medium shadow-md">IoT enabled Manufacturing and Industrial Automation</li><li class="text-xl my-2 hover:bg-gray-300 p-2 font-medium shadow-md">Sustainable Smart City Technologies</li><li class="text-xl my-2 hover:bg-gray-300 p-2 font-medium shadow-md">Integration of intelligent sensors in embedded systems</li><li class="text-xl my-2 hover:bg-gray-300 p-2 font-medium shadow-md">Security and privacy in embedded IoT networks</li><li class="text-xl my-2 hover:bg-gray-300 p-2 font-medium shadow-md">Human-robot interaction in embedded environments</li><li class="text-xl my-2 hover:bg-gray-300 p-2 font-medium shadow-md">Climate change and sustainability through embedded technologies</li><li class="text-xl my-2 hover:bg-gray-300 p-2 font-medium shadow-md">Edge computing for healthcare analytics and decision support</li><li class="text-xl my-2 hover:bg-gray-300 p-2 font-medium shadow-md">Modern embedded technologies for agricultural automation</li><li class="text-xl my-2 hover:bg-gray-300 p-2 font-medium shadow-md">Adaptive learning algorithms for real time embedded systems</li><li class="text-xl my-2 hover:bg-gray-300 p-2 font-medium shadow-md">Emerging technologies for sustainable automotive embedded systems</li></ul></div><div class="flex flex-wrap flex-col items-center justify-center mt-10 mb-20"><h2 class="text-3xl font-semibold text-center ">Intelligent Wireless Communication system</h2><h3 class="text-2xl font-normal text-center ">Track Chairs</h3><div class="mt-2 h-0.5 w-[50%] bg-[#35575a] rounded-md"></div><div class="flex flex-row flex-wrap mt-5 justify-around  items-center w-full border-2 border-black"><div class="flex flex-col mx-10 mt-10 mb-5 items-center"><img src="/images/vijayakumar.jpg" alt="Dr. Vijay Kumar P" class="w-40 border-2 border-black"><div class="text-center mt-5 text-xl w-full"><div class="font-semibold">Dr. Vijay Kumar P</div><div>VIT Chennai</div></div></div><div class="flex flex-col mx-10 mt-10 mb-5 items-center"><img src="/images/berlin.jpg" alt="Dr. Berlin Hency V" class="w-40 border-2 border-black"><div class="text-center mt-5 text-xl w-full"><div class="font-semibold">Dr. Berlin Hency V</div><div>VIT Chennai</div></div></div></div><h3 class="mt-10 w-full text-center text-2xl bg-[#addfca] text-[#2b4a4d] py-2 font-bold">Topics</h3><ul class="text-start w-full"><li class="text-xl my-2 hover:bg-gray-300 p-2 font-medium shadow-md">Cognitive Radio and Dynamic Spectrum Access</li><li class="text-xl my-2 hover:bg-gray-300 p-2 font-medium shadow-md">Vehicular Ad-Hoc Networks (VANETs)</li><li class="text-xl my-2 hover:bg-gray-300 p-2 font-medium shadow-md">Wireless Communication for Smart Grids</li><li class="text-xl my-2 hover:bg-gray-300 p-2 font-medium shadow-md">Millimeter-Wave and Terahertz Communication</li><li class="text-xl my-2 hover:bg-gray-300 p-2 font-medium shadow-md">Massive MIMO and Beamforming</li><li class="text-xl my-2 hover:bg-gray-300 p-2 font-medium shadow-md">Wireless Power Transfer and Energy Harvesting</li><li class="text-xl my-2 hover:bg-gray-300 p-2 font-medium shadow-md">Satellite Communication and Unmanned Aerial Vehicles (UAVs)</li><li class="text-xl my-2 hover:bg-gray-300 p-2 font-medium shadow-md">Quantum Communication and Cryptography</li><li class="text-xl my-2 hover:bg-gray-300 p-2 font-medium shadow-md">Mobile Edge Computing and Fog Networks</li><li class="text-xl my-2 hover:bg-gray-300 p-2 font-medium shadow-md">Reconfigurable Intelligent Surfaces for 5G /6G</li><li class="text-xl my-2 hover:bg-gray-300 p-2 font-medium shadow-md">Machine and Deep Learning for Wireless Communications</li><li class="text-xl my-2 hover:bg-gray-300 p-2 font-medium shadow-md">Transfer Learning for Wireless Communications and Networks</li></ul></div><div class="flex flex-wrap flex-col items-center justify-center mt-10 mb-20"><h2 class="text-3xl font-semibold text-center ">Data-Driven Innovations in Electronics Engineering</h2><h3 class="text-2xl font-normal text-center ">Track Chairs</h3><div class="mt-2 h-0.5 w-[50%] bg-[#35575a] rounded-md"></div><div class="flex flex-row flex-wrap mt-5 justify-around  items-center w-full border-2 border-black"><div class="flex flex-col mx-10 mt-10 mb-5 items-center"><img src="/images/logesh.jpg" alt="Dr. Logesh R" class="w-40 border-2 border-black"><div class="text-center mt-5 text-xl w-full"><div class="font-semibold">Dr. Logesh R</div><div>VIT Chennai</div></div></div><div class="flex flex-col mx-10 mt-10 mb-5 items-center"><img src="/images/suganthi.jpg" alt="Dr. Suganthi K" class="w-40 border-2 border-black"><div class="text-center mt-5 text-xl w-full"><div class="font-semibold">Dr. Suganthi K</div><div>VIT Chennai</div></div></div></div><h3 class="mt-10 w-full text-center text-2xl bg-[#addfca] text-[#2b4a4d] py-2 font-bold">Topics</h3><ul class="text-start w-full"><li class="text-xl my-2 hover:bg-gray-300 p-2 font-medium shadow-md">Machine Learning Algorithms for Enhancing Signal Processing</li><li class="text-xl my-2 hover:bg-gray-300 p-2 font-medium shadow-md">Predictive Maintenance for Electronic Devices Using Big Data</li><li class="text-xl my-2 hover:bg-gray-300 p-2 font-medium shadow-md">Edge Computing and Real-Time Data Processing in Electronics</li><li class="text-xl my-2 hover:bg-gray-300 p-2 font-medium shadow-md">Data Analytics for Enhanced Performance of Semiconductor Devices</li><li class="text-xl my-2 hover:bg-gray-300 p-2 font-medium shadow-md">Big Data Applications in VLSI Design and Testing</li><li class="text-xl my-2 hover:bg-gray-300 p-2 font-medium shadow-md">Automated Fault Detection in Electronic Systems Using AI</li><li class="text-xl my-2 hover:bg-gray-300 p-2 font-medium shadow-md">AI-Enhanced Thermal Management in High-Performance Electronics</li><li class="text-xl my-2 hover:bg-gray-300 p-2 font-medium shadow-md">Advanced Data Compression Techniques for Electronics Systems</li><li class="text-xl my-2 hover:bg-gray-300 p-2 font-medium shadow-md">Data-Centric Approaches to Improve Antenna Design</li><li class="text-xl my-2 hover:bg-gray-300 p-2 font-medium shadow-md">Real-Time Data Acquisition and Processing in Sensor Networks and Wireless Communication Systems</li><li class="text-xl my-2 hover:bg-gray-300 p-2 font-medium shadow-md">Integration of Big Data Analytics in IoT Devices</li><li class="text-xl my-2 hover:bg-gray-300 p-2 font-medium shadow-md">Data-Driven Modelling and Simulation of Electronic Systems</li><li class="text-xl my-2 hover:bg-gray-300 p-2 font-medium shadow-md">AI-Driven Optimization in Consumer Electronics, Robotics and Manufacutring</li><li class="text-xl my-2 hover:bg-gray-300 p-2 font-medium shadow-md">Data Mining Techniques for Enhancing Electronic Design Automation (EDA)</li></ul></div></div></div></div><footer class="bg-white border-black border-t-2 w-full"><div class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8"><div class="flex flex-col justify-center sm:flex-row md:justify-between"><a href="https://chennai.vit.ac.in/" class=" mb-6 md:mb-0 flex justify-center sm:justify-start"><img src="/logos/vitlogo-white.jpg" class="h-12 lg:h-20 me-3" alt="FlowBite Logo"></a><div class="flex justify-center sm:justify-start"><ul class="text-gray-800 grid grid-rows-3 text-sm md:text-base grid-flow-col gap-4"><li><a href="/" class="hover:underline">Home</a></li><li><a href="/about-vit" class="hover:underline">About VIT</a></li><li><a class="hover:underline" data-modal-target="default-modal" data-modal-toggle="default-modal">Registration</a></li><li><a class="hover:underline" data-modal-target="default-modal" data-modal-toggle="default-modal">Advisory Board</a></li><li><a class="hover:underline" data-modal-target="default-modal" data-modal-toggle="default-modal">Conference Speakers</a></li><li><a href="/call-for-papers" class="hover:underline">Call for Papers</a></li><li><a class="hover:underline" data-modal-target="default-modal" data-modal-toggle="default-modal">Paper Submission</a></li><li><a href="organizing-committee" class="hover:underline">Organizing committee</a></li><li><a href="/contact-us" class="hover:underline">Contact Us</a></li></ul></div></div></div></footer><hr class="border-[#addfca] sm:mx-auto"><div class="sm:flex sm:items-center sm:justify-between text-sm md:text-base bg-[#addfca] p-8"><span class="font-semibold text-sm text-[#2b4a4d] sm:text-center dark:text-[#2b4a4d]">© 2024 <a href="https://chennai.vit.ac.in/" class="hover:underline">VIT Chennai</a>. All Rights Reserved.</span></div><div id="default-modal" tabindex="-1" aria-hidden="true" class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full"><div class="relative p-4 w-full max-w-2xl max-h-full"><div class="relative bg-white rounded-lg shadow dark:bg-gray-900"><div class="flex items-center justify-between p-4 md:p-5 border-b rounded-t dark:border-gray-600"><h3 class="text-xl font-semibold text-gray-900 dark:text-white">Pages</h3><button type="button" class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white" data-modal-hide="default-modal"><svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"></path></svg><span class="sr-only">Close modal</span></button></div><div class="p-4 md:p-5 space-y-4"><p class="text-base leading-relaxed text-gray-200 dark:text-gray-200">Updating soon......</p></div></div></div></div></div>
+    <div id="root">
+      <div class="flex flex-col md:flex-row items-center p-4 shadow-lg">
+        <img
+          src="./logos/vitlogo-blue.jpg"
+          alt="VIT logo"
+          class="w-40 h-20 rounded md:order-1 order-2 mt-2 md:mt-0"
+        />
+        <div class="md:flex-1 text-center md:order-2 order-1">
+          <h1 class="text-lg sm:text-3xl font-bold text-gray-800">
+            Green Revolution in Electronics Engineering and Networks Conference
+            2025
+          </h1>
+          <h2 class="text-md sm:text-xl mt-1 text-gray-600">
+            (GREENCON 2025) | MARCH, 2025
+          </h2>
+          <p class="text-sm sm:text-base mt-1 font-light text-gray-600">
+            Vellore Institute of Technology (VIT, Chennai India) organizes
+            GREENCON 2025
+          </p>
+        </div>
+        <img
+          src="./images/greencon.png"
+          alt="Greencon logo"
+          class="w-44 h-28 md:order-3 order-3 mt-2 md:mt-0"
+        />
+      </div>
+      <nav class="bg-[#addfca] shadow-xl shadow-gray-950 rounded-xl">
+        <div class="max-w-screen-xl mx-auto px-4 md:px-8">
+          <div class="flex justify-between items-center py-3">
+            <div class="md:hidden">
+              <button
+                data-collapse-toggle="navbar-default"
+                type="button"
+                class="inline-flex items-center p-2 w-10 h-10 justify-center text-gray-500 rounded-lg focus:outline-none focus:ring-2 focus:ring-gray-200"
+                aria-controls="navbar-default"
+                aria-expanded="false"
+              >
+                <span class="sr-only">Open main menu</span
+                ><svg
+                  class="w-6 h-6"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h16M4 18h16"
+                  ></path>
+                </svg>
+              </button>
+            </div>
+            <div class="hidden md:flex space-x-6" id="navbar-default">
+              <a
+                href="/"
+                class="text-gray-700 hover:text-[#3c5a96] hover:bg-gray-200 px-1 py-1 transition-colors duration-300 font-medium"
+                >Home</a
+              ><a
+                href="/about-vit"
+                class="text-gray-700 hover:text-[#3c5a96] hover:bg-gray-200 px-1 py-1 transition-colors duration-300 font-medium"
+                >About VIT</a
+              ><button
+                data-modal-target="default-modal"
+                data-modal-toggle="default-modal"
+                class="text-gray-700 hover:text-[#3c5a96] transition-colors duration-300 font-medium hover:bg-gray-200 px-1 py-1"
+              >
+                Registration</button
+              ><button
+                data-modal-target="default-modal"
+                data-modal-toggle="default-modal"
+                class="text-gray-700 hover:text-[#3c5a96] transition-colors duration-300 font-medium hover:bg-gray-200 px-1 py-1"
+              >
+                Advisory Board</button
+              ><button
+                data-modal-target="default-modal"
+                data-modal-toggle="default-modal"
+                class="text-gray-700 hover:text-[#3c5a96] transition-colors duration-300 font-medium hover:bg-gray-200 px-1 py-1"
+              >
+                Conference Speakers</button
+              ><a
+                href="/call-for-papers"
+                class="text-gray-700 hover:text-[#3c5a96] transition-colors duration-300 font-medium hover:bg-gray-200 px-1 py-1"
+                >Call for Papers</a
+              ><button
+                data-modal-target="default-modal"
+                data-modal-toggle="default-modal"
+                class="text-gray-700 hover:text-[#3c5a96] transition-colors duration-300 font-medium hover:bg-gray-200 px-1 py-1"
+              >
+                Paper Submission</button
+              ><a
+                href="/organizing-committee"
+                class="text-gray-700 hover:text-[#3c5a96] transition-colors duration-300 font-medium hover:bg-gray-200 px-1 py-1"
+                >Organizing Committee</a
+              ><a
+                href="/contact-us"
+                class="text-gray-700 hover:text-[#3c5a96] transition-colors duration-300 font-medium hover:bg-gray-200 px-1 py-1"
+                >Contact Us</a
+              >
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div
+        id="default-modal"
+        tabindex="-1"
+        aria-hidden="true"
+        class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full"
+      >
+        <div class="relative p-4 w-full max-w-2xl max-h-full">
+          <div class="relative bg-white rounded-lg shadow dark:bg-gray-900">
+            <div
+              class="flex items-center justify-between p-4 md:p-5 border-b rounded-t dark:border-gray-600"
+            >
+              <h3 class="text-xl font-semibold text-gray-900 dark:text-white">
+                Pages
+              </h3>
+              <button
+                type="button"
+                class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white"
+                data-modal-hide="default-modal"
+              >
+                <svg
+                  class="w-3 h-3"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 14 14"
+                >
+                  <path
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"
+                  ></path></svg
+                ><span class="sr-only">Close modal</span>
+              </button>
+            </div>
+            <div class="p-4 md:p-5 space-y-4">
+              <p
+                class="text-base leading-relaxed text-gray-200 dark:text-gray-200"
+              >
+                Updating soon......
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="App">
+        <div
+          class="max-w-screen-xl flex flex-wrap flex-col items-center justify-center mx-auto"
+        >
+          <h1 class="mt-10 text-3xl font-bold uppercase text-[#35575a]">
+            Tracks
+          </h1>
+          <div
+            class="mt-2 h-0.5 w-[20%] sm:w-[10%] bg-[#35575a] rounded-md"
+          ></div>
+          <div class="w-full">
+            <div
+              class="flex flex-wrap flex-col items-center justify-center mt-10 mb-20"
+            >
+              <h2 class="text-3xl font-semibold text-center">
+                Sustainable Innovations in VLSI Devices, Circuits, and Systems
+              </h2>
+              <h3 class="text-2xl font-normal text-center">Track Chairs</h3>
+              <div class="mt-2 h-0.5 w-[50%] bg-[#35575a] rounded-md"></div>
+              <div
+                class="flex flex-row flex-wrap mt-5 justify-around items-center w-full border-2 border-black"
+              >
+                <div class="flex flex-col mx-10 mt-10 mb-5 items-center">
+                  <img
+                    src="./images/prathiba.jpeg"
+                    alt="Dr. Prathiba A"
+                    class="w-40 border-2 border-black"
+                  />
+                  <div class="text-center mt-5 text-xl w-full">
+                    <div class="font-semibold">Dr. Prathiba A</div>
+                    <div>VIT Chennai</div>
+                  </div>
+                </div>
+                <div class="flex flex-col mx-10 mt-10 mb-5 items-center">
+                  <img
+                    src="./images/umadevi.jpg"
+                    alt="Dr. Umadevi S"
+                    class="w-40 border-2 border-black"
+                  />
+                  <div class="text-center mt-5 text-xl w-full">
+                    <div class="font-semibold">Dr. Umadevi S</div>
+                    <div>VIT Chennai</div>
+                  </div>
+                </div>
+              </div>
+              <h3
+                class="mt-10 w-full text-center text-2xl bg-[#addfca] text-[#2b4a4d] py-2 font-bold"
+              >
+                Topics
+              </h3>
+              <ul class="text-start w-full">
+                <li
+                  class="text-xl my-2 hover:bg-gray-300 p-2 font-medium shadow-md"
+                >
+                  Innovative Material and Devices Technologies
+                </li>
+                <li
+                  class="text-xl my-2 hover:bg-gray-300 p-2 font-medium shadow-md"
+                >
+                  Quantum Computing for VLSI
+                </li>
+                <li
+                  class="text-xl my-2 hover:bg-gray-300 p-2 font-medium shadow-md"
+                >
+                  Emerging Processors for System Design
+                </li>
+                <li
+                  class="text-xl my-2 hover:bg-gray-300 p-2 font-medium shadow-md"
+                >
+                  Analog IC Design, RF and Mixed Signal IC Design
+                </li>
+                <li
+                  class="text-xl my-2 hover:bg-gray-300 p-2 font-medium shadow-md"
+                >
+                  Advances in CAD for VLSI
+                </li>
+                <li
+                  class="text-xl my-2 hover:bg-gray-300 p-2 font-medium shadow-md"
+                >
+                  Automated Electronic Design Techniques for VLSI Systems
+                </li>
+                <li
+                  class="text-xl my-2 hover:bg-gray-300 p-2 font-medium shadow-md"
+                >
+                  Innovative Memory Solutions in Advanced VLSI Systems
+                </li>
+                <li
+                  class="text-xl my-2 hover:bg-gray-300 p-2 font-medium shadow-md"
+                >
+                  Testing and Verification of VLSI circuits
+                </li>
+                <li
+                  class="text-xl my-2 hover:bg-gray-300 p-2 font-medium shadow-md"
+                >
+                  Cutting-Edge MEMS devices and Microfluidic Technologies
+                </li>
+                <li
+                  class="text-xl my-2 hover:bg-gray-300 p-2 font-medium shadow-md"
+                >
+                  Advancements in VLSI Hardware for AI and Machine Learning
+                </li>
+                <li
+                  class="text-xl my-2 hover:bg-gray-300 p-2 font-medium shadow-md"
+                >
+                  Hardware and System Security
+                </li>
+                <li
+                  class="text-xl my-2 hover:bg-gray-300 p-2 font-medium shadow-md"
+                >
+                  Neuromorphic Computing – Spiking Neural Networks, Neuron
+                  models
+                </li>
+                <li
+                  class="text-xl my-2 hover:bg-gray-300 p-2 font-medium shadow-md"
+                >
+                  Energy-efficient Reliable System Design
+                </li>
+              </ul>
+            </div>
+            <div
+              class="flex flex-wrap flex-col items-center justify-center mt-10 mb-20"
+            >
+              <h2 class="text-3xl font-semibold text-center">
+                Microwave and Antenna Green Networks and Emerging Technologies(
+                MAGNET)
+              </h2>
+              <h3 class="text-2xl font-normal text-center">Track Chairs</h3>
+              <div class="mt-2 h-0.5 w-[50%] bg-[#35575a] rounded-md"></div>
+              <div
+                class="flex flex-row flex-wrap mt-5 justify-around items-center w-full border-2 border-black"
+              >
+                <div class="flex flex-col mx-10 mt-10 mb-5 items-center">
+                  <img
+                    src="./images/ushakiran.jpg"
+                    alt="Dr. Usha Kiran Kommuri"
+                    class="w-40 border-2 border-black"
+                  />
+                  <div class="text-center mt-5 text-xl w-full">
+                    <div class="font-semibold">Dr. Usha Kiran Kommuri</div>
+                    <div>VIT Chennai</div>
+                  </div>
+                </div>
+                <div class="flex flex-col mx-10 mt-10 mb-5 items-center">
+                  <img
+                    src="./images/organizing-committee/niraj.jpg"
+                    alt="Dr. Niraj Kumar"
+                    class="w-40 border-2 border-black"
+                  />
+                  <div class="text-center mt-5 text-xl w-full">
+                    <div class="font-semibold">Dr. Niraj Kumar</div>
+                    <div>VIT Chennai</div>
+                  </div>
+                </div>
+              </div>
+              <h3
+                class="mt-10 w-full text-center text-2xl bg-[#addfca] text-[#2b4a4d] py-2 font-bold"
+              >
+                Topics
+              </h3>
+              <ul class="text-start w-full">
+                <li
+                  class="text-xl my-2 hover:bg-gray-300 p-2 font-medium shadow-md"
+                >
+                  Flexible, Wearable and Implantable antennas
+                </li>
+                <li
+                  class="text-xl my-2 hover:bg-gray-300 p-2 font-medium shadow-md"
+                >
+                  Intelligent reflector surfaces for 5G/6G Mobile Networking
+                </li>
+                <li
+                  class="text-xl my-2 hover:bg-gray-300 p-2 font-medium shadow-md"
+                >
+                  Metamaterial, metasurface , FSS and EBG structures
+                </li>
+                <li
+                  class="text-xl my-2 hover:bg-gray-300 p-2 font-medium shadow-md"
+                >
+                  RF energy harvesting and wireless power transfer antennas
+                </li>
+                <li
+                  class="text-xl my-2 hover:bg-gray-300 p-2 font-medium shadow-md"
+                >
+                  3D printed Microwave devices and antennas
+                </li>
+                <li
+                  class="text-xl my-2 hover:bg-gray-300 p-2 font-medium shadow-md"
+                >
+                  Ultra-wideband (UWB) antennas and Dielecric Resonator antenna
+                </li>
+                <li
+                  class="text-xl my-2 hover:bg-gray-300 p-2 font-medium shadow-md"
+                >
+                  Antennas for NexGen Networks: Mobile, Vehicular Communications
+                  and UAVs in 5G/6G and Beyond
+                </li>
+                <li
+                  class="text-xl my-2 hover:bg-gray-300 p-2 font-medium shadow-md"
+                >
+                  RF technologies, antennas and devices for space and defence
+                  applications
+                </li>
+                <li
+                  class="text-xl my-2 hover:bg-gray-300 p-2 font-medium shadow-md"
+                >
+                  Reconfigurable antennas, adaptive arrays, active and smart
+                  antennas
+                </li>
+                <li
+                  class="text-xl my-2 hover:bg-gray-300 p-2 font-medium shadow-md"
+                >
+                  MIMO, Beamforming techniques and phased array antennas for 5G
+                </li>
+                <li
+                  class="text-xl my-2 hover:bg-gray-300 p-2 font-medium shadow-md"
+                >
+                  Antennas for Underwater communication
+                </li>
+                <li
+                  class="text-xl my-2 hover:bg-gray-300 p-2 font-medium shadow-md"
+                >
+                  Integrating RCS Reduction Strategies in Green Engineering
+                </li>
+                <li
+                  class="text-xl my-2 hover:bg-gray-300 p-2 font-medium shadow-md"
+                >
+                  Quantum Computing and AI/ML for Advancing Antenna Design and
+                  Optimization
+                </li>
+                <li
+                  class="text-xl my-2 hover:bg-gray-300 p-2 font-medium shadow-md"
+                >
+                  Computational Electromagnetics for Microwave and Antenna
+                  Design
+                </li>
+                <li
+                  class="text-xl my-2 hover:bg-gray-300 p-2 font-medium shadow-md"
+                >
+                  Passive/Active Microwave, mm-Wave and THz components and
+                  circuits
+                </li>
+                <li
+                  class="text-xl my-2 hover:bg-gray-300 p-2 font-medium shadow-md"
+                >
+                  Compact and Miniaturized TWT Devices for Emerging Technologies
+                </li>
+              </ul>
+            </div>
+            <div
+              class="flex flex-wrap flex-col items-center justify-center mt-10 mb-20"
+            >
+              <h2 class="text-3xl font-semibold text-center">
+                Green Innovations in Photonics &amp; Optical Communication
+              </h2>
+              <h3 class="text-2xl font-normal text-center">Track Chairs</h3>
+              <div class="mt-2 h-0.5 w-[50%] bg-[#35575a] rounded-md"></div>
+              <div
+                class="flex flex-row flex-wrap mt-5 justify-around items-center w-full border-2 border-black"
+              >
+                <div class="flex flex-col mx-10 mt-10 mb-5 items-center">
+                  <img
+                    src="./images/sivasubramanian.jpg"
+                    alt="Dr. Sivasubramanian A"
+                    class="w-40 border-2 border-black"
+                  />
+                  <div class="text-center mt-5 text-xl w-full">
+                    <div class="font-semibold">Dr. Sivasubramanian A</div>
+                    <div>VIT Chennai</div>
+                  </div>
+                </div>
+                <div class="flex flex-col mx-10 mt-10 mb-5 items-center">
+                  <img
+                    src="./images/ilavarasan.jpg"
+                    alt="Dr. Ilavarasan T"
+                    class="w-40 border-2 border-black"
+                  />
+                  <div class="text-center mt-5 text-xl w-full">
+                    <div class="font-semibold">Dr. Ilavarasan T</div>
+                    <div>VIT Chennai</div>
+                  </div>
+                </div>
+              </div>
+              <h3
+                class="mt-10 w-full text-center text-2xl bg-[#addfca] text-[#2b4a4d] py-2 font-bold"
+              >
+                Topics
+              </h3>
+              <ul class="text-start w-full">
+                <li
+                  class="text-xl my-2 hover:bg-gray-300 p-2 font-medium shadow-md"
+                >
+                  Energy-Efficient Optical Networks for Carbon Footprint
+                  Reduction
+                </li>
+                <li
+                  class="text-xl my-2 hover:bg-gray-300 p-2 font-medium shadow-md"
+                >
+                  Green Photonics: Advancements in Eco-Friendly Light-Based
+                  Technologies
+                </li>
+                <li
+                  class="text-xl my-2 hover:bg-gray-300 p-2 font-medium shadow-md"
+                >
+                  Low-Power Optical Communication Systems for Green ICT
+                </li>
+                <li
+                  class="text-xl my-2 hover:bg-gray-300 p-2 font-medium shadow-md"
+                >
+                  Photonic Integration for Green Data Centers
+                </li>
+                <li
+                  class="text-xl my-2 hover:bg-gray-300 p-2 font-medium shadow-md"
+                >
+                  Optical Communication in Smart Grids and Green Energy
+                </li>
+                <li
+                  class="text-xl my-2 hover:bg-gray-300 p-2 font-medium shadow-md"
+                >
+                  Photonic Materials for Eco-Friendly Device Fabrication
+                </li>
+                <li
+                  class="text-xl my-2 hover:bg-gray-300 p-2 font-medium shadow-md"
+                >
+                  Emerging Green Photonics in Smart Cities
+                </li>
+                <li
+                  class="text-xl my-2 hover:bg-gray-300 p-2 font-medium shadow-md"
+                >
+                  Energy-Efficient Optical Amplifiers and Repeaters
+                </li>
+                <li
+                  class="text-xl my-2 hover:bg-gray-300 p-2 font-medium shadow-md"
+                >
+                  Optical Communication Technologies for Low-Energy IoT
+                  Solutions
+                </li>
+                <li
+                  class="text-xl my-2 hover:bg-gray-300 p-2 font-medium shadow-md"
+                >
+                  Underwater Optical Communication for Sustainable Marine
+                  Technologies
+                </li>
+                <li
+                  class="text-xl my-2 hover:bg-gray-300 p-2 font-medium shadow-md"
+                >
+                  Eco-Conscious Free Space Optical technology
+                </li>
+                <li
+                  class="text-xl my-2 hover:bg-gray-300 p-2 font-medium shadow-md"
+                >
+                  Quantum Photonics and Applications for Sustainable
+                  Technologies
+                </li>
+                <li
+                  class="text-xl my-2 hover:bg-gray-300 p-2 font-medium shadow-md"
+                >
+                  Energy-Efficient Optical Signal Processing &amp; Microwave
+                  Photonics
+                </li>
+                <li
+                  class="text-xl my-2 hover:bg-gray-300 p-2 font-medium shadow-md"
+                >
+                  Eco-Friendly Optical Sensors for Environmental Monitoring and
+                  Sustainability
+                </li>
+                <li
+                  class="text-xl my-2 hover:bg-gray-300 p-2 font-medium shadow-md"
+                >
+                  Ultrafast Photonics and Nonlinear fiber optics
+                </li>
+              </ul>
+            </div>
+            <div
+              class="flex flex-wrap flex-col items-center justify-center mt-10 mb-20"
+            >
+              <h2 class="text-3xl font-semibold text-center">
+                Signal and Image Processing for Sustainable development
+              </h2>
+              <h3 class="text-2xl font-normal text-center">Track Chairs</h3>
+              <div class="mt-2 h-0.5 w-[50%] bg-[#35575a] rounded-md"></div>
+              <div
+                class="flex flex-row flex-wrap mt-5 justify-around items-center w-full border-2 border-black"
+              >
+                <div class="flex flex-col mx-10 mt-10 mb-5 items-center">
+                  <img
+                    src="./images/vijayarajan.jpg"
+                    alt="Dr. Vijayarajan R"
+                    class="w-40 border-2 border-black"
+                  />
+                  <div class="text-center mt-5 text-xl w-full">
+                    <div class="font-semibold">Dr. Vijayarajan R</div>
+                    <div>VIT Chennai</div>
+                  </div>
+                </div>
+                <div class="flex flex-col mx-10 mt-10 mb-5 items-center">
+                  <img
+                    src="./images/sss.jpg"
+                    alt="Dr. Sankar Ganesh S"
+                    class="w-40 border-2 border-black"
+                  />
+                  <div class="text-center mt-5 text-xl w-full">
+                    <div class="font-semibold">Dr. Sankar Ganesh S</div>
+                    <div>VIT Chennai</div>
+                  </div>
+                </div>
+              </div>
+              <h3
+                class="mt-10 w-full text-center text-2xl bg-[#addfca] text-[#2b4a4d] py-2 font-bold"
+              >
+                Topics
+              </h3>
+              <ul class="text-start w-full">
+                <li
+                  class="text-xl my-2 hover:bg-gray-300 p-2 font-medium shadow-md"
+                >
+                  Audio and Acoustic Signal Processing
+                </li>
+                <li
+                  class="text-xl my-2 hover:bg-gray-300 p-2 font-medium shadow-md"
+                >
+                  AI for Speech and Language Processing
+                </li>
+                <li
+                  class="text-xl my-2 hover:bg-gray-300 p-2 font-medium shadow-md"
+                >
+                  Signal/Image Processing for Healthcare Applications
+                </li>
+                <li
+                  class="text-xl my-2 hover:bg-gray-300 p-2 font-medium shadow-md"
+                >
+                  AI for Signal/ Image Processing and Computer Vision
+                </li>
+                <li
+                  class="text-xl my-2 hover:bg-gray-300 p-2 font-medium shadow-md"
+                >
+                  Ethical Healthcare Intelligence
+                </li>
+                <li
+                  class="text-xl my-2 hover:bg-gray-300 p-2 font-medium shadow-md"
+                >
+                  Reproducible/Responsible AI for Signal and Image Processing
+                </li>
+                <li
+                  class="text-xl my-2 hover:bg-gray-300 p-2 font-medium shadow-md"
+                >
+                  Sensor Array and Multichannel Signal Processing
+                </li>
+                <li
+                  class="text-xl my-2 hover:bg-gray-300 p-2 font-medium shadow-md"
+                >
+                  Computer Vision for Smart Cities
+                </li>
+                <li
+                  class="text-xl my-2 hover:bg-gray-300 p-2 font-medium shadow-md"
+                >
+                  Image Processing for Sustainable and Precision Farming
+                </li>
+                <li
+                  class="text-xl my-2 hover:bg-gray-300 p-2 font-medium shadow-md"
+                >
+                  Signal/Image Processing for Autonomous Robot Navigation and
+                  Process Automation
+                </li>
+                <li
+                  class="text-xl my-2 hover:bg-gray-300 p-2 font-medium shadow-md"
+                >
+                  Signal Processing for Radar and Sonar Applications
+                </li>
+              </ul>
+            </div>
+            <div
+              class="flex flex-wrap flex-col items-center justify-center mt-10 mb-20"
+            >
+              <h2 class="text-3xl font-semibold text-center">
+                Sustainable Intelligent Systems
+              </h2>
+              <h3 class="text-2xl font-normal text-center">Track Chairs</h3>
+              <div class="mt-2 h-0.5 w-[50%] bg-[#35575a] rounded-md"></div>
+              <div
+                class="flex flex-row flex-wrap mt-5 justify-around items-center w-full border-2 border-black"
+              >
+                <div class="flex flex-col mx-10 mt-10 mb-5 items-center">
+                  <img
+                    src="./images/organizing-committee/gugapriya.jpg"
+                    alt="Dr. Gugapriya G"
+                    class="w-40 border-2 border-black"
+                  />
+                  <div class="text-center mt-5 text-xl w-full">
+                    <div class="font-semibold">Dr. Gugapriya G</div>
+                    <div>VIT Chennai</div>
+                  </div>
+                </div>
+                <div class="flex flex-col mx-10 mt-10 mb-5 items-center">
+                  <img
+                    src="./images/organizing-committee/abraham.jpg"
+                    alt="Dr. Abraham Sudharson Ponraj"
+                    class="w-40 border-2 border-black"
+                  />
+                  <div class="text-center mt-5 text-xl w-full">
+                    <div class="font-semibold">
+                      Dr. Abraham Sudharson Ponraj
+                    </div>
+                    <div>VIT Chennai</div>
+                  </div>
+                </div>
+              </div>
+              <h3
+                class="mt-10 w-full text-center text-2xl bg-[#addfca] text-[#2b4a4d] py-2 font-bold"
+              >
+                Topics
+              </h3>
+              <ul class="text-start w-full">
+                <li
+                  class="text-xl my-2 hover:bg-gray-300 p-2 font-medium shadow-md"
+                >
+                  Energy-efficient embedded systems
+                </li>
+                <li
+                  class="text-xl my-2 hover:bg-gray-300 p-2 font-medium shadow-md"
+                >
+                  IoT enabled Manufacturing and Industrial Automation
+                </li>
+                <li
+                  class="text-xl my-2 hover:bg-gray-300 p-2 font-medium shadow-md"
+                >
+                  Sustainable Smart City Technologies
+                </li>
+                <li
+                  class="text-xl my-2 hover:bg-gray-300 p-2 font-medium shadow-md"
+                >
+                  Integration of intelligent sensors in embedded systems
+                </li>
+                <li
+                  class="text-xl my-2 hover:bg-gray-300 p-2 font-medium shadow-md"
+                >
+                  Security and privacy in embedded IoT networks
+                </li>
+                <li
+                  class="text-xl my-2 hover:bg-gray-300 p-2 font-medium shadow-md"
+                >
+                  Human-robot interaction in embedded environments
+                </li>
+                <li
+                  class="text-xl my-2 hover:bg-gray-300 p-2 font-medium shadow-md"
+                >
+                  Climate change and sustainability through embedded
+                  technologies
+                </li>
+                <li
+                  class="text-xl my-2 hover:bg-gray-300 p-2 font-medium shadow-md"
+                >
+                  Edge computing for healthcare analytics and decision support
+                </li>
+                <li
+                  class="text-xl my-2 hover:bg-gray-300 p-2 font-medium shadow-md"
+                >
+                  Modern embedded technologies for agricultural automation
+                </li>
+                <li
+                  class="text-xl my-2 hover:bg-gray-300 p-2 font-medium shadow-md"
+                >
+                  Adaptive learning algorithms for real time embedded systems
+                </li>
+                <li
+                  class="text-xl my-2 hover:bg-gray-300 p-2 font-medium shadow-md"
+                >
+                  Emerging technologies for sustainable automotive embedded
+                  systems
+                </li>
+              </ul>
+            </div>
+            <div
+              class="flex flex-wrap flex-col items-center justify-center mt-10 mb-20"
+            >
+              <h2 class="text-3xl font-semibold text-center">
+                Intelligent Wireless Communication system
+              </h2>
+              <h3 class="text-2xl font-normal text-center">Track Chairs</h3>
+              <div class="mt-2 h-0.5 w-[50%] bg-[#35575a] rounded-md"></div>
+              <div
+                class="flex flex-row flex-wrap mt-5 justify-around items-center w-full border-2 border-black"
+              >
+                <div class="flex flex-col mx-10 mt-10 mb-5 items-center">
+                  <img
+                    src="./images/vijayakumar.jpg"
+                    alt="Dr. Vijay Kumar P"
+                    class="w-40 border-2 border-black"
+                  />
+                  <div class="text-center mt-5 text-xl w-full">
+                    <div class="font-semibold">Dr. Vijay Kumar P</div>
+                    <div>VIT Chennai</div>
+                  </div>
+                </div>
+                <div class="flex flex-col mx-10 mt-10 mb-5 items-center">
+                  <img
+                    src="./images/berlin.jpg"
+                    alt="Dr. Berlin Hency V"
+                    class="w-40 border-2 border-black"
+                  />
+                  <div class="text-center mt-5 text-xl w-full">
+                    <div class="font-semibold">Dr. Berlin Hency V</div>
+                    <div>VIT Chennai</div>
+                  </div>
+                </div>
+              </div>
+              <h3
+                class="mt-10 w-full text-center text-2xl bg-[#addfca] text-[#2b4a4d] py-2 font-bold"
+              >
+                Topics
+              </h3>
+              <ul class="text-start w-full">
+                <li
+                  class="text-xl my-2 hover:bg-gray-300 p-2 font-medium shadow-md"
+                >
+                  Cognitive Radio and Dynamic Spectrum Access
+                </li>
+                <li
+                  class="text-xl my-2 hover:bg-gray-300 p-2 font-medium shadow-md"
+                >
+                  Vehicular Ad-Hoc Networks (VANETs)
+                </li>
+                <li
+                  class="text-xl my-2 hover:bg-gray-300 p-2 font-medium shadow-md"
+                >
+                  Wireless Communication for Smart Grids
+                </li>
+                <li
+                  class="text-xl my-2 hover:bg-gray-300 p-2 font-medium shadow-md"
+                >
+                  Millimeter-Wave and Terahertz Communication
+                </li>
+                <li
+                  class="text-xl my-2 hover:bg-gray-300 p-2 font-medium shadow-md"
+                >
+                  Massive MIMO and Beamforming
+                </li>
+                <li
+                  class="text-xl my-2 hover:bg-gray-300 p-2 font-medium shadow-md"
+                >
+                  Wireless Power Transfer and Energy Harvesting
+                </li>
+                <li
+                  class="text-xl my-2 hover:bg-gray-300 p-2 font-medium shadow-md"
+                >
+                  Satellite Communication and Unmanned Aerial Vehicles (UAVs)
+                </li>
+                <li
+                  class="text-xl my-2 hover:bg-gray-300 p-2 font-medium shadow-md"
+                >
+                  Quantum Communication and Cryptography
+                </li>
+                <li
+                  class="text-xl my-2 hover:bg-gray-300 p-2 font-medium shadow-md"
+                >
+                  Mobile Edge Computing and Fog Networks
+                </li>
+                <li
+                  class="text-xl my-2 hover:bg-gray-300 p-2 font-medium shadow-md"
+                >
+                  Reconfigurable Intelligent Surfaces for 5G /6G
+                </li>
+                <li
+                  class="text-xl my-2 hover:bg-gray-300 p-2 font-medium shadow-md"
+                >
+                  Machine and Deep Learning for Wireless Communications
+                </li>
+                <li
+                  class="text-xl my-2 hover:bg-gray-300 p-2 font-medium shadow-md"
+                >
+                  Transfer Learning for Wireless Communications and Networks
+                </li>
+              </ul>
+            </div>
+            <div
+              class="flex flex-wrap flex-col items-center justify-center mt-10 mb-20"
+            >
+              <h2 class="text-3xl font-semibold text-center">
+                Data-Driven Innovations in Electronics Engineering
+              </h2>
+              <h3 class="text-2xl font-normal text-center">Track Chairs</h3>
+              <div class="mt-2 h-0.5 w-[50%] bg-[#35575a] rounded-md"></div>
+              <div
+                class="flex flex-row flex-wrap mt-5 justify-around items-center w-full border-2 border-black"
+              >
+                <div class="flex flex-col mx-10 mt-10 mb-5 items-center">
+                  <img
+                    src="./images/logesh.jpg"
+                    alt="Dr. Logesh R"
+                    class="w-40 border-2 border-black"
+                  />
+                  <div class="text-center mt-5 text-xl w-full">
+                    <div class="font-semibold">Dr. Logesh R</div>
+                    <div>VIT Chennai</div>
+                  </div>
+                </div>
+                <div class="flex flex-col mx-10 mt-10 mb-5 items-center">
+                  <img
+                    src="./images/suganthi.jpg"
+                    alt="Dr. Suganthi K"
+                    class="w-40 border-2 border-black"
+                  />
+                  <div class="text-center mt-5 text-xl w-full">
+                    <div class="font-semibold">Dr. Suganthi K</div>
+                    <div>VIT Chennai</div>
+                  </div>
+                </div>
+              </div>
+              <h3
+                class="mt-10 w-full text-center text-2xl bg-[#addfca] text-[#2b4a4d] py-2 font-bold"
+              >
+                Topics
+              </h3>
+              <ul class="text-start w-full">
+                <li
+                  class="text-xl my-2 hover:bg-gray-300 p-2 font-medium shadow-md"
+                >
+                  Machine Learning Algorithms for Enhancing Signal Processing
+                </li>
+                <li
+                  class="text-xl my-2 hover:bg-gray-300 p-2 font-medium shadow-md"
+                >
+                  Predictive Maintenance for Electronic Devices Using Big Data
+                </li>
+                <li
+                  class="text-xl my-2 hover:bg-gray-300 p-2 font-medium shadow-md"
+                >
+                  Edge Computing and Real-Time Data Processing in Electronics
+                </li>
+                <li
+                  class="text-xl my-2 hover:bg-gray-300 p-2 font-medium shadow-md"
+                >
+                  Data Analytics for Enhanced Performance of Semiconductor
+                  Devices
+                </li>
+                <li
+                  class="text-xl my-2 hover:bg-gray-300 p-2 font-medium shadow-md"
+                >
+                  Big Data Applications in VLSI Design and Testing
+                </li>
+                <li
+                  class="text-xl my-2 hover:bg-gray-300 p-2 font-medium shadow-md"
+                >
+                  Automated Fault Detection in Electronic Systems Using AI
+                </li>
+                <li
+                  class="text-xl my-2 hover:bg-gray-300 p-2 font-medium shadow-md"
+                >
+                  AI-Enhanced Thermal Management in High-Performance Electronics
+                </li>
+                <li
+                  class="text-xl my-2 hover:bg-gray-300 p-2 font-medium shadow-md"
+                >
+                  Advanced Data Compression Techniques for Electronics Systems
+                </li>
+                <li
+                  class="text-xl my-2 hover:bg-gray-300 p-2 font-medium shadow-md"
+                >
+                  Data-Centric Approaches to Improve Antenna Design
+                </li>
+                <li
+                  class="text-xl my-2 hover:bg-gray-300 p-2 font-medium shadow-md"
+                >
+                  Real-Time Data Acquisition and Processing in Sensor Networks
+                  and Wireless Communication Systems
+                </li>
+                <li
+                  class="text-xl my-2 hover:bg-gray-300 p-2 font-medium shadow-md"
+                >
+                  Integration of Big Data Analytics in IoT Devices
+                </li>
+                <li
+                  class="text-xl my-2 hover:bg-gray-300 p-2 font-medium shadow-md"
+                >
+                  Data-Driven Modelling and Simulation of Electronic Systems
+                </li>
+                <li
+                  class="text-xl my-2 hover:bg-gray-300 p-2 font-medium shadow-md"
+                >
+                  AI-Driven Optimization in Consumer Electronics, Robotics and
+                  Manufacutring
+                </li>
+                <li
+                  class="text-xl my-2 hover:bg-gray-300 p-2 font-medium shadow-md"
+                >
+                  Data Mining Techniques for Enhancing Electronic Design
+                  Automation (EDA)
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer class="bg-white border-black border-t-2 w-full">
+        <div class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
+          <div
+            class="flex flex-col justify-center sm:flex-row md:justify-between"
+          >
+            <a
+              href="https://chennai.vit.ac.in/"
+              class="mb-6 md:mb-0 flex justify-center sm:justify-start"
+              ><img
+                src="./logos/vitlogo-white.jpg"
+                class="h-12 lg:h-20 me-3"
+                alt="FlowBite Logo"
+            /></a>
+            <div class="flex justify-center sm:justify-start">
+              <ul
+                class="text-gray-800 grid grid-rows-3 text-sm md:text-base grid-flow-col gap-4"
+              >
+                <li><a href="/" class="hover:underline">Home</a></li>
+                <li>
+                  <a href="/about-vit" class="hover:underline">About VIT</a>
+                </li>
+                <li>
+                  <a
+                    class="hover:underline"
+                    data-modal-target="default-modal"
+                    data-modal-toggle="default-modal"
+                    >Registration</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="hover:underline"
+                    data-modal-target="default-modal"
+                    data-modal-toggle="default-modal"
+                    >Advisory Board</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="hover:underline"
+                    data-modal-target="default-modal"
+                    data-modal-toggle="default-modal"
+                    >Conference Speakers</a
+                  >
+                </li>
+                <li>
+                  <a href="/call-for-papers" class="hover:underline"
+                    >Call for Papers</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="hover:underline"
+                    data-modal-target="default-modal"
+                    data-modal-toggle="default-modal"
+                    >Paper Submission</a
+                  >
+                </li>
+                <li>
+                  <a href="organizing-committee" class="hover:underline"
+                    >Organizing committee</a
+                  >
+                </li>
+                <li>
+                  <a href="/contact-us" class="hover:underline">Contact Us</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <hr class="border-[#addfca] sm:mx-auto" />
+      <div
+        class="sm:flex sm:items-center sm:justify-between text-sm md:text-base bg-[#addfca] p-8"
+      >
+        <span
+          class="font-semibold text-sm text-[#2b4a4d] sm:text-center dark:text-[#2b4a4d]"
+          >© 2024
+          <a href="https://chennai.vit.ac.in/" class="hover:underline"
+            >VIT Chennai</a
+          >. All Rights Reserved.</span
+        >
+      </div>
+      <div
+        id="default-modal"
+        tabindex="-1"
+        aria-hidden="true"
+        class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full"
+      >
+        <div class="relative p-4 w-full max-w-2xl max-h-full">
+          <div class="relative bg-white rounded-lg shadow dark:bg-gray-900">
+            <div
+              class="flex items-center justify-between p-4 md:p-5 border-b rounded-t dark:border-gray-600"
+            >
+              <h3 class="text-xl font-semibold text-gray-900 dark:text-white">
+                Pages
+              </h3>
+              <button
+                type="button"
+                class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white"
+                data-modal-hide="default-modal"
+              >
+                <svg
+                  class="w-3 h-3"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 14 14"
+                >
+                  <path
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"
+                  ></path></svg
+                ><span class="sr-only">Close modal</span>
+              </button>
+            </div>
+            <div class="p-4 md:p-5 space-y-4">
+              <p
+                class="text-base leading-relaxed text-gray-200 dark:text-gray-200"
+              >
+                Updating soon......
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <script type="module" src="/src/main.jsx"></script>
     <script src="/path/to/flowbite/dist/flowbite.min.js"></script>
-  
-
-</body></html>
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.js"></script>
+  </body>
+</html>
