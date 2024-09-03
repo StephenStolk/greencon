@@ -1,18 +1,18 @@
 <html lang="en">
   <head>
-    <script type="module">
-      import RefreshRuntime from "/@react-refresh";
-      RefreshRuntime.injectIntoGlobalHook(window);
+    <!-- <script type="module">
+      // import RefreshRuntime from "/@react-refresh";
+      // RefreshRuntime.injectIntoGlobalHook(window);
       window.$RefreshReg$ = () => {};
       window.$RefreshSig$ = () => (type) => type;
       window.__vite_plugin_react_preamble_installed__ = true;
-    </script>
+    </script> -->
     <link
       href="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.css"
       rel="stylesheet"
     />
 
-    <script type="module" src="/@vite/client"></script>
+    <!-- <script type="module" src="/@vite/client"></script> -->
 
     <meta charset="UTF-8" />
     <style type="text/css">
@@ -1819,26 +1819,70 @@
       @tailwind components;
       @tailwind utilities;
     </style>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        let slideIndex = 0;
+        const slides = document.querySelectorAll(".slide");
+        const totalSlides = slides.length;
+
+        if (totalSlides === 0) {
+          console.error("No slides found");
+          return;
+        }
+
+        function showSlide(index) {
+          slides.forEach((slide, i) => {
+            slide.style.opacity = i === index ? "1" : "0";
+          });
+        }
+
+        function showNextSlide() {
+          slideIndex = (slideIndex + 1) % totalSlides;
+          showSlide(slideIndex);
+        }
+
+        function showPrevSlide() {
+          slideIndex = (slideIndex - 1 + totalSlides) % totalSlides;
+          showSlide(slideIndex);
+        }
+
+        document
+          .querySelector(".next")
+          .addEventListener("click", showNextSlide);
+        document
+          .querySelector(".prev")
+          .addEventListener("click", showPrevSlide);
+
+        // Initialize the first slide
+        showSlide(slideIndex);
+
+        // Optional: Auto-slide every 5 seconds
+        setInterval(showNextSlide, 5000);
+      });
+    </script>
   </head>
   <body>
     <div id="root">
-      <div class="flex flex-col md:flex-row items-center p-4 shadow-lg">
+      <div class="flex flex-col md:flex-row items-center p-4">
         <img
-          src="./logos/vitlogo-blue.jpg"
+          src="./images/vit-logo-new.png"
           alt="VIT logo"
           class="w-40 h-20 rounded md:order-1 order-2 mt-2 md:mt-0"
         />
         <div class="md:flex-1 text-center md:order-2 order-1">
           <h1 class="text-lg sm:text-3xl font-bold text-gray-800">
             Green Revolution in Electronics Engineering and Networks Conference
-            2025
+            (GREENCON) 2025
           </h1>
           <h2 class="text-md sm:text-xl mt-1 text-gray-600">
-            (GREENCON 2025) | MARCH, 2025
+            20-21 March, 2025
+          </h2>
+          <h2 class="text-md sm:text-xl mt-1 text-red-500">
+            Organizing by SENSE School and Centre for Nanoelectronics and VLSI
+            Design
           </h2>
           <p class="text-sm sm:text-base mt-1 font-light text-gray-600">
-            Vellore Institute of Technology (VIT, Chennai India) organizes
-            GREENCON 2025
+            Vellore Institute of Technology, Chennai
           </p>
         </div>
         <img
@@ -1847,7 +1891,7 @@
           class="w-44 h-28 md:order-3 order-3 mt-2 md:mt-0"
         />
       </div>
-      <nav class="bg-[#addfca] shadow-xl shadow-gray-950 rounded-xl">
+      <nav class="bg-[#addfca]">
         <div class="max-w-screen-xl mx-auto px-4 md:px-8">
           <div class="flex justify-between items-center py-3">
             <div class="md:hidden">
@@ -1977,11 +2021,6 @@
           <div
             class="flex-col w-full sm:w-1/2 justify-center my-auto px-4 mx-auto"
           >
-            <img
-              src="./logos/vitlogo-white.jpg"
-              alt="VIT Logo"
-              class="hidden sm:block mx-auto mb-6 w-64 h-auto rounded-xl"
-            />
             <h1
               class="scroll-m-20 text-3xl font-extrabold tracking-tight lg:text-4xl text-center px-2 text-[#063032]"
             >
@@ -1993,46 +2032,53 @@
               Transforming life through excellence in education and research.
             </h3>
           </div>
-          <div class="w-full sm:w-1/2 m-auto">
+          <div class="w-full pr-10 sm:w-1/2 m-auto">
             <div class="relative w-full max-w-4xl mx-auto">
               <div class="relative overflow-hidden rounded-lg h-64 sm:h-96">
                 <img
                   src="./images/vit1.jpg"
                   alt="Slide 1"
-                  class="absolute w-full h-full object-cover transition-opacity duration-1000 ease-in-out opacity-100"
-                /><img
+                  class="slide absolute w-full h-full object-cover transition-opacity duration-1000 ease-in-out opacity-100"
+                />
+                <img
                   src="./images/vit2.jpg"
                   alt="Slide 2"
-                  class="absolute w-full h-full object-cover transition-opacity duration-1000 ease-in-out opacity-0"
-                /><img
+                  class="slide absolute w-full h-full object-cover transition-opacity duration-1000 ease-in-out opacity-0"
+                />
+                <img
                   src="./images/vit3.jpg"
                   alt="Slide 3"
-                  class="absolute w-full h-full object-cover transition-opacity duration-1000 ease-in-out opacity-0"
-                /><img
+                  class="slide absolute w-full h-full object-cover transition-opacity duration-1000 ease-in-out opacity-0"
+                />
+                <img
                   src="./images/vit4.jpg"
                   alt="Slide 4"
-                  class="absolute w-full h-full object-cover transition-opacity duration-1000 ease-in-out opacity-0"
-                /><img
+                  class="slide absolute w-full h-full object-cover transition-opacity duration-1000 ease-in-out opacity-0"
+                />
+                <img
                   src="./images/vit5.jpg"
                   alt="Slide 5"
-                  class="absolute w-full h-full object-cover transition-opacity duration-1000 ease-in-out opacity-0"
-                /><img
+                  class="slide absolute w-full h-full object-cover transition-opacity duration-1000 ease-in-out opacity-0"
+                />
+                <img
                   src="./images/vit6.jpg"
                   alt="Slide 6"
-                  class="absolute w-full h-full object-cover transition-opacity duration-1000 ease-in-out opacity-0"
-                /><img
+                  class="slide absolute w-full h-full object-cover transition-opacity duration-1000 ease-in-out opacity-0"
+                />
+                <img
                   src="./images/vit7.jpg"
                   alt="Slide 7"
-                  class="absolute w-full h-full object-cover transition-opacity duration-1000 ease-in-out opacity-0"
+                  class="slide absolute w-full h-full object-cover transition-opacity duration-1000 ease-in-out opacity-0"
                 />
               </div>
               <div class="absolute inset-0 flex justify-between items-center">
                 <button
-                  class="bg-gray-800 text-white p-3 rounded-full bg-opacity-50 hover:bg-opacity-75 focus:outline-none ml-2"
+                  class="prev bg-gray-800 text-white p-3 rounded-full bg-opacity-50 hover:bg-opacity-75 focus:outline-none ml-2"
                 >
-                  ❮</button
-                ><button
-                  class="bg-gray-800 text-white p-3 rounded-full bg-opacity-50 hover:bg-opacity-75 focus:outline-none mr-2"
+                  ❮
+                </button>
+                <button
+                  class="next bg-gray-800 text-white p-3 rounded-full bg-opacity-50 hover:bg-opacity-75 focus:outline-none mr-2"
                 >
                   ❯
                 </button>
@@ -2050,17 +2096,68 @@
             <p
               class="mt-8 text-lg sm:text-xl text-gray-600 font-semibold px-[7%] sm:px-[15%] text-center sm:text-start"
             >
-              VIT, for the past 35 years, has made a mark in the field of higher
-              education in India imparting quality education in a multi-cultural
-              ambience, intertwined with extensive application-oriented
-              research. VIT was established with the aim to provide quality
-              higher education on par with International Standards. It
-              persistently seeks and adopts innovative methods to improve the
-              quality of higher education on a consistent basis. Established by
-              well-known educationalist and former parliamentarian, Dr. G.
-              Viswanathan, Founder and Chancellor, a visionary who transformed
-              VIT into a center of excellence in higher technical education.
+              VIT Chennai, one of the leading engineering colleges in India,
+              offers the best exposure in terms of world class education,
+              internship opportunities, top-notch placement opportunities, and
+              infrastructural amenities. We ensure that the graduates walk out
+              with many skills and learning. We provide a domain for polishing
+              technical mastery and interpretive and analytical skills, which is
+              the need of the hour. VIT Chennai fosters principles and ensures
+              to achieve the mission and vision to enrich the learning process
+              for the future leaders of our society.
             </p>
+            <p
+              class="mt-8 text-lg sm:text-xl text-gray-600 font-semibold px-[7%] sm:px-[15%] text-center sm:text-start"
+            >
+              VIT was established in 1984 as a self-financing institution called
+              the Vellore Engineering College under Section 3 of the University
+              Grants Commission (UGC) Act, 1956. VIT Chennai was established in
+              2010 by Dr G. Viswanathan, a former parliamentarian and a profound
+              minister in the Tamil Nadu Government. Mr Sankar Viswanathan, Dr
+              Sekar Viswanathan, and Mr G.V Selvam are the Vice Presidents of
+              our institute.
+            </p>
+            <p
+              class="mt-8 text-lg sm:text-xl text-gray-600 font-semibold px-[7%] sm:px-[15%] text-center sm:text-start"
+            >
+              VIT Chennai, the top engineering college in India, aims to provide
+              a world-class education that imbibes strong ethical values in our
+              students to gain a competitive edge over others. Our mission is to
+              maintain an intellectually stimulating environment for students to
+              learn professional ethics and push them out of their comfort zones
+              to reach heights of success.
+            </p>
+            <p
+              class="mt-8 text-lg sm:text-xl text-gray-600 font-semibold px-[7%] sm:px-[15%] text-center sm:text-start"
+            >
+              VIT Chennai offers 19 Undergraduate, 18 Postgraduate, 03
+              Integrated M. Tech and Research programmes. In addition, full-time
+              PhD in Engineering and Management disciplines, PhD in Science and
+              Languages and Integrated PhD programmes in engineering disciplines
+              are offered. And several other Diploma courses in management,
+              arts, engineering, and law. Hence, graduating from VIT Chennai:
+              the best engineering college in Chennai, will promise you a bright
+              future in the industry. The faculties have exceptional skills
+              training students and years of experience in the field. They hold
+              the perfect blend of knowledge, industry experience and research
+              skills. We believe in fostering an environment that helps to
+              brainstorm creative ideas and be the place where students find
+              their voice.
+            </p>
+            <p
+              class="mt-8 text-lg sm:text-xl text-gray-600 font-semibold px-[7%] sm:px-[15%] text-center sm:text-start"
+            >
+              We offer an array of clubs that help to create a recreational
+              space for students to display their talents and get involved with
+              important causes. At present, there are 70 + clubs present on
+              campus. Here we present a few clubs that are as follows: National
+              Entrepreneurship Network club, Youth Red cross club, Rotaract
+              club, Robotics club and many more. The infrastructural amenities
+              are top-notch and will continue to grow immensely in the upcoming
+              years. The constant efforts make VIT the top engineering college
+              in India.
+            </p>
+
             <div
               class="w-full sm:w-[90%] flex flex-wrap justify-center mt-8 mx-auto"
             >
@@ -2144,7 +2241,7 @@
                 class="w-72 m-4 border pb-4 border-dotted shadow hover:shadow-lg hover:cursor-pointer"
               >
                 <img
-                  src="./images/partons/vp.jpg"
+                  src="./images/partons/vp1.jpg"
                   alt="Mr. Sankar Viswanathan"
                   class="w-64 h-76 mx-auto py-4"
                 />
@@ -2157,7 +2254,7 @@
                 class="w-72 m-4 border pb-4 border-dotted shadow hover:shadow-lg hover:cursor-pointer"
               >
                 <img
-                  src="./images/partons/vp1.jpg"
+                  src="./images/partons/vp.jpg"
                   alt="Dr. Sekar Viswanathan"
                   class="w-64 h-76 mx-auto py-4"
                 />
@@ -2464,6 +2561,17 @@
                 The school offers fashion technology program.
               </p>
             </div>
+            <div>
+              <h3 class="text-xl font-bold mb-2">
+                School of Social Sciences and Languages (SSL)
+              </h3>
+              <p class="text-lg mb-2">
+                The School of Social Sciences and Languages SSL was established
+                in 2020, prior to which we existed as the Division of Social
+                Sciences and Languages since the inception of VIT Chennai in
+                2010.
+              </p>
+            </div>
           </div>
         </div>
       </div>
@@ -2601,8 +2709,8 @@
         </div>
       </div>
     </div>
-    <script type="module" src="/src/main.jsx"></script>
-    <script src="/path/to/flowbite/dist/flowbite.min.js"></script>
+    <!-- <script type="module" src="/src/main.jsx"></script> -->
+    <!-- <script src="/path/to/flowbite/dist/flowbite.min.js"></script> -->
     <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.js"></script>
   </body>
 </html>
