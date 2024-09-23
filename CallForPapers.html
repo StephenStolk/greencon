@@ -42,6 +42,7 @@
         <div
           class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4 md:px-8"
         >
+          <!-- Hamburger Menu Button for Mobile -->
           <button
             data-collapse-toggle="navbar-default"
             type="button"
@@ -66,7 +67,66 @@
               ></path>
             </svg>
           </button>
-          <div class="hidden w-full md:flex md:space-x-6" id="navbar-default">
+      
+          <!-- Mobile Menu -->
+          <div class="hidden w-full flex-col space-y-2 md:hidden" id="navbar-default">
+            <a
+              href="index.html"
+              class="block text-gray-700 hover:text-[#3c5a96] hover:bg-gray-200 px-1 py-1 transition-colors duration-300 font-medium"
+              >Home</a
+            >
+            <a
+              href="AboutVit.html"
+              class="block text-gray-700 hover:text-[#3c5a96] hover:bg-gray-200 px-1 py-1 transition-colors duration-300 font-medium"
+              >About VIT</a
+            >
+            <button
+              data-modal-target="default-modal"
+              data-modal-toggle="default-modal"
+              class="block text-gray-700 hover:text-[#3c5a96] transition-colors duration-300 font-medium hover:bg-gray-200 px-1 py-1"
+            >
+              Registration
+            </button>
+            <button
+              data-modal-target="default-modal"
+              data-modal-toggle="default-modal"
+              class="block text-gray-700 hover:text-[#3c5a96] transition-colors duration-300 font-medium hover:bg-gray-200 px-1 py-1"
+            >
+              Advisory Board
+            </button>
+            <button
+              data-modal-target="default-modal"
+              data-modal-toggle="default-modal"
+              class="block text-gray-700 hover:text-[#3c5a96] transition-colors duration-300 font-medium hover:bg-gray-200 px-1 py-1"
+            >
+              Conference Speakers
+            </button>
+            <a
+              href="CallForPapers.html"
+              class="block text-gray-700 hover:text-[#3c5a96] transition-colors duration-300 font-medium hover:bg-gray-200 px-1 py-1"
+              >Call for Papers</a
+            >
+            <button
+              data-modal-target="default-modal"
+              data-modal-toggle="default-modal"
+              class="block text-gray-700 hover:text-[#3c5a96] transition-colors duration-300 font-medium hover:bg-gray-200 px-1 py-1"
+            >
+              Paper Submission
+            </button>
+            <a
+              href="OrganizingCommittee.html"
+              class="block text-gray-700 hover:text-[#3c5a96] transition-colors duration-300 font-medium hover:bg-gray-200 px-1 py-1"
+              >Organizing Committee</a
+            >
+            <a
+              href="ContactUs.html"
+              class="block text-gray-700 hover:text-[#3c5a96] transition-colors duration-300 font-medium hover:bg-gray-200 px-1 py-1"
+              >Contact Us</a
+            >
+          </div>
+      
+          <!-- Desktop Menu -->
+          <div class="hidden w-full md:flex my-auto md:space-x-6" id="navbar-default">
             <a
               href="index.html"
               class="text-gray-700 hover:text-[#3c5a96] hover:bg-gray-200 px-1 py-1 transition-colors duration-300 font-medium"
@@ -123,6 +183,7 @@
           </div>
         </div>
       </nav>
+      
       <div
         id="default-modal"
         tabindex="-1"
