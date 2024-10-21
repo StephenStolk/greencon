@@ -1,13 +1,63 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
       href="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.css"
       rel="stylesheet"
     />
+    <title>Registration</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contact Us</title>
+    <script>
+      function updateCountdown() {
+        const deadline = new Date("March 19, 2025 00:00:00").getTime();
+        const now = new Date().getTime();
+        const timeRemaining = deadline - now;
+
+        const days = Math.floor(timeRemaining / (1000 * 60 * 60 * 24));
+        const hours = Math.floor(
+          (timeRemaining % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+        );
+        const minutes = Math.floor(
+          (timeRemaining % (1000 * 60 * 60)) / (1000 * 60)
+        );
+        const seconds = Math.floor((timeRemaining % (1000 * 60)) / 1000);
+
+        document.getElementById("days").innerText = days;
+        document.getElementById("hours").innerText = hours;
+        document.getElementById("minutes").innerText = minutes;
+        document.getElementById("seconds").innerText = seconds;
+
+        if (timeRemaining < 0) {
+          clearInterval(countdownInterval);
+          document.getElementById("days").innerText = "0";
+          document.getElementById("hours").innerText = "0";
+          document.getElementById("minutes").innerText = "0";
+          document.getElementById("seconds").innerText = "0";
+        }
+      }
+
+      const countdownInterval = setInterval(updateCountdown, 1000);
+    </script>
+    <style>
+      @keyframes fadeOut {
+        0% {
+          opacity: 1;
+        }
+        100% {
+          opacity: 0;
+        }
+      }
+
+      .fade-animation {
+        animation: fadeOut 1s linear infinite;
+      }
+
+      .fade-animation:hover {
+        animation: none;
+        opacity: 1;
+      }
+    </style>
   </head>
   <body>
     <div id="root">
@@ -46,6 +96,7 @@
           class="md:w-48 w-36 md:order-3 order-3 mt-2 md:mt-0"
         />
       </div>
+
       <nav class="bg-[#addfca] border-gray-200">
         <div
           class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4 md:px-8"
@@ -93,7 +144,7 @@
             >
             <a
               href="/Registration.html"
-              class="block text-gray-700 hover:text-[#3c5a96] hover:bg-gray-200 px-1 py-1 transition-colors duration-300 font-medium"
+              class="block text-gray-700 bg-gray-200 hover:text-[#3c5a96] hover:bg-gray-200 px-1 py-1 transition-colors duration-300 font-medium rounded-lg border-2 border-black"
               >Registration</a
             >
             <button
@@ -129,7 +180,7 @@
             >
             <a
               href="ContactUs.html"
-              class="block text-gray-700 hover:text-[#3c5a96] transition-colors duration-300 font-medium hover:bg-gray-200 px-1 py-1 bg-gray-200 rounded-lg border-2 border-black"
+              class="block text-gray-700 hover:text-[#3c5a96] transition-colors duration-300 font-medium hover:bg-gray-200 px-1 py-1"
               >Contact Us</a
             >
           </div>
@@ -150,8 +201,8 @@
               >About VIT</a
             >
             <a
-              href="/Registration.html"
-              class="text-gray-700 hover:text-[#3c5a96] hover:bg-gray-200 px-1 py-1 transition-colors duration-300 font-medium"
+              href="AboutVit.html"
+              class="text-gray-700 bg-gray-200 rounded-lg border-2 border-black hover:text-[#3c5a96] hover:bg-gray-200 px-1 py-1 transition-colors duration-300 font-medium"
               >Registration</a
             >
             <button
@@ -187,7 +238,7 @@
             >
             <a
               href="ContactUs.html"
-              class="text-gray-700 hover:text-[#3c5a96] transition-colors duration-300 font-medium hover:bg-gray-200 px-1 py-1 bg-gray-200 rounded-lg border-2 border-black"
+              class="text-gray-700 hover:text-[#3c5a96] transition-colors duration-300 font-medium hover:bg-gray-200 px-1 py-1"
               >Contact Us</a
             >
           </div>
@@ -241,129 +292,101 @@
         </div>
       </div>
       <div class="App">
-        <div class="w-full mx-auto py-12 px-8 bg-[#f1f7f6]">
-          <div class="max-w-6xl mx-auto">
-            <h2
-              class="mt-10 scroll-m-20 border-b border-[#35575a] pb-2 text-3xl font-bold tracking-tight transition-colors first:mt-0 w-[50%] mx-auto text-[#35575a] text-center mb-8"
-            >
-              ORGANIZING COMMITTEE
-            </h2>
+        <div class="w-full md:w-[80%] px-10 mx-auto my-12">
+          <table class="table-auto w-full text-left text-sm border-green-900">
+            <thead>
+              <tr class="bg-[#87cbb3] text-white">
+                <th class="px-4 py-2">Registration Fee</th>
+                <th class="px-4 py-2">Indian (INR)</th>
+                <th class="px-4 py-2">Foreign (USD)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="bg-blue-100 text-black">
+                <td class="border px-4 py-2 font-bold" colspan="3">
+                  Early Bird Registration (15<sup>th</sup> Feb, 2025 - 28<sup
+                    >th</sup
+                  >
+                  Feb, 2025)
+                </td>
+              </tr>
+              <tr class="bg-white text-black">
+                <td class="border px-4 py-2">Student</td>
+                <td class="border px-4 py-2">Rs. 5900*</td>
+                <td class="border px-4 py-2">150 USD</td>
+              </tr>
+              <tr class="bg-blue-50 text-black">
+                <td class="border px-4 py-2">Faculty & Industry</td>
+                <td class="border px-4 py-2">Rs. 7080*</td>
+                <td class="border px-4 py-2">200 USD</td>
+              </tr>
+              <tr class="bg-white text-black">
+                <td class="border px-4 py-2">Co Authors (Participants)</td>
+                <td class="border px-4 py-2">Rs. 4720*</td>
+                <td class="border px-4 py-2">100 USD</td>
+              </tr>
+
+              <tr class="bg-blue-100 text-black">
+                <td class="border px-4 py-2 font-bold" colspan="3">
+                  Regular Registration (on or before 10<sup>th</sup> March,
+                  2025)
+                </td>
+              </tr>
+              <tr class="bg-white text-black">
+                <td class="border px-4 py-2">Student</td>
+                <td class="border px-4 py-2">Rs. 7080*</td>
+                <td class="border px-4 py-2">200 USD</td>
+              </tr>
+              <tr class="bg-blue-50 text-black">
+                <td class="border px-4 py-2">Faculty & Industry</td>
+                <td class="border px-4 py-2">Rs. 8260*</td>
+                <td class="border px-4 py-2">250 USD</td>
+              </tr>
+              <tr class="bg-white text-black">
+                <td class="border px-4 py-2">Co Authors (Participants)</td>
+                <td class="border px-4 py-2">Rs. 5900*</td>
+                <td class="border px-4 py-2">150 USD</td>
+              </tr>
+              <tr class="bg-white text-black">
+                <td class="border px-4 py-2">* Inclusive of 18% GST</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <center class="mt-8 space-y-3 md:space-y-0 md:space-x-4">
+          <a
+            class="bg-[#62b895] text-white text-center px-6 py-2 w-48 font-semibold rounded-md hover:bg-[#49886e] transition-colors"
+            data-modal-target="default-modal"
+            data-modal-toggle="default-modal"
+            >Learn more &#8599;</a
+          >
+        </center>
+        <div
+          class="flex flex-col items-center justify-center bg-white rounded-xl shadow-lg border border-gray-200 w-11/12 sm:w-1/2 mx-auto mt-8 mb-28"
+        >
+          <h1
+            class="w-full text-lg md:text-2xl font-bold mb-16 bg-[#62b895] text-[#2b4a4d] text-center py-4"
+          >
+            GREENCON 2025
+          </h1>
+          <div class="flex space-x-4 sm:space-x-8 text-xl font-semibold mb-8">
+            <div class="flex flex-col items-center bg-gray-100 p-4 rounded-xl">
+              <span id="days" class="text-4xl text-[#3c5a96]">176</span>
+              <span class="text-gray-500 mt-2 text-sm">Days</span>
+            </div>
             <div
-              class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 pt-8"
+              class="flex flex-col items-center bg-gray-100 px-4 py-4 rounded-xl"
             >
-              <div class="flex justify-center">
-                <div
-                  class="bg-white pb-8 rounded-lg shadow-md text-center hover:cursor-pointer hover:shadow-lg w-96 mx-auto"
-                >
-                  <img
-                    src="./images/subhashini.jpg"
-                    alt="Dr. N. Subhashini"
-                    class="w-52 h-60 mx-auto rounded-full my-4 shadow"
-                  />
-                  <h3 class="text-xl font-bold mb-2">Dr. N. Subhashini</h3>
-                  <p class="text-gray-700 mb-2">General Chair</p>
-                  <p class="text-gray-700 mb-2">Associate Professor Senior</p>
-                  <p class="text-gray-700 mb-2">
-                    School of Electronics Engineering (SENSE), Vellore Institute
-                    of Technology
-                  </p>
-                  <p class="text-gray-700 mb-2">Chennai, Tamil Nadu – 600127</p>
-                  <p class="text-gray-700 mb-2">
-                    <strong>Email:</strong>
-                    <a
-                      href="mailto:subhashini.n@vit.ac.in"
-                      class="text-blue-500"
-                      >subhashini.n@vit.ac.in</a
-                    >
-                  </p>
-                  <a
-                    href="mailto:subhashini.n@vit.ac.in"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    ><button
-                      class="transition mt-8 bg-[#62b895] text-white text-center px-6 py-2 w-28 font-bold rounded-md hover:bg-[#49886e]"
-                    >
-                      Contact
-                    </button></a
-                  >
-                </div>
-              </div>
-
-              <div class="flex justify-center">
-                <div
-                  class="bg-white pb-8 rounded-lg shadow-md text-center hover:cursor-pointer hover:shadow-lg w-96 mx-auto"
-                >
-                  <img
-                    src="./images/velmathi.jpg"
-                    alt="Dr. Velmathi G"
-                    class="w-52 h-60 mx-auto rounded-full my-4 shadow"
-                  />
-                  <h3 class="text-xl font-bold mb-2">Dr. Velmathi G</h3>
-                  <p class="text-gray-700 mb-2">Programme Chair</p>
-                  <p class="text-gray-700 mb-2">
-                    Professor of Higher Academic Grade
-                  </p>
-                  <p class="text-gray-700 mb-2">
-                    School of Electronics Engineering (SENSE), Vellore Institute
-                    of Technology
-                  </p>
-                  <p class="text-gray-700 mb-2">Chennai, Tamil Nadu – 600127</p>
-                  <p class="text-gray-700 mb-2">
-                    <strong>Email:</strong>
-                    <a href="mailto:velmathi.g@vit.ac.in" class="text-blue-500"
-                      >velmathi.g@vit.ac.in</a
-                    >
-                  </p>
-                  <a
-                    href="mailto:velmathi.g@vit.ac.in"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    ><button
-                      class="transition mt-8 bg-[#62b895] text-white text-center px-6 py-2 w-28 font-bold rounded-md hover:bg-[#49886e]"
-                    >
-                      Contact
-                    </button></a
-                  >
-                </div>
-              </div>
-
-              <div class="flex justify-center">
-                <div
-                  class="bg-white pb-8 rounded-lg shadow-md text-center hover:cursor-pointer hover:shadow-lg w-96 mx-auto"
-                >
-                  <img
-                    src="./images/sangeetha.jpg"
-                    alt="Dr. R G Sangeetha"
-                    class="w-52 h-60 mx-auto rounded-full my-4 shadow"
-                  />
-                  <h3 class="text-xl font-bold mb-2">Dr. R G Sangeetha</h3>
-                  <p class="text-gray-700 mb-2">Programme Chair</p>
-                  <p class="text-gray-700 mb-2">Professor Grade 2</p>
-                  <p class="text-gray-700 mb-2">
-                    School of Electronics Engineering (SENSE), Vellore Institute
-                    of Technology
-                  </p>
-                  <p class="text-gray-700 mb-2">Chennai, Tamil Nadu – 600127</p>
-                  <p class="text-gray-700 mb-2">
-                    <strong>Email:</strong>
-                    <a
-                      href="mailto:sangeetha.rg@vit.ac.in"
-                      class="text-blue-500"
-                      >sangeetha.rg@vit.ac.in</a
-                    >
-                  </p>
-                  <a
-                    href="mailto:sangeetha.rg@vit.ac.in"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    ><button
-                      class="transition mt-8 bg-[#62b895] text-white text-center px-6 py-2 w-28 font-bold rounded-md hover:bg-[#49886e]"
-                    >
-                      Contact
-                    </button></a
-                  >
-                </div>
-              </div>
+              <span id="hours" class="text-4xl text-[#3c5a96]">13</span>
+              <span class="text-gray-500 mt-2 text-sm">Hours</span>
+            </div>
+            <div class="flex flex-col items-center bg-gray-100 p-4 rounded-xl">
+              <span id="minutes" class="text-4xl text-[#3c5a96]">53</span>
+              <span class="text-gray-500 mt-2 text-sm">Minutes</span>
+            </div>
+            <div class="flex flex-col items-center bg-gray-100 p-4 rounded-xl">
+              <span id="seconds" class="text-4xl text-[#3c5a96]">40</span>
+              <span class="text-gray-500 mt-2 text-sm">Seconds</span>
             </div>
           </div>
         </div>
