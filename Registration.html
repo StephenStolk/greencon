@@ -8,37 +8,6 @@
     />
     <title>Registration</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-      function updateCountdown() {
-        const deadline = new Date("March 19, 2025 00:00:00").getTime();
-        const now = new Date().getTime();
-        const timeRemaining = deadline - now;
-
-        const days = Math.floor(timeRemaining / (1000 * 60 * 60 * 24));
-        const hours = Math.floor(
-          (timeRemaining % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
-        );
-        const minutes = Math.floor(
-          (timeRemaining % (1000 * 60 * 60)) / (1000 * 60)
-        );
-        const seconds = Math.floor((timeRemaining % (1000 * 60)) / 1000);
-
-        document.getElementById("days").innerText = days;
-        document.getElementById("hours").innerText = hours;
-        document.getElementById("minutes").innerText = minutes;
-        document.getElementById("seconds").innerText = seconds;
-
-        if (timeRemaining < 0) {
-          clearInterval(countdownInterval);
-          document.getElementById("days").innerText = "0";
-          document.getElementById("hours").innerText = "0";
-          document.getElementById("minutes").innerText = "0";
-          document.getElementById("seconds").innerText = "0";
-        }
-      }
-
-      const countdownInterval = setInterval(updateCountdown, 1000);
-    </script>
     <style>
       @keyframes fadeOut {
         0% {
@@ -65,9 +34,9 @@
         <img
           src="./images/blue-vit-logo.png"
           alt="VIT logo"
-          class="w-60 h-30 rounded md:order-1 order-2 my-6"
+          class="w-60 h-30 rounded order-1 my-6"
         />
-        <div class="md:flex-1 text-center md:order-2 order-1">
+        <div class="md:flex-1 text-center order-2">
           <h1 class="text-lg sm:text-3xl font-bold text-gray-800">
             <span class="text-green-600">G</span>reen
             <span class="text-green-600">R</span>evolution in
