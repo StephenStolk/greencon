@@ -188,265 +188,176 @@
         <!-- Sustainable Intelligent Systems Track -->
         <section class="my-8 text-center">
           <h2 class="text-2xl font-bold text-gray-800 mb-6">
-            Sustainable Intelligent Syatems
+            Sustainable Intelligent Systems
           </h2>
-
-          <!-- Speaker Card for MD Selvaraj -->
-
-          <div
-            class="flex flex-col sm:flex-row w-11/12 sm:w-1/2 lg:w-1/2 mx-auto items-center shadow-lg p-6 sm:px-2 lg:py-4 lg:px-0 mb-4 bg-white rounded-lg cursor-pointer justify-evenly"
-            onclick="toggleModal('modal-selvaraj')"
-          >
-            <img
-              src="./images/speakers/selvaraj.png"
-              alt="Dr. M. D. Selvaraj"
-              class="w-4/5 sm:w-1/3 sm:h-80 py-6"
-            />
+        
+          <!-- Container for Speaker Cards -->
+          <div class="flex flex-wrap justify-center gap-4">
+            <!-- Speaker Card for MD Selvaraj -->
             <div
-              class="text-left px-12 bg-gray-100 py-28 sm:w-1/2 w-full rounded-md"
+              class="w-full sm:w-1/2 lg:w-1/3 shadow-lg p-4 bg-white rounded-lg cursor-pointer mx-4 sm:mx-0"
+              
             >
-              <h3 class="text-lg sm:text-xl font-semibold">
-                Dr. M. D. Selvaraj
-              </h3>
-              <p>Professor, IIITDM,.</p>
-              <p>Kanchipuram, Tamilnadu, India</p>
-              <p class="text-blue-600">Click to know more</p>
+              <img
+                src="./images/speakers/selvaraj.png"
+                alt="Dr. M. D. Selvaraj"
+                class="w-full sm:h-3/4 rounded-t-lg"
+              />
+              <div class="text-left px-4 py-4">
+                <h3 class="text-lg sm:text-xl font-semibold">Dr. M. D. Selvaraj</h3>
+                <p>Professor, IIITDM</p>
+                <p>Kanchipuram, Tamilnadu, India</p>
+                <button class="bg-green-600 px-5 py-2 mt-8 text-white rounded-lg hover:bg-green-800" onclick="toggleModal('modal-pethuru')">Know More</button>
+              </div>
+            </div>
+        
+            <!-- Speaker Card for Dr. Pethuru -->
+            <div
+              class="w-full sm:w-1/2 lg:w-1/3 shadow-lg p-4 bg-white rounded-lg cursor-pointer mx-4 sm:mx-0"
+              
+            >
+              <img
+                src="./images/speakers/pethuru.png"
+                alt="Dr. Pethuru Raj"
+                class="w-full sm:h-3/4 rounded-t-lg"
+              />
+              <div class="text-left px-4 py-4">
+                <h3 class="text-lg sm:text-xl font-semibold">Dr. Pethuru Raj</h3>
+                <p>Reliance Jio Platforms Ltd</p>
+                <p>Bangalore, India</p>
+                <button class="bg-green-600 px-5 py-2 mt-8 text-white rounded-lg hover:bg-green-800" onclick="toggleModal('modal-pethuru')">Know More</button>
+              </div>
             </div>
           </div>
-
-          <!-- Modal for MD Selvaraj -->
+        
+          <!-- Modals -->
           <div
             id="modal-selvaraj"
             class="hidden fixed inset-0 bg-gray-600 bg-opacity-50 overflow-y-auto h-full w-full"
           >
             <div
-              class="relative top-20 mx-auto p-5 border w-11/12 sm:w-3/4 lg:w-3/4 shadow-lg rounded-md bg-white"
+              class="relative top-20 mx-auto p-5 border w-11/12 sm:w-3/4 lg:w-1/2 shadow-lg rounded-md bg-white"
             >
-              <!-- Close Button -->
               <button
                 class="absolute top-2 right-2 text-gray-500 hover:text-gray-800 text-3xl font-bold"
                 onclick="toggleModal('modal-selvaraj')"
               >
                 &times;
               </button>
-
-              <!-- Modal Content -->
               <div class="flex flex-col sm:flex-row">
-                <!-- Left Column: Speaker Info -->
-                <div
-                  class="bg-gray-100 p-4 sm:w-1/2 w-full flex flex-col items-center"
-                >
+                <div class="bg-gray-100 p-4 sm:w-1/2 w-full flex flex-col items-center">
                   <img
                     src="./images/speakers/selvaraj.png"
                     alt="Dr. M. D. Selvaraj"
-                    class="w-2/3 h-2/3 mb-4"
+                    class="w-2/3 h-auto mb-4"
                   />
                   <h3 class="text-lg font-semibold">Dr. M. D. Selvaraj</h3>
-                  <p class="text-gray-700">Professor, IIITDM, Kanchipuram,</p>
-                  <p class="text-gray-700">Tamilnadu, India.</p>
+                  <p class="text-gray-700">Professor, IIITDM, Kanchipuram</p>
+                  <p class="text-gray-700">Tamilnadu, India</p>
                 </div>
-
-                <!-- Right Column: Speaker Description -->
                 <div class="p-4 sm:w-1/2 w-full">
-                  <h3 class="text-xl font-semibold mb-3 text-left">
-                    About Speaker
-                  </h3>
+                  <h3 class="text-xl font-semibold mb-3">About Speaker</h3>
                   <p class="text-gray-800 text-justify">
-                    Dr.M.D.Selvaraj obtained B.Tech. and an M.Tech. in ECE from
-                    Pondicherry Engineering College (now-named as Puducherry
-                    Technological University ) and Ph.D. from IIT Delhi. He
-                    began working as a faculty member at the Indian Institute of
-                    Information Technology, Design and Manufacturing (IIITDM)
-                    Kancheepuram in 2012 where he is now a Professor in
-                    Electronics and Communication Engineering and also presently
-                    serves as Dean (Design, Innovation, Incubation). Previously,
-                    he had held the roles of Dean (Sponsored Research, Industry
-                    Consultancy, and Continuing Education) and Head of the ECE
-                    department. He is a member of the Selection Committee for
-                    faculty and non-teaching selections in CFTI and other
-                    reputed private universities. From DST and other agencies,
-                    he has received funded projects totaling more than one
-                    crore. Also, he is an evaluator for DST project
-                    proposals.Prof.Selvaraj currently serves as the editor of
-                    IETE Journal of Research. He was an Associate Editor in the
-                    Elsevier Computer and Electrical Engineering Journal during
-                    2018-2021. He is the Founder Branch Counselor of the IEEE
-                    Student Chapter at IIITDM Kancheepuram. He has been a TPC
-                    member of the National Conference on Communications (NCC)
-                    and the SPCOM for the past ten years. He served as a Board
-                    of Studies (BoS) member for numerous institutions in Tamil
-                    Nadu. He is a Senior Member of IEEE. He shares his expertise
-                    by presenting several invited speeches at reputed seminars
-                    and conferences.
+                    Dr.M.D.Selvaraj obtained B.Tech. and an M.Tech. in ECE from Pondicherry Engineering College (now-named as Puducherry Technological University ) and Ph.D. from IIT Delhi. He began working as a faculty member at the Indian Institute of Information Technology, Design and Manufacturing (IIITDM) Kancheepuram in 2012 where he is now a Professor in Electronics and Communication Engineering and also presently serves as Dean (Design, Innovation, Incubation). Previously, he had held the roles of Dean (Sponsored Research, Industry Consultancy, and Continuing Education) and Head of the ECE department. He is a member of the Selection Committee for faculty and non-teaching selections in CFTI and other reputed private universities.  From DST and other agencies, he has received funded projects totaling more than one crore. Also, he is an evaluator for DST project proposals.Prof.Selvaraj currently serves as the editor of IETE Journal of Research. He was an Associate Editor in the Elsevier Computer and Electrical Engineering Journal during 2018-2021. He is the Founder Branch Counselor of the IEEE Student Chapter at IIITDM Kancheepuram. He has been a TPC member of the National Conference on Communications (NCC) and the SPCOM for the past ten years. He served as a Board of Studies (BoS) member for numerous institutions in Tamil Nadu.  He is a Senior Member of IEEE. He shares his expertise by presenting several invited speeches at reputed seminars and conferences.        
                   </p>
                 </div>
               </div>
             </div>
           </div>
-        </section>
-
-        <section class="my-8 text-center">
-          <!-- Speaker Card for Dr. Pethuru -->
-          <div
-            class="flex flex-col sm:flex-row w-11/12 sm:w-1/2 lg:w-1/2 mx-auto items-center shadow-lg p-6 sm:px-2 lg:py-4 lg:px-0 mb-4 bg-white rounded-lg cursor-pointer justify-evenly"
-            onclick="toggleModal('modal-pethuru')"
-          >
-            <img
-              src="./images/speakers/pethuru.png"
-              alt="Dr. Pethuru Raj"
-              class="w-4/5 sm:w-1/3 h-auto py-6"
-            />
-            <div class="text-left px-12 bg-gray-100 py-28 sm:w-1/2 w-full">
-              <h3 class="text-lg sm:text-xl font-semibold">Dr. Pethuru Raj</h3>
-              <p>Reliance Jio Platforms Ltd</p>
-              <p>Bangalore, India</p>
-              <p class="text-blue-600">Click to know more</p>
-            </div>
-          </div>
-
-          <!-- Modal for Dr. Pethuru Raj -->
+        
           <div
             id="modal-pethuru"
             class="hidden fixed inset-0 bg-gray-600 bg-opacity-50 overflow-y-auto h-full w-full"
           >
             <div
-              class="relative top-20 mx-auto p-5 border w-11/12 sm:w-3/4 lg:w-3/4 shadow-lg rounded-md bg-white"
+              class="relative top-20 mx-auto p-5 border w-11/12 sm:w-3/4 lg:w-1/2 shadow-lg rounded-md bg-white"
             >
-              <!-- Close Button -->
               <button
                 class="absolute top-2 right-2 text-gray-500 hover:text-gray-800 text-3xl font-bold"
                 onclick="toggleModal('modal-pethuru')"
               >
                 &times;
               </button>
-
-              <!-- Modal Content -->
               <div class="flex flex-col sm:flex-row">
-                <!-- Left Column: Speaker Info -->
-                <div
-                  class="bg-gray-100 p-4 sm:w-1/2 w-full flex flex-col items-center"
-                >
+                <div class="bg-gray-100 p-4 sm:w-1/2 w-full flex flex-col items-center">
                   <img
                     src="./images/speakers/pethuru.png"
                     alt="Dr. Pethuru Raj"
-                    class="w-1/2 h-2/3 mb-4"
+                    class="w-2/3 h-auto mb-4"
                   />
                   <h3 class="text-lg font-semibold">Dr. Pethuru Raj</h3>
-                  <p class="text-gray-700">Reliance Jio Platforms Ltd,</p>
-                  <p class="text-gray-700">S Bangalore, India</p>
-                  <p class="text-gray-700">
-                    Google Scholar:
-                    <a
-                      href="https://scholar.google.co.in/citations?user=MgMlqAwAAAAJ&hl=en"
-                      target="_blank"
-                      class="text-blue-600 underline"
-                    >
-                      https://scholar.google.co.in/citations?user=MgMlqAwAAAAJ&hl=en
-                    </a>
-                  </p>
-                  <p class="text-gray-700">
-                    Crunchbase:
-                    <a
-                      href="https://www.crunchbase.com/person/pethuru-raj-chelliah"
-                      target="_blank"
-                      class="text-blue-600 underline"
-                    >
-                      https://www.crunchbase.com/person/pethuru-raj-chelliah
-                    </a>
-                  </p>
+                  <p class="text-gray-700">Reliance Jio Platforms Ltd</p>
+                  <p class="text-gray-700">Bangalore, India</p>
                 </div>
-
-                <!-- Right Column: Speaker Description -->
                 <div class="p-4 sm:w-1/2 w-full">
-                  <h3 class="text-xl font-semibold mb-3 text-left">
-                    About Speaker
-                  </h3>
+                  <h3 class="text-xl font-semibold mb-3">About Speaker</h3>
                   <p class="text-gray-800 text-justify">
-                    Dr. Pethuru Raj is currently working as a chief architect at
-                    Reliance Jio Platforms Ltd. (JPL) Bangalore. Previously he
-                    worked in IBM Global Cloud Center of Excellence (CoE), Wipro
-                    consulting services (WCS), and Robert Bosch Corporate
-                    Research (CR). In total, he has more than 23 years of IT
-                    industry experience and 8 years of research experience. He
-                    had finished the CSIR-sponsored PhD degree at Anna
-                    University, Chennai and continued with the UGC-sponsored
-                    postdoctoral research in the Department of Computer Science
-                    and Automation, Indian Institute of Science (IISc),
-                    Bangalore. Through international research fellowships (JSPS
-                    and JST), he worked as a research scientist for 3.5 years in
-                    two leading Japanese universities. His research area
-                    includes Internet of Things (IoT), Artificial Intelligence
-                    (AI), Model Optimization Techniques, Streaming Analytics,
-                    Blockchain, Digital Twins, Cloud-native and Edge computing,
-                    Reliability, Prompt and Platform engineering, Quantum
-                    Computing, Efficient & Explainable AI, Green & Generative
-                    AI, 5G/6G, etc.
+                    Dr. Pethuru Raj is currently working as a chief architect at Reliance Jio Platforms Ltd. (JPL) Bangalore. Previously he  worked in IBM Global Cloud Center of Excellence (CoE), Wipro consulting services (WCS), and Robert Bosch Corporate Research (CR). In total, he has more than 23 years of IT industry experience and 8 years of research experience. He had finished the CSIR-sponsored PhD degree at Anna University, Chennai and continued with the UGC-sponsored postdoctoral research in the Department of Computer Science and Automation, Indian Institute of Science (IISc), Bangalore. Through international research fellowships (JSPS and JST), he worked as a research scientist for 3.5 years in two leading Japanese universities. His research area includes Internet of Things (IoT), Artificial Intelligence (AI), Model Optimization Techniques, Streaming Analytics, Blockchain, Digital Twins, Cloud-native and Edge computing, Reliability, Prompt and Platform engineering, Quantum Computing, Efficient & Explainable AI, Green & Generative AI, 5G/6G, etc.
                   </p>
                 </div>
               </div>
             </div>
           </div>
         </section>
-
+        
         <!-- Sustainable Innovations in VLSI Devices Track -->
-        <section class="my-8 text-center">
+        <section class="my-8 text-center sm:mt-24 mt-16">
           <h2 class="text-2xl font-bold text-gray-800 mb-6">
             Sustainable Innovations in VLSI Devices, Circuits and Systems
           </h2>
-
-          <!-- Speaker Card for Ms Suganya Annadurai -->
-          <div
-            class="flex flex-col sm:flex-row w-11/12 sm:w-1/2 lg:w-1/2 mx-auto items-center shadow-lg p-6 sm:px-2 lg:py-2 lg:px-0 mb-4 bg-white rounded-lg cursor-pointer justify-evenly"
-            onclick="toggleModal('modal-suganya')"
-          >
-            <img
-              src="./images/speakers/suganya.png"
-              alt="Ms Suganya Annadurai"
-              class="w-4/5 sm:w-1/3 h-80 py-6"
-            />
-            <div class="text-left px-12 bg-gray-100 py-28 sm:w-1/2 w-full">
-              <h3 class="text-lg sm:text-xl font-semibold">
+        
+          <!-- Container for Speaker Cards -->
+          <div class="flex flex-wrap justify-center gap-2">
+            <!-- Speaker Card for Suganya -->
+            <div
+              class="w-full sm:w-1/2 lg:w-1/3 shadow-lg px-4 bg-white rounded-lg cursor-pointer mx-4 sm:mx-0"
+              
+            >
+              <img
+                src="./images/speakers/suganya.png"
+                alt="Dr. M. D. Selvaraj"
+                class="w-full sm:h-2/3 rounded-t-lg"
+              />
+              <div class="text-left px-4 py-4">
+                <h3 class="text-lg sm:text-xl font-semibold">
                 Ms Suganya Annadurai
               </h3>
               <p>Senior Scientist, SETS</p>
               <p>Thanjavur, India</p>
-              <p class="text-blue-600">Click to know more</p>
+                <button class="bg-green-600 px-5 py-2 mt-8 text-white rounded-lg hover:bg-green-800 mb-4 sm:mb-0" onclick="toggleModal('modal-suganya')">Know More</button>
+              </div>
             </div>
+        
+            <!-- Speaker Card for Dr. Suganya -->
+           
           </div>
-
-          <!-- Modal for Ms Suganya Annadurai -->
+        
+          <!-- Modals -->
+         
           <div
             id="modal-suganya"
             class="hidden fixed inset-0 bg-gray-600 bg-opacity-50 overflow-y-auto h-full w-full"
           >
             <div
-              class="relative top-20 mx-auto p-5 border w-11/12 sm:w-3/4 lg:w-3/4 shadow-lg rounded-md bg-white"
+              class="relative top-20 mx-auto p-5 border w-11/12 sm:w-3/4 lg:w-1/2 shadow-lg rounded-md bg-white"
             >
-              <!-- Close Button -->
               <button
                 class="absolute top-2 right-2 text-gray-500 hover:text-gray-800 text-3xl font-bold"
                 onclick="toggleModal('modal-suganya')"
               >
                 &times;
               </button>
-
-              <!-- Modal Content -->
               <div class="flex flex-col sm:flex-row">
-                <!-- Left Column: Speaker Info -->
-                <div
-                  class="bg-gray-100 p-4 sm:w-1/2 w-full flex flex-col items-center"
-                >
+                <div class="bg-gray-100 p-4 sm:w-1/2 w-full flex flex-col items-center">
                   <img
                     src="./images/speakers/suganya.png"
-                    alt="Ms Suganya Annadurai"
-                    class="w-1/2 sm:h-80 mb-4"
+                    alt="Dr. Suganya Annadurai"
+                    class="w-2/3 h-auto mb-4"
                   />
                   <h3 class="text-lg font-semibold">Ms Suganya Annadurai</h3>
                   <p class="text-gray-700">Senior Scientist</p>
                   <p class="text-gray-700">SETS, Thanjavur, India</p>
                 </div>
-
-                <!-- Right Column: Speaker Description -->
                 <div class="p-4 sm:w-1/2 w-full">
                   <h3 class="text-xl font-semibold mb-3 text-left">
                     About Speaker
@@ -471,75 +382,74 @@
             </div>
           </div>
         </section>
+        
 
-        <section class="my-8 text-center">
+
+
+        <section class="my-8 text-center sm:mt-24 mt-16">
           <h2 class="text-2xl font-bold text-gray-800 mb-6">
             Signal and Image Processing for Sustainable Development
           </h2>
-
-          <!-- Speaker Card for Dr.S.Sakthivel Murugan-->
-
-          <div
-            class="flex flex-col sm:flex-row w-11/12 sm:w-1/2 lg:w-1/2 mx-auto items-center shadow-lg p-6 sm:px-2 lg:py-4 lg:px-0 mb-4 bg-white rounded-lg cursor-pointer justify-evenly"
-            onclick="toggleModal('modal-murugan')"
-          >
-            <img
-              src="./images/speakers/sakthivel.png"
-              alt="Dr.S.Sakthivel Murugan"
-              class="w-4/5 sm:w-1/3 h-auto py-6"
-            />
-            <div class="text-left px-12 bg-gray-100 py-28 sm:w-1/2 w-full">
-              <h3 class="text-lg sm:text-xl font-semibold">
-                Dr.S.Sakthivel Murugan
-              </h3>
-              <p>
-                Professor, Department of Electronics and Communication
-                Engineering
-              </p>
-              <p>
-                National Institute of Technical Teachers Training and Research
-                (NITTTR), Chennai
-              </p>
-              <p class="text-blue-600">Click to know more</p>
+        
+          <!-- Container for Speaker Cards -->
+          <div class="flex flex-wrap justify-center gap-2">
+            <!-- Speaker Card for Dr. S. Sakthivel Murugan -->
+            <div
+              class="w-full sm:w-1/2 lg:w-1/3 shadow-lg px-4 bg-white rounded-lg cursor-pointer mx-4 sm:mx-0"
+            >
+              <img
+                src="./images/speakers/sakthivel.png"
+                alt="Dr. S. Sakthivel Murugan"
+                class="w-full sm:h-2/3 rounded-t-lg"
+              />
+              <div class="text-left px-4 py-4">
+                <h3 class="text-lg sm:text-xl font-semibold">
+                  Dr. S. Sakthivel Murugan
+                </h3>
+                 
+                <p>Professor </p>
+                <p>Department of Electronics and Communication Engineering</p>
+                <p>National Institute of Technical Teachers Training and Research (NITTTR), Chennai</p>
+                <button
+                  class="bg-green-600 px-5 py-2 mt-8 text-white rounded-lg hover:bg-green-800 mb-4"
+                  onclick="toggleModal('modal-murugan')"
+                >
+                  Know More
+                </button>
+              </div>
             </div>
           </div>
-
-          <!-- Modal for Dr.S.Sakthivel Murugan -->
+        
+          <!-- Modal for Dr. S. Sakthivel Murugan -->
           <div
             id="modal-murugan"
             class="hidden fixed inset-0 bg-gray-600 bg-opacity-50 overflow-y-auto h-full w-full"
           >
             <div
-              class="relative top-20 mx-auto p-5 border w-11/12 sm:w-3/4 lg:w-3/4 shadow-lg rounded-md bg-white"
+              class="relative top-20 mx-auto p-5 border w-11/12 sm:w-3/4 lg:w-1/2 shadow-lg rounded-md bg-white"
             >
-              <!-- Close Button -->
               <button
                 class="absolute top-2 right-2 text-gray-500 hover:text-gray-800 text-3xl font-bold"
                 onclick="toggleModal('modal-murugan')"
               >
                 &times;
               </button>
-
-              <!-- Modal Content -->
-              <div class="flex flex-col sm:flex-row">
+              <div class="flex flex-col sm:flex-row text-wrap">
                 <!-- Left Column: Speaker Info -->
                 <div
                   class="bg-gray-100 p-4 sm:w-1/2 w-full flex flex-col items-center"
                 >
                   <img
                     src="./images/speakers/sakthivel.png"
-                    alt="Dr.S.Sakthivel Murugan"
-                    class="w-2/3 sm:h-96 mb-4"
+                    alt="Dr. S. Sakthivel Murugan"
+                    class="w-2/3 h-auto mb-4"
                   />
-                  <h3 class="text-lg font-semibold">Dr.S.Sakthivel Murugan</h3>
+                  <h3 class="text-lg font-semibold">Dr. S. Sakthivel Murugan</h3>
                   <p class="text-gray-700">Professor</p>
                   <p class="text-gray-700">
-                    Department of Electronics and Communication Engineering
+                    Electronics and Communication Engineering
                   </p>
-                  <p class="text-gray-700">
-                    National Institute of Technical Teachers Training and
-                    Research (NITTTR), Chennai
-                  </p>
+                  <p class="text-gray-700">NITTTR, Chennai</p>
                   <p class="text-gray-700">
                     Google Scholar Citation:
                     <a
@@ -547,7 +457,7 @@
                       target="_blank"
                       class="text-blue-600 underline text-wrap"
                     >
-                      https://scholar.google.com/citations?user=7kJJg68AAAAJ&hl=en
+                      scholar.google.com/citations/SakthivelMurugan
                     </a>
                   </p>
                   <p class="text-gray-700">
@@ -557,21 +467,22 @@
                       target="_blank"
                       class="text-blue-600 underline"
                     >
-                      https://www.researchgate.net/profile/Sakthivel_Murugan_Santhanam
+                      www.researchgate.net/SakthivelMuruganS
                     </a>
                   </p>
                   <p class="text-gray-700">
                     LinkedIn:
-                    <a
+                    
+                  </p>
+                  <a
                       href="https://www.linkedin.com/in/sakthivel-murugan-35387b27/"
                       target="_blank"
                       class="text-blue-600 underline"
                     >
-                      https://www.linkedin.com/in/sakthivel-murugan-35387b27/
+                      www.linkedin.com/sakthivel-murugan
                     </a>
-                  </p>
                 </div>
-
+        
                 <!-- Right Column: Speaker Description -->
                 <div class="p-4 sm:w-1/2 w-full">
                   <h3 class="text-xl font-semibold mb-3 text-left">
@@ -581,7 +492,7 @@
                     Dr. S. Sakthivel Murugan, is working as Professor in the
                     Department of Electronics and Communication Engineering in
                     National Institute of Technical Teachers Training and
-                    Research (NITTTR), Chennai from September 2024. Prior
+                    Research (NITTTR), Chennai from September 2024. Prior to
                     joining NITTTR, he served as Associate Professor in Sri
                     Sivasubramaniya Nadar (SSN) College of Engineering in
                     various designations for 23 plus years since 2001. He
@@ -593,9 +504,9 @@
                     underwater technology related to acoustic signal processing,
                     optical / acoustic image processing, acoustic communication,
                     acoustic wireless sensor networks, underwater energy
-                    Harvesting, autonomous underwater vehicles and remotely
-                    Operated Vehicles etc. He has an ongoing and various
-                    completed external funded projects as PI and Co PI funded by
+                    harvesting, autonomous underwater vehicles and remotely
+                    operated vehicles etc. He has an ongoing and various
+                    completed external funded projects as PI and Co-PI funded by
                     MoES, DST-SSTP, TNSCST, NIOT and SSN Trust worth more than
                     165 lakhs. He had established an exclusive research lab for
                     underwater research namely “Underwater Acoustic Research
@@ -603,7 +514,7 @@
                     co-authored 52+ research articles in leading International
                     and national Journals. He has also presented and published
                     research papers in 80+ proceedings of International and
-                    National conferences and has served as key note speaker for
+                    National conferences and has served as keynote speaker for
                     various national and international conferences organized and
                     held in India and abroad (Singapore, Canada, Australia etc).
                     Dr. S. Sakthivel Murugan authored five books titled
@@ -618,62 +529,86 @@
             </div>
           </div>
         </section>
-
-        <section class="my-8 text-center">
+        
+        
+        <section class="my-8 text-center sm:mt-24 mt-16">
           <h2 class="text-2xl font-bold text-gray-800 mb-6">
             Microwave and Antenna Green Networks and Emerging Technologies
           </h2>
-
-          <!-- Speaker Card for Dr. Lee Yong Hong  -->
-          <div
-            class="flex flex-col sm:flex-row w-11/12 sm:w-1/2 lg:w-1/2 mx-auto items-center shadow-lg p-6 sm:px-2 lg:py-0 lg:px-0 mb-4 bg-white rounded-lg cursor-pointer justify-evenly"
-            onclick="toggleModal('modal-hong')"
-          >
-            <img
-              src="./images/speakers/leeyong.png"
-              alt="Dr. Lee Yong Hong"
-              class="w-4/5 sm:w-1/3 h-auto py-6"
-            />
-            <div class="text-left px-12 bg-gray-100 py-28 sm:w-1/2 w-full">
-              <h3 class="text-lg sm:text-xl font-semibold">
-                Dr. Lee Yong Hong
-              </h3>
-              <p>Universiti Tunku Abdul Rahman (UTAR)</p>
-              <p class="text-blue-600">Click to know more</p>
+        
+          <!-- Container for Speaker Cards -->
+          <div class="flex flex-wrap justify-center gap-4">
+            <!-- Speaker Card for Dr. Lee Yong Hong -->
+            <div
+              class="w-full sm:w-1/2 lg:w-1/3 shadow-lg p-4 bg-white rounded-lg cursor-pointer mx-4 sm:mx-0"
+            >
+              <img
+                src="./images/speakers/leeyong.png"
+                alt="Dr. Lee Yong Hong"
+                class="w-full sm:h-3/4 rounded-t-lg"
+              />
+              <div class="text-left px-4 py-4">
+                <h3 class="text-lg sm:text-xl font-semibold">Dr. Lee Yong Hong</h3>
+                <p>Universiti Tunku Abdul Rahman</p>
+                <p>(UTAR)</p>
+                <button
+                  class="bg-green-600 px-5 py-2 mt-8 text-white rounded-lg hover:bg-green-800"
+                  onclick="toggleModal('modal-hong')"
+                >
+                  Know More
+                </button>
+              </div>
+            </div>
+        
+            <!-- Speaker Card for Dr. Sreenath Reddy Thummaluru -->
+            <div
+              class="w-full sm:w-1/2 lg:w-1/3 shadow-lg p-4 bg-white rounded-lg cursor-pointer mx-4 sm:mx-0"
+            >
+              <img
+                src="./images/speakers/sreenathreddy.png"
+                alt="Dr. Sreenath Reddy Thummaluru"
+                class="w-full sm:h-3/4 rounded-t-lg"
+              />
+              <div class="text-left px-4 py-4">
+                <h3 class="text-lg sm:text-xl font-semibold">
+                  Dr. Sreenath Reddy Thummaluru
+                </h3>
+                <p>Assistant Professor, IIITDM Kancheepuram</p>
+                <p>Chennai, India</p>
+                <button
+                  class="bg-green-600 px-5 py-2 mt-8 text-white rounded-lg hover:bg-green-800"
+                  onclick="toggleModal('modal-reddy')"
+                >
+                  Know More
+                </button>
+              </div>
             </div>
           </div>
-
+        
+          <!-- Modals -->
           <!-- Modal for Dr. Lee Yong -->
           <div
             id="modal-hong"
             class="hidden fixed inset-0 bg-gray-600 bg-opacity-50 overflow-y-auto h-full w-full"
           >
             <div
-              class="relative top-20 mx-auto p-5 border w-11/12 sm:w-3/4 lg:w-3/4 shadow-lg rounded-md bg-white"
+              class="relative top-20 mx-auto p-5 border w-11/12 sm:w-3/4 lg:w-1/2 shadow-lg rounded-md bg-white"
             >
-              <!-- Close Button -->
               <button
                 class="absolute top-2 right-2 text-gray-500 hover:text-gray-800 text-3xl font-bold"
                 onclick="toggleModal('modal-hong')"
               >
                 &times;
               </button>
-
-              <!-- Modal Content -->
               <div class="flex flex-col sm:flex-row">
-                <!-- Left Column: Speaker Info -->
-                <div
-                  class="bg-gray-100 p-4 sm:w-1/2 w-full flex flex-col items-center"
-                >
+                <div class="bg-gray-100 p-4 sm:w-1/2 w-full flex flex-col items-center">
                   <img
                     src="./images/speakers/leeyong.png"
-                    alt="Dr. Lee Yong Hong "
-                    class="w-1/2 sm:h-80 mb-4"
+                    alt="Dr. Lee Yong Hong"
+                    class="w-2/3 h-auto mb-4"
                   />
                   <h3 class="text-lg font-semibold">Dr. Lee Yong Hong</h3>
-                  <p class="text-gray-700">
-                    Universiti Tunku Abdul Rahman (UTAR)
-                  </p>
+                  <p class="text-gray-700">Universiti Tunku Abdul Rahman (UTAR)</p>
                   <p class="text-gray-700">
                     Research Gate:
                     <a
@@ -685,101 +620,42 @@
                     </a>
                   </p>
                 </div>
-
-                <!-- Right Column: Speaker Description -->
                 <div class="p-4 sm:w-1/2 w-full">
-                  <h3 class="text-xl font-semibold mb-3 text-left">
-                    About Speaker
-                  </h3>
+                  <h3 class="text-xl font-semibold mb-3">About Speaker</h3>
                   <p class="text-gray-800 text-justify">
-                    Dr. Lee Yong Hong received a First-Class B.Sc. (Hons) in
-                    Physics in 2012, followed by an M.Eng.Sc. in 2016 and a
-                    Ph.D. in Engineering in 2019, all from Universiti Tunku
-                    Abdul Rahman (UTAR). After joining UTAR as an Assistant
-                    Professor, Dr. Lee continued his research in RFID antenna
-                    design for a wide range of applications, earning recognition
-                    through publications in esteemed journals such as IEEE
-                    Transactions on Antennas and Propagation, as well as leading
-                    conference proceedings. A notable achievement was the
-                    development of an embedded tag antenna, which, despite its
-                    compact size (5 × 3 × 2 mm³), achieved a high realized gain
-                    of approximately −5 dBi when fully embedded in metal. To the
-                    best of his knowledge, this represented the highest
-                    gain-to-size ratio among similar tag antennas at the time, a
-                    breakthrough that was recognized with an international
-                    patent granted in Taiwan in February 2022. In addition to
-                    RFID antenna design, Dr. Lee’s research interests span
-                    electromagnetism, microwave theory, and propagation
-                    techniques. He is currently collaborating with researchers
-                    and industry partners on several projects funded by the
-                    university, as well as government and industry stakeholders.
-                    Additionally, Dr. Lee serves as a consultant to several
-                    international RFID companies. He is also the HRD Corp
-                    accredited trainer that provides training for courses such
-                    as “RFID Tag Antenna Design with CST Microwave Studio” and
-                    “Impedance Matching for RF Circuit: Theory and Technique.”
+                    Dr. Lee Yong Hong received a First-Class B.Sc. (Hons) in Physics in 2012, followed by an M.Eng.Sc. in 2016 and a Ph.D. in Engineering in 2019, all from Universiti Tunku Abdul Rahman (UTAR). After joining UTAR as an Assistant Professor, Dr. Lee continued his research in RFID antenna design for a wide range of applications, earning recognition through publications in esteemed journals such as IEEE Transactions on Antennas and Propagation, as well as leading conference proceedings. A notable achievement was the development of an embedded tag antenna, which, despite its compact size (5 × 3 × 2 mm³), achieved a high realized gain of approximately −5 dBi when fully embedded in metal. To the best of his knowledge, this represented the highest gain-to-size ratio among similar tag antennas at the time, a breakthrough that was recognized with an international patent granted in Taiwan in February 2022.
                   </p>
                 </div>
               </div>
             </div>
           </div>
-        </section>
-
-        <section class="my-8 text-center">
-          <!-- Speaker Card for Dr. Sreenath Reddy Thummaluru -->
-          <div
-            class="flex flex-col sm:flex-row w-11/12 sm:w-1/2 lg:w-1/2 mx-auto items-center shadow-lg p-6 sm:px-2 lg:py-4 lg:px-0 mb-4 bg-white rounded-lg cursor-pointer justify-evenly"
-            onclick="toggleModal('modal-reddy')"
-          >
-            <img
-              src="./images/speakers/sreenathreddy.png"
-              alt="Dr. Sreenath Reddy Thummaluru"
-              class="w-4/5 sm:w-1/3 h-80 py-6"
-            />
-            <div class="text-left px-12 bg-gray-100 py-28 sm:w-1/2 w-full">
-              <h3 class="text-lg sm:text-xl font-semibold">
-                Dr. Sreenath Reddy Thummaluru
-              </h3>
-              <p>Assistant Professor IIITDM Kancheepuram,</p>
-              <p>Chennai, India</p>
-              <p class="text-blue-600">Click to know more</p>
-            </div>
-          </div>
-
+        
           <!-- Modal for Dr. Sreenath Reddy -->
           <div
             id="modal-reddy"
             class="hidden fixed inset-0 bg-gray-600 bg-opacity-50 overflow-y-auto h-full w-full"
           >
             <div
-              class="relative top-20 mx-auto p-5 border w-11/12 sm:w-3/4 lg:w-3/4 shadow-lg rounded-md bg-white"
+              class="relative top-20 mx-auto p-5 border w-11/12 sm:w-3/4 lg:w-1/2 shadow-lg rounded-md bg-white"
             >
-              <!-- Close Button -->
               <button
                 class="absolute top-2 right-2 text-gray-500 hover:text-gray-800 text-3xl font-bold"
                 onclick="toggleModal('modal-reddy')"
               >
                 &times;
               </button>
-
-              <!-- Modal Content -->
               <div class="flex flex-col sm:flex-row">
-                <!-- Left Column: Speaker Info -->
-                <div
-                  class="bg-gray-100 p-4 sm:w-1/2 w-full flex flex-col items-center"
-                >
+                <div class="bg-gray-100 p-4 sm:w-1/2 w-full flex flex-col items-center">
                   <img
                     src="./images/speakers/sreenathreddy.png"
                     alt="Dr. Sreenath Reddy Thummaluru"
-                    class="w-1/2 h-2/3 mb-4"
+                    class="w-2/3 h-auto mb-4"
                   />
                   <h3 class="text-lg font-semibold">
                     Dr. Sreenath Reddy Thummaluru
                   </h3>
                   <p class="text-gray-700">Assistant Professor</p>
-                  <p class="text-gray-700">
-                    IIITDM Kancheepuram, Chennai, India
-                  </p>
+                  <p class="text-gray-700">IIITDM Kancheepuram, Chennai, India</p>
                   <p class="text-gray-700">
                     Research Gate:
                     <a
@@ -791,60 +667,77 @@
                     </a>
                   </p>
                 </div>
-
-                <!-- Right Column: Speaker Description -->
                 <div class="p-4 sm:w-1/2 w-full">
-                  <h3 class="text-xl font-semibold mb-3 text-left">
-                    About Speaker
-                  </h3>
+                  <h3 class="text-xl font-semibold mb-3">About Speaker</h3>
                   <p class="text-gray-800 text-justify">
-                    Sreenath Reddy received the master’s and Ph.D. degrees in RF
-                    & Microwave engineering from Indian Institute of Technology
-                    Dhanbad, India, in 2016 and 2021, respectively. He received
-                    the Raman-Charpak fellowship 2019-20 and carried ompleted
-                    part of his Ph.D. work at Sorbonne University, Paris,
-                    France, for six months. He worked as an IOE-IISc
-                    postdoctoral fellow at the Department of ECE, IISc
-                    Bangalore, from Nov. 2021 to Feb. 2022. Currently, he is
-                    working as an Assistant Professor at the Department of ECE,
-                    IIITDM Kancheepuram. Dr. Sreenath received the URSI Young
-                    Scientist Award two times in GASS 2021 at Rome Italy and
-                    AT-RASC 2024 at Gran Canaria, Spain. He is currently
-                    executing research projects worth more than 1 crore and
-                    funded by DST, DRDO, and IIITDM
+                    Sreenath Reddy received the master’s and Ph.D. degrees in RF & Microwave engineering from Indian Institute of Technology Dhanbad, India, in 2016 and 2021, respectively. He received the Raman-Charpak fellowship 2019-20 and carried ompleted part of his Ph.D. work at Sorbonne University, Paris, France, for six months. He worked as an IOE-IISc postdoctoral fellow at the Department of ECE, IISc Bangalore, from Nov. 2021 to Feb. 2022. Currently, he is working as an Assistant Professor at the Department of ECE, IIITDM Kancheepuram. 
+Dr. Sreenath received the URSI Young Scientist Award two times in GASS 2021 at Rome Italy and AT-RASC 2024 at Gran Canaria, Spain. He is currently executing research projects worth more than 1 crore and funded by DST, DRDO, and IIITDM.
+
                   </p>
                 </div>
               </div>
             </div>
           </div>
         </section>
-
-        <section class="my-8 text-center">
+        
+        
+        <section class="my-8 text-center sm:mt-24 mt-16">
           <h2 class="text-2xl font-bold text-gray-800 mb-6">
             Intelligent Wireless Communication Networks
           </h2>
-
-          <!-- Speaker Card for Dr Malka N. Halgamuge -->
-          <div
-            class="flex flex-col sm:flex-row w-11/12 sm:w-1/2 lg:w-1/2 mx-auto items-center shadow-lg p-6 sm:px-2 lg:py-0 lg:px-0 mb-4 bg-white rounded-lg cursor-pointer justify-evenly"
-            onclick="toggleModal('modal-malka')"
-          >
-            <img
-              src="./images/speakers/malkan.png"
-              alt="Dr Malka N. Halgamuge"
-              class="w-4/5 sm:w-1/3 h-auto py-6"
-            />
-            <div class="text-left px-12 bg-gray-100 py-28 sm:w-1/2 w-full">
-              <h3 class="text-lg sm:text-xl font-semibold">
-                Dr Malka N. Halgamuge
-              </h3>
-              <p>RMIT University</p>
-              <p>Melbourne, Australia</p>
-              <p class="text-blue-600">Click to know more</p>
+        
+          <!-- Container for Speaker Cards -->
+          <div class="flex flex-wrap justify-center gap-4">
+            <!-- Speaker Card for Dr Malka N. Halgamuge -->
+            <div 
+              class="w-full sm:w-1/2 lg:w-1/3 shadow-lg p-4 bg-white rounded-lg cursor-pointer mx-4 sm:mx-0"
+              
+            >
+              <img
+                src="./images/speakers/malkan.png"
+                alt="Dr Malka N. Halgamuge"
+                class="w-full sm:h-3/4 rounded-t-lg"
+              />
+              <div class="text-left px-4 py-4">
+                <h3 class="text-lg sm:text-xl font-semibold">Dr Malka N. Halgamuge</h3>
+                <p>RMIT University</p>
+                <p>Melbourne</p>
+                <p>Australia</p>
+                <button
+                  class="bg-green-600 px-5 py-2 text-white rounded-lg mt-4 sm:mt-8 hover:bg-green-800"
+                  onclick="toggleModal('modal-malka')"
+                >
+                  Know More
+                </button>
+              </div>
+            </div>
+        
+            <!-- Speaker Card for Dr. Saravana Balaji B -->
+            <div 
+              class="w-full sm:w-1/2 lg:w-1/3 shadow-lg p-4 bg-white rounded-lg cursor-pointer mx-4 sm:mx-0"
+              
+            >
+              <img
+                src="./images/speakers/saravanabalaji.png"
+                alt="Dr. Saravana Balaji B"
+                class="w-full sm:h-3/4 rounded-t-lg"
+              />
+              <div class="text-left px-4 py-4">
+                <h3 class="text-lg sm:text-xl font-semibold">Dr. Saravana Balaji B</h3>
+                <p>Department of Computing</p>
+                <p>De Montfort University Kazakhstan</p>
+                <p>Almaty, Kazakhstan</p>
+                <button
+                  class="bg-green-600 px-5 py-2 text-white rounded-lg mt-4 sm:mt-8 hover:bg-green-800"
+                  onclick="toggleModal('modal-balaji')"
+                >
+                  Know More
+                </button>
+              </div>
             </div>
           </div>
-
-          <!-- Modal for Ms Suganya Annadurai -->
+        
+          <!-- Modal for Dr Malka N. Halgamuge -->
           <div
             id="modal-malka"
             class="hidden fixed inset-0 bg-gray-600 bg-opacity-50 overflow-y-auto h-full w-full"
@@ -852,20 +745,12 @@
             <div
               class="relative top-20 mx-auto p-5 border w-11/12 sm:w-3/4 lg:w-3/4 shadow-lg rounded-md bg-white"
             >
-              <!-- Close Button -->
               <button
                 class="absolute top-2 right-2 text-gray-500 hover:text-gray-800 text-3xl font-bold"
                 onclick="toggleModal('modal-malka')"
-              >
-                &times;
-              </button>
-
-              <!-- Modal Content -->
+              >&times;</button>
               <div class="flex flex-col sm:flex-row">
-                <!-- Left Column: Speaker Info -->
-                <div
-                  class="bg-gray-100 p-4 sm:w-1/2 w-full flex flex-col items-center"
-                >
+                <div class="bg-gray-100 p-4 sm:w-1/2 w-full flex flex-col items-center">
                   <img
                     src="./images/speakers/malkan.png"
                     alt="Dr Malka N. Halgamuge"
@@ -877,91 +762,35 @@
                   <p class="text-gray-700">
                     Google Scholar:
                     <a
-                      href="https://www.iiitdm.ac.in/people/faculty/sreenath@iiitdm.ac.in"
+                      href="https://scholar.google.com/citations?user=LletjMkAAAAJ"
                       target="_blank"
                       class="text-blue-600 underline"
                     >
-                      https://scholar.google.com/citations?user=LletjMkAAAAJ
+                      Scholar Profile
                     </a>
                   </p>
                   <p class="text-gray-700">
                     LinkedIn:
                     <a
-                      href="https://www.iiitdm.ac.in/people/faculty/sreenath@iiitdm.ac.in"
+                      href="https://www.linkedin.com/in/malka-n-halgamuge-b9929810"
                       target="_blank"
                       class="text-blue-600 underline"
                     >
-                      https://www.linkedin.com/in/malka-n-halgamuge-b9929810
+                      LinkedIn Profile
                     </a>
                   </p>
                 </div>
-
-                <!-- Right Column: Speaker Description -->
                 <div class="p-4 sm:w-1/2 w-full">
-                  <h3 class="text-xl font-semibold mb-3 text-left">
-                    About Speaker
-                  </h3>
+                  <h3 class="text-xl font-semibold mb-3 text-left">About Speaker</h3>
                   <p class="text-gray-800 text-justify">
-                    Dr Malka N. Halgamuge is a Senior Lecturer in Cybersecurity
-                    at RMIT University, Melbourne, Australia. She is the Chair
-                    of the IEEE Computational Intelligence Society, Victorian
-                    Section. From 2007-2021, Malka worked as a Researcher at the
-                    Department of Electrical and Electronic Engineering at the
-                    University of Melbourne. She obtained her PhD in the same
-                    department. She was awarded prestigious fellowships to work
-                    at the University of California, Los Angeles, Lund
-                    University, Sweden, and the Chinese Academy of Sciences
-                    (CAS), Beijing, among others. Malka was the Keynote Speaker,
-                    Plenary Speaker, Associate Editor, Editorial Board Member,
-                    and IEEE Senior Member. She was the Program Co-Chair, Track
-                    Chair, Publication Chair, Advisory Chair, Publicity
-                    Co-Chair, Session Chair, Guest Editor, and a Member of the
-                    TPC for 300 international conferences. She has presented 60
-                    invited/guest lectures in academia (e.g., Oxford University,
-                    Ohio State University), industry (e.g., IBM, KPMG East
-                    Africa, AISA), and at 10 IEEE sections. Malka has conducted
-                    18 media interviews, articles, radio interviews, and TV
-                    interviews (ABC News). She is passionate about research in
-                    IoTs, Data Communications, Cyber Security, Blockchain,
-                    Machine & Deep Learning, and security in Large Language
-                    Models. She has co-supervised 4 PhD students to completion
-                    at the University of Melbourne and currently supervises 6
-                    PhD students at RMIT University as the principal supervisor.
-                    Malka has been a chief investigator for multiple grants
-                    totalling over $1 million and has over 100 peer-reviewed
-                    publications in scientific journals and conference
-                    proceedings. She has been consecutively listed among the top
-                    2% of the world’s most cited researchers (Stanford
-                    University database, 2020-2024).
+                    Dr Malka N. Halgamuge is a Senior Lecturer in Cybersecurity at RMIT University, Melbourne, Australia. She is the Chair of the IEEE Computational Intelligence Society, Victorian Section. From 2007-2021, Malka worked as a Researcher at the Department of Electrical and Electronic Engineering at the University of Melbourne. She obtained her PhD in the same department. She was awarded prestigious fellowships to work at the University of California, Los Angeles, Lund University, Sweden, and the Chinese Academy of Sciences (CAS), Beijing, among others. Malka was the Keynote Speaker, Plenary Speaker, Associate Editor, Editorial Board Member, and IEEE Senior Member. She was the Program Co-Chair, Track Chair, Publication Chair, Advisory Chair, Publicity Co-Chair, Session Chair, Guest Editor, and a Member of the TPC for 300 international conferences. She has presented 60 invited/guest lectures in academia (e.g., Oxford University, Ohio State University), industry (e.g., IBM, KPMG East Africa, AISA), and at 10 IEEE sections. Malka has conducted 18 media interviews, articles, radio interviews, and TV interviews (ABC News). She is passionate about research in IoTs, Data Communications, Cyber Security, Blockchain, Machine & Deep Learning, and security in Large Language Models. She has co-supervised 4 PhD students to completion at the University of Melbourne and currently supervises 6 PhD students at RMIT University as the principal supervisor. Malka has been a chief investigator for multiple grants totalling over $1 million and has over 100 peer-reviewed publications in scientific journals and conference proceedings. She has been consecutively listed among the top 2% of the world’s most cited researchers (Stanford University database, 2020-2024).
                   </p>
                 </div>
               </div>
             </div>
           </div>
-        </section>
-
-        <section class="my-8 text-center">
-          <!-- Speaker Card for Dr. Saravana Balaji B -->
-          <div
-            class="flex flex-col sm:flex-row w-11/12 sm:w-1/2 lg:w-1/2 mx-auto items-center shadow-lg p-6 sm:px-2 lg:py-4 lg:px-0 mb-4 bg-white rounded-lg cursor-pointer justify-evenly"
-            onclick="toggleModal('modal-balaji')"
-          >
-            <img
-              src="./images/speakers/saravanabalaji.png"
-              alt="Dr. Saravana Balaji B"
-              class="w-4/5 sm:w-1/3 h-80 py-6"
-            />
-            <div class="text-left px-12 bg-gray-100 py-28 sm:w-1/2 w-full">
-              <h3 class="text-lg sm:text-xl font-semibold">
-                Dr. Saravana Balaji B (Senior Member - IEEE)
-              </h3>
-              <p>Department of Computing, De Montfort University Kazakhstan,</p>
-              <p>Almaty, Kazakhstan.</p>
-              <p class="text-blue-600">Click to know more</p>
-            </div>
-          </div>
-
-          <!-- Modal for Ms Suganya Annadurai -->
+        
+          <!-- Modal for Dr. Saravana Balaji B -->
           <div
             id="modal-balaji"
             class="hidden fixed inset-0 bg-gray-600 bg-opacity-50 overflow-y-auto h-full w-full"
@@ -969,85 +798,95 @@
             <div
               class="relative top-20 mx-auto p-5 border w-11/12 sm:w-3/4 lg:w-3/4 shadow-lg rounded-md bg-white"
             >
-              <!-- Close Button -->
               <button
                 class="absolute top-2 right-2 text-gray-500 hover:text-gray-800 text-3xl font-bold"
                 onclick="toggleModal('modal-balaji')"
-              >
-                &times;
-              </button>
-
-              <!-- Modal Content -->
+              >&times;</button>
               <div class="flex flex-col sm:flex-row">
-                <!-- Left Column: Speaker Info -->
-                <div
-                  class="bg-gray-100 p-4 sm:w-1/2 w-full flex flex-col items-center"
-                >
+                <div class="bg-gray-100 p-4 sm:w-1/2 w-full flex flex-col items-center">
                   <img
                     src="./images/speakers/saravanabalaji.png"
                     alt="Dr. Saravana Balaji B"
                     class="w-1/2 sm:h-80 mb-4"
                   />
-                  <h3 class="text-lg font-semibold">
-                    Dr. Saravana Balaji B (Senior Member - IEEE)
-                  </h3>
-                  <p class="text-gray-700">
-                    Department of Computing, De Montfort University Kazakhstan
-                  </p>
-                  <p class="text-gray-700">Almaty, Kazakhstan.</p>
+                  <h3 class="text-lg font-semibold">Dr. Saravana Balaji B</h3>
+                  <p class="text-gray-700">Department of Computing</p>
+                  <p class="text-gray-700">De Montfort University Kazakhstan</p>
+                  <p class="text-gray-700">Almaty, Kazakhstan</p>
                 </div>
-
-                <!-- Right Column: Speaker Description -->
                 <div class="p-4 sm:w-1/2 w-full">
-                  <h3 class="text-xl font-semibold mb-3 text-left">
-                    About Speaker
-                  </h3>
+                  <h3 class="text-xl font-semibold mb-3 text-left">About Speaker</h3>
                   <p class="text-gray-800 text-justify">
-                    He is currently affiliated with Department of Computing, De
-                    Montfort University Kazakhstan, Almaty, Kazakhstan. He is
-                    having 18 years of teaching and research experience. His
-                    research interests are machine learning, cloud computing and
-                    optimization techniques. He have been acted as a resource
-                    person for various workshops and faculty development
-                    programs organized by various institutions. He completed his
-                    undergraduate and postgraduate engineering degree in
-                    Computer Science and Engineering. He has earned his Ph.D.
-                    degree from Anna University Chennai under the faculty of
-                    Information and Communication Engineering. So far he has
-                    published more than 40 research articles in various indexed
-                    international journals and conferences.
+                    He is currently affiliated with Department of Computing, De Montfort University Kazakhstan, Almaty, Kazakhstan. He is having 18 years of teaching and research experience. His research interests are machine learning, cloud computing and optimization techniques. He have been acted as a resource person for various workshops and faculty development programs organized by various institutions. He completed his undergraduate and postgraduate engineering degree in Computer Science and Engineering. He has earned his Ph.D. degree from Anna University Chennai under the faculty of Information and Communication Engineering. 
+So far he has published more than 40 research articles in various indexed international journals and conferences.
+
                   </p>
                 </div>
               </div>
             </div>
           </div>
         </section>
+        
+        
+        
 
-        <section class="my-8 text-center">
+        <section class="my-8 text-center sm:mt-24 mt-16">
           <h2 class="text-2xl font-bold text-gray-800 mb-6">
             Green Innovations in Photonics and Optical Communication
           </h2>
-
-          <!-- Speaker Card for Dr.Prabu K -->
-          <div
-            class="flex flex-col sm:flex-row w-11/12 sm:w-1/2 lg:w-1/2 mx-auto items-center shadow-lg p-6 sm:px-2 lg:py-0 lg:px-0 mb-4 bg-white rounded-lg cursor-pointer justify-evenly"
-            onclick="toggleModal('modal-prabhuk')"
-          >
-            <img
-              src="./images/speakers/prabhu.png"
-              alt="Dr.Prabu K"
-              class="w-4/5 sm:w-1/3 h-96 py-6"
-            />
-            <div class="text-left px-12 bg-gray-100 py-28 sm:w-1/2 w-full">
-              <h3 class="text-lg sm:text-xl font-semibold">Dr.Prabu K</h3>
-              <p>Associate Professor</p>
-              <p>TDept. of Electronics & Communication Engineering</p>
-              <p>NIT Suratkal, India</p>
-              <p class="text-blue-600">Click to know more</p>
+        
+          <!-- Container for Speaker Cards -->
+          <div class="flex flex-wrap justify-center gap-4">
+            <!-- Speaker Card for Dr. Prabu K -->
+            <div
+              class="w-full sm:w-1/2 lg:w-1/3 shadow-lg p-4 sm:p-0 sm:px-4 bg-white rounded-lg cursor-pointer mx-4 sm:mx-0"
+              
+            >
+              <img
+                src="./images/speakers/prabhu.png"
+                alt="Dr. Prabu K"
+                class="w-full h-2/3 mb-4 rounded-t-lg"
+              />
+              <div class="text-left">
+                <h3 class="text-lg font-semibold">Dr. Prabu K</h3>
+                <p>Associate Professor</p>
+                <p>Dept. of Electronics & Communication Engineering</p>
+                <p>NIT Suratkal, India</p>
+                <button
+                  class="bg-green-600 px-5 py-2 mt-8 text-white rounded-lg hover:bg-green-800"
+                  onclick="toggleModal('modal-prabhuk')"
+                >
+                  Know More
+                </button>
+              </div>
+            </div>
+        
+            <!-- Speaker Card for Dr. M. Meenakshi -->
+            <div
+              class="w-full sm:w-1/2 lg:w-1/3 shadow-lg p-4 bg-white rounded-lg cursor-pointer mx-4 sm:mx-0"
+              
+            >
+              <img
+                src="./images/speakers/meenakshim.png"
+                alt="Dr. M. Meenakshi"
+                class="w-full h-2/3 mb-4 rounded-t-lg"
+              />
+              <div class="text-left pb-28 sm:pb-0">
+                <h3 class="text-lg font-semibold">Dr. M. Meenakshi</h3>
+                <p>Professor & Director, Centre for Wireless System Design</p>
+                <p>Dept. of Electronics & Communication Engineering</p>
+                <p>CEG, Anna University</p>
+                <button
+                  class="bg-green-600 px-5 py-2 text-white rounded-lg mt-4 sm:mt-8 hover:bg-green-800"
+                  onclick="toggleModal('modal-meenakshi')"
+                >
+                  Know More
+                </button>
+              </div>
             </div>
           </div>
-
-          <!-- Modal for Dr.Prabu K -->
+        
+          <!-- Modal for Dr. Prabu K -->
           <div
             id="modal-prabhuk"
             class="hidden fixed inset-0 bg-gray-600 bg-opacity-50 overflow-y-auto h-full w-full"
@@ -1062,102 +901,38 @@
               >
                 &times;
               </button>
-
+        
               <!-- Modal Content -->
               <div class="flex flex-col sm:flex-row">
-                <!-- Left Column: Speaker Info -->
                 <div
                   class="bg-gray-100 p-4 sm:w-1/2 w-full flex flex-col items-center"
                 >
                   <img
                     src="./images/speakers/prabhu.png"
-                    alt="Dr.Prabu K"
+                    alt="Dr. Prabu K"
                     class="w-1/2 sm:h-96 mb-4"
                   />
-                  <h3 class="text-lg font-semibold">Dr.Prabu K</h3>
+                  <h3 class="text-lg font-semibold">Dr. Prabu K</h3>
                   <p class="text-gray-700">Associate Professor</p>
                   <p class="text-gray-700">
                     Dept. of Electronics & Communication Engineering
                   </p>
                   <p class="text-gray-700">NIT Suratkal</p>
                 </div>
-
-                <!-- Right Column: Speaker Description -->
                 <div class="p-4 sm:w-1/2 w-full">
-                  <h3 class="text-xl font-semibold mb-3 text-left">
-                    About Speaker
-                  </h3>
+                  <h3 class="text-xl font-semibold mb-3 text-left">About Speaker</h3>
                   <p class="text-gray-800 text-justify">
-                    Dr. Prabu K is an Associate Professor in the Department of
-                    Electrical and Computer Engineering at the National
-                    Institute of Technology Karnataka (NIT-K) in Surathkal.
-                    Prior to this, he was an Associate Professor at VIT
-                    University Vellore's SENSE, as well as at EEC, SRM Group,
-                    LICET, the Loyola group of institutions, and SGC Services
-                    Pvt. Ltd. in the CIPA Project NIC Puducherry. Over all he
-                    has 11+ years of experience with the wireless and optical
-                    communications domain. He is a notable alumnus of Anna
-                    University, where he graduated and post graduated in 2007
-                    and 2010, respectively, before pursuing a PhD at NIT Trichy.
-                    He is a Senior Member of the IEEE. Prof. Prabu has mentored
-                    around 40 PhD and Master's students, significantly
-                    contributing to academic and professional growth. He has
-                    disseminated valuable knowledge through one patent, three
-                    funded projects totaling INR 2.2 Crores, and authored 81
-                    technical papers, including 70 in prestigious international
-                    journals and 16 at international conferences. His
-                    contributions extend to two book chapters and one book
-                    publication. Prof. Prabu has delivered over 150 invited and
-                    conference talks at renowned institutions such as IISc
-                    Bangalore, IIT Indore, and IIT Goa, and led five training
-                    programs that have benefitted thousands of teachers,
-                    students, and working professionals. Recognized for his
-                    academic prowess, Dr. Prabu has received fellowships from
-                    the Government of India, including the University Grant
-                    Commission (UGC) and the Technical Education Quality
-                    Improvement Programme (TEQIP). He has also been honored with
-                    the TEQIP International Foreign Travel Grant for his
-                    laboratory visits to Nanyang Technological University (NTU),
-                    Singapore. He visited the Asia Pacific University of
-                    Technology & Innovation (APU) in Malaysia to present his
-                    research paper at the IEEE 21st Student Conference on
-                    Research and Development (SCOReD). Notably, Dr. Prabu's
-                    contributions have earned him a place among the top 2% of
-                    scientists worldwide, as acknowledged by Elsevier and
-                    Stanford University US consecutively in the years 2019,
-                    2020, 2021, and 2022. In 2020, his world rank stood at 398
-                    in the field of optoelectronics and telecommunication. His
-                    research interests include Wireless Optical Communication
-                    (FSO, VLC, and Underwater), Optical Sensors, Nano-Photonics,
-                    5G, Antennas and 6G–IoT.
+                    Dr. Prabu K is an Associate Professor in the Department of Electrical and Computer Engineering at the National Institute of Technology Karnataka (NIT-K) in Surathkal. Prior to this, he was an Associate Professor at VIT University Vellore's SENSE, as well as at EEC, SRM Group, LICET, the Loyola group of institutions, and SGC Services Pvt. Ltd. in the CIPA Project NIC Puducherry. Over all he has 11+ years of experience with the wireless and optical communications domain. He is a notable alumnus of Anna University, where he graduated and post graduated in 2007 and 2010, respectively, before pursuing a PhD at NIT Trichy. He is a Senior Member of the IEEE.
+                    Prof. Prabu has mentored around 40 PhD and Master's students, significantly contributing to academic and professional growth. He has disseminated valuable knowledge through one patent, three funded projects totaling INR 2.2 Crores, and authored 81 technical papers, including 70 in prestigious international journals and 16 at international conferences. His contributions extend to two book chapters and one book publication. Prof. Prabu has delivered over 150 invited and conference talks at renowned institutions such as IISc Bangalore, IIT Indore, and IIT Goa, and led five training programs that have benefitted thousands of teachers, students, and working professionals. Recognized for his academic prowess, Dr. Prabu has received fellowships from the Government of India, including the University Grant Commission (UGC) and the Technical Education Quality Improvement Programme (TEQIP). He has also been honored with the TEQIP International Foreign Travel Grant for his laboratory visits to Nanyang Technological University (NTU), Singapore. He visited the Asia Pacific University of Technology & Innovation (APU) in Malaysia to present his research paper at the IEEE 21st Student Conference on Research and Development (SCOReD). Notably, Dr. Prabu's contributions have earned him a place among the top 2% of scientists worldwide, as acknowledged by Elsevier and Stanford University US consecutively in the years 2019, 2020, 2021, and 2022. In 2020, his world rank stood at 398 in the field of optoelectronics and telecommunication.
+                    His research interests include Wireless Optical Communication (FSO, VLC, and Underwater), Optical Sensors, Nano-Photonics, 5G, Antennas and 6G–IoT.
+                    
                   </p>
                 </div>
               </div>
             </div>
           </div>
-        </section>
-
-        <section class="my-8 text-center">
-          <!-- Speaker Card for Dr.M.Meenakshi -->
-          <div
-            class="flex flex-col sm:flex-row w-11/12 sm:w-1/2 lg:w-1/2 mx-auto items-center shadow-lg p-6 sm:px-2 lg:py-4 lg:px-0 mb-4 bg-white rounded-lg cursor-pointer justify-evenly"
-            onclick="toggleModal('modal-meenakshi')"
-          >
-            <img
-              src="./images/speakers/meenakshim.png"
-              alt="Dr.M.Meenakshi"
-              class="w-4/5 sm:w-1/3 h-80 py-6"
-            />
-            <div class="text-left px-12 bg-gray-100 py-28 sm:w-1/2 w-full">
-              <h3 class="text-lg sm:text-xl font-semibold">Dr.M.Meenakshi</h3>
-              <p>Professor & Director, Centre for Wireless System Design</p>
-              <p>Dept. of Electronics & Communication Engineering</p>
-              <p>CEG, Anna University</p>
-              <p class="text-blue-600">Click to know more</p>
-            </div>
-          </div>
-
-          <!-- Modal for Dr. M Meenakshi -->
+        
+          <!-- Modal for Dr. M. Meenakshi -->
           <div
             id="modal-meenakshi"
             class="hidden fixed inset-0 bg-gray-600 bg-opacity-50 overflow-y-auto h-full w-full"
@@ -1165,26 +940,23 @@
             <div
               class="relative top-20 mx-auto p-5 border w-11/12 sm:w-3/4 lg:w-3/4 shadow-lg rounded-md bg-white"
             >
-              <!-- Close Button -->
               <button
                 class="absolute top-2 right-2 text-gray-500 hover:text-gray-800 text-3xl font-bold"
                 onclick="toggleModal('modal-meenakshi')"
               >
                 &times;
               </button>
-
-              <!-- Modal Content -->
+        
               <div class="flex flex-col sm:flex-row">
-                <!-- Left Column: Speaker Info -->
                 <div
                   class="bg-gray-100 p-4 sm:w-1/2 w-full flex flex-col items-center"
                 >
                   <img
                     src="./images/speakers/meenakshim.png"
-                    alt="Dr.M.Meenakshi"
+                    alt="Dr. M. Meenakshi"
                     class="w-1/2 sm:h-80 mb-4"
                   />
-                  <h3 class="text-lg font-semibold">Dr.M.Meenakshi</h3>
+                  <h3 class="text-lg font-semibold">Dr. M. Meenakshi</h3>
                   <p class="text-gray-700">
                     Professor & Director, Centre for Wireless System Design
                   </p>
@@ -1193,12 +965,8 @@
                   </p>
                   <p class="text-gray-700">CEG, Anna University</p>
                 </div>
-
-                <!-- Right Column: Speaker Description -->
                 <div class="p-4 sm:w-1/2 w-full">
-                  <h3 class="text-xl font-semibold mb-3 text-left">
-                    About Speaker
-                  </h3>
+                  <h3 class="text-xl font-semibold mb-3 text-left">About Speaker</h3>
                   <p class="text-gray-800 text-justify">
                     Meenakshi Murugappan is a professor in the Department of
                     Electronics and Communication Engineering, College of
@@ -1220,196 +988,98 @@
             </div>
           </div>
         </section>
+        
 
-        <section class="my-8 text-center">
+
+
+        <section class="my-8 text-center sm:mt-24 mt-16">
           <h2 class="text-2xl font-bold text-gray-800 mb-6">
             Data Driven Innovations in Electronics Engineering
           </h2>
-
-          <!-- Speaker Card for Dr. Gunasekaran Thangavel -->
-          <div
-            class="flex flex-col sm:flex-row w-11/12 sm:w-1/2 lg:w-1/2 mx-auto items-center shadow-lg p-6 sm:px-2 lg:py-4 lg:px-0 mb-4 bg-white rounded-lg cursor-pointer justify-evenly"
-            onclick="toggleModal('modal-guna')"
-          >
-            <img
-              src="./images/speakers/gunasekaran.png"
-              alt="Dr. Gunasekaran Thangavel"
-              class="w-4/5 sm:w-1/3 h-80 py-6"
-            />
-            <div class="text-left px-12 bg-gray-100 py-28 sm:w-1/2 w-full">
-              <h3 class="text-lg sm:text-xl font-semibold">
-                Dr. Gunasekaran Thangavel
-              </h3>
-              <p>Deputy Program Director</p>
-              <p>University of Technology and Applied Sciences</p>
-              <p>Muscat, Oman</p>
-              <p class="text-blue-600">Click to know more</p>
+        
+          <!-- Container for Speaker Cards -->
+          <div class="flex flex-wrap justify-center gap-4 mb-28">
+            <!-- Speaker Card for Dr. Gunasekaran Thangavel -->
+            <div class="w-full sm:w-1/2 lg:w-1/3 shadow-lg mx-4 sm:mx-0 p-4 bg-white rounded-lg cursor-pointer">
+              <img
+                src="./images/speakers/gunasekaran.png"
+                alt="Dr. Gunasekaran Thangavel"
+                class="w-full sm:h-3/4 rounded-t-lg"
+              />
+              <div class="text-left px-4 py-4">
+                <h3 class="text-lg sm:text-xl font-semibold">Dr. Gunasekaran Thangavel</h3>
+                <p>Deputy Program Director</p>
+                <p>University of Technology and Applied Sciences</p>
+                <p>Muscat, Oman</p>
+                <button class="bg-green-600 px-5 py-2 mt-4 text-white rounded-lg hover:bg-green-800 sm:mb-20" onclick="toggleModal('modal-guna')">Know More</button>
+              </div>
+            </div>
+        
+            <!-- Speaker Card for Srinivasan Narayanan -->
+            <div class="w-full sm:w-1/2 lg:w-1/3 shadow-lg p-4 bg-white rounded-lg cursor-pointer mx-4 sm:mx-0">
+              <img
+                src="./images/speakers/narayanan.png"
+                alt="Srinivasan Narayanan"
+                class="w-full sm:h-3/4 rounded-t-lg"
+              />
+              <div class="text-left px-4 py-4">
+                <h3 class="text-lg sm:text-xl font-semibold">Srinivasan Narayanan</h3>
+                <p>Sr. Director</p>
+                <p>Oracle India Pvt Ltd</p>
+                <p>Kadubeesanahalli, Bengaluru, Karnataka</p>
+                <button class="bg-green-600 px-5 py-2 mt-4 text-white rounded-lg hover:bg-green-800" onclick="toggleModal('modal-narayanan')">Know More</button>
+              </div>
             </div>
           </div>
-
+        
+          <!-- Modals -->
           <!-- Modal for Dr. Gunasekaran Thangavel -->
-          <div
-            id="modal-guna"
-            class="hidden fixed inset-0 bg-gray-600 bg-opacity-50 overflow-y-auto h-full w-full"
-          >
-            <div
-              class="relative top-20 mx-auto p-5 border w-11/12 sm:w-3/4 lg:w-3/4 shadow-lg rounded-md bg-white"
-            >
-              <!-- Close Button -->
-              <button
-                class="absolute top-2 right-2 text-gray-500 hover:text-gray-800 text-3xl font-bold"
-                onclick="toggleModal('modal-guna')"
-              >
-                &times;
-              </button>
-
-              <!-- Modal Content -->
+          <div id="modal-guna" class="hidden fixed inset-0 bg-gray-600 bg-opacity-50 overflow-y-auto h-full w-full">
+            <div class="relative top-20 mx-auto p-5 border w-11/12 sm:w-3/4 lg:w-3/4 shadow-lg rounded-md bg-white">
+              <button class="absolute top-2 right-2 text-gray-500 hover:text-gray-800 text-3xl font-bold" onclick="toggleModal('modal-guna')">&times;</button>
               <div class="flex flex-col sm:flex-row">
-                <!-- Left Column: Speaker Info -->
-                <div
-                  class="bg-gray-100 p-4 sm:w-1/2 w-full flex flex-col items-center"
-                >
-                  <img
-                    src="./images/speakers/gunasekaran.png"
-                    alt="Dr. Gunasekaran Thangavel"
-                    class="w-1/2 sm:h-80 mb-4"
-                  />
-                  <h3 class="text-lg font-semibold">
-                    Dr. Gunasekaran Thangavel
-                  </h3>
+                <div class="bg-gray-100 p-4 sm:w-1/2 w-full flex flex-col items-center">
+                  <img src="./images/speakers/gunasekaran.png" alt="Dr. Gunasekaran Thangavel" class="w-1/2 sm:h-80 mb-4" />
+                  <h3 class="text-lg font-semibold">Dr. Gunasekaran Thangavel</h3>
                   <p class="text-gray-700">Deputy Program Director</p>
-                  <p class="text-gray-700">
-                    University of Technology and Applied Sciences
-                  </p>
+                  <p class="text-gray-700">University of Technology and Applied Sciences</p>
                   <p class="text-gray-700">Muscat, Oman</p>
                 </div>
-
-                <!-- Right Column: Speaker Description -->
                 <div class="p-4 sm:w-1/2 w-full">
-                  <h3 class="text-xl font-semibold mb-3 text-left">
-                    About Speaker
-                  </h3>
-                  <p class="text-gray-800 text-justify">
-                    Dr. Gunasekaran Thangavel is a Senior Lecturer and Deputy
-                    Program Director specializing in Electronics and
-                    Communication Engineering (ECE) at the University of
-                    Technology and Applied Sciences in Muscat, Oman. With a
-                    Ph.D. in Information and Communication Engineering from Anna
-                    University, Chennai, he brings 24 years of teaching
-                    experience and over 15 years in research. His expertise
-                    spans wireless communications, antenna design, and
-                    bio-electromagnetics, with a publication record of 49
-                    papers, including international journals,conferences, and
-                    book chapters. Dr. Thangavel has guided over 75
-                    undergraduate and postgraduate projects and secured multiple
-                    research grants. He has also filed five patents, focusing on
-                    machine learning and IoT applications. Recognized for his
-                    contributions, he has received the Role Model Employee award
-                    twice at UTAS and leads initiatives in curriculum
-                    development and program design. His professional memberships
-                    include IEEE, ISTE, and IAENG, and he frequently reviews for
-                    top engineering journals.
-                  </p>
+                  <h3 class="text-xl font-semibold mb-3 text-left">About Speaker</h3>
+                  <p class="text-gray-800 text-justify">Dr. Gunasekaran Thangavel is a Senior Lecturer and Deputy Program Director specializing in Electronics and Communication Engineering (ECE) at the University of Technology and Applied Sciences in Muscat, Oman. With a Ph.D. in Information and Communication Engineering from Anna University, Chennai, he brings 24 years of teaching experience and over 15 years in research. His expertise spans wireless communications, antenna design, and bio-electromagnetics, with a publication record of 49 papers, including international journals,conferences, and book chapters. Dr. Thangavel has guided over 75 undergraduate and postgraduate projects and secured multiple research grants. He has also filed five patents, focusing on machine learning and IoT applications. Recognized for his contributions, he has received the Role Model Employee award twice at UTAS and leads initiatives in curriculum development and program design. His professional memberships include IEEE, ISTE, and IAENG, and he frequently reviews for top engineering journals.</p>
                 </div>
               </div>
             </div>
           </div>
-        </section>
-
-        <section class="my-8 text-center">
-          <!-- Speaker Card for Srinivasan Narayanan -->
-          <div
-            class="flex flex-col sm:flex-row w-11/12 sm:w-1/2 lg:w-1/2 mx-auto items-center shadow-lg p-6 sm:px-2 lg:py-4 lg:px-0 mb-4 bg-white rounded-lg cursor-pointer justify-evenly"
-            onclick="toggleModal('modal-narayanan')"
-          >
-            <img
-              src="./images/speakers/narayanan.png"
-              alt="Srinivasan Narayanan"
-              class="w-4/5 sm:w-1/3 h-80 py-6"
-            />
-            <div class="text-left px-12 bg-gray-100 py-28 sm:w-1/2 w-full">
-              <h3 class="text-lg sm:text-xl font-semibold">
-                Srinivasan Narayanan
-              </h3>
-              <p>Sr.Director</p>
-              <p>Oracle India Pvt Ltd</p>
-              <p>Kadubeesanahalli, Bengaluru, Karnataka</p>
-              <p class="text-blue-600">Click to know more</p>
-            </div>
-          </div>
-
+        
           <!-- Modal for Srinivasan Narayanan -->
-          <div
-            id="modal-narayanan"
-            class="hidden fixed inset-0 bg-gray-600 bg-opacity-50 overflow-y-auto h-full w-full"
-          >
-            <div
-              class="relative top-20 mx-auto p-5 border w-11/12 sm:w-3/4 lg:w-3/4 shadow-lg rounded-md bg-white"
-            >
-              <!-- Close Button -->
-              <button
-                class="absolute top-2 right-2 text-gray-500 hover:text-gray-800 text-3xl font-bold"
-                onclick="toggleModal('modal-narayanan')"
-              >
-                &times;
-              </button>
-
-              <!-- Modal Content -->
+          <div id="modal-narayanan" class="hidden fixed inset-0 bg-gray-600 bg-opacity-50 overflow-y-auto h-full w-full">
+            <div class="relative top-20 mx-auto p-5 border w-11/12 sm:w-3/4 lg:w-3/4 shadow-lg rounded-md bg-white">
+              <button class="absolute top-2 right-2 text-gray-500 hover:text-gray-800 text-3xl font-bold" onclick="toggleModal('modal-narayanan')">&times;</button>
               <div class="flex flex-col sm:flex-row">
-                <!-- Left Column: Speaker Info -->
-                <div
-                  class="bg-gray-100 p-4 sm:w-1/2 w-full flex flex-col items-center"
-                >
-                  <img
-                    src="./images/speakers/narayanan.png"
-                    alt="Srinivasan Narayanan"
-                    class="w-1/2 sm:h-80 mb-4"
-                  />
+                <div class="bg-gray-100 p-4 sm:w-1/2 w-full flex flex-col items-center">
+                  <img src="./images/speakers/narayanan.png" alt="Srinivasan Narayanan" class="w-1/2 sm:h-80 mb-4" />
                   <h3 class="text-lg font-semibold">Srinivasan Narayanan</h3>
-                  <p class="text-gray-700">Sr.Director</p>
+                  <p class="text-gray-700">Sr. Director</p>
                   <p class="text-gray-700">Oracle India Pvt Ltd</p>
-                  <p class="text-gray-700">
-                    Kadubeesanahalli, Bengaluru, Karnataka
-                  </p>
+                  <p class="text-gray-700">Kadubeesanahalli, Bengaluru, Karnataka</p>
                 </div>
-
-                <!-- Right Column: Speaker Description -->
                 <div class="p-4 sm:w-1/2 w-full">
-                  <h3 class="text-xl font-semibold mb-3 text-left">
-                    About Speaker
-                  </h3>
-                  <p class="text-gray-800 text-justify">
-                    Srinivasan Narayanan Graduated in Computer Science in
-                    Engineering from Anna University in 2001.He is With Oracle
-                    over 2 decades, specializing in the turnaround and setup of
-                    businesses across geographies, He currently into Delivery
-                    and transformation of Oracle Consulting, responsible for the
-                    sales and delivery of Consulting services and solutions
-                    across Oracle Applications and Technology.Passionate about
-                    solving business problems for our customers to deliver the
-                    Customer for Life mantra, He drive san inclusive culture of
-                    innovation and excellence, ensuring execution of adaptive
-                    strategies to realize our vision through enduring
-                    partnerships to collaboratively create success for customers
-                    to be our advocates. He has been instrumental in driving
-                    transformation for several marquee organizations across
-                    North America, South America, EMEA and APAC, helping them
-                    realize value through business led technology innovation and
-                    transformation. Successful in multiple leadership positions
-                    with Oracle over 20 years, He is leading Oracle’s Cloud
-                    portfolio over the past 10 years from inception, guiding
-                    customers across FSI, Public Sector, Health, Retail,
-                    Manufacturing and Higher Ed Globally to transform their
-                    business with Oracle Cloud. His prime drivers for the team
-                    are to : 1. Solve Business problems for our customers and
-                    make them Advocates for Oracle, thereby 2. Growing Oracle
-                    ERP- Fusion , E-Business Suite , JD Edwards ,OTM.
-                  </p>
+                  <h3 class="text-xl font-semibold mb-3 text-left">About Speaker</h3>
+                  <p class="text-gray-800 text-justify">Srinivasan Narayanan Graduated in Computer Science in Engineering from Anna University in 2001.He is With Oracle over 2 decades, specializing in the turnaround and setup of businesses across geographies, He currently into Delivery and transformation of Oracle Consulting, responsible for the sales and delivery of Consulting services and solutions across Oracle Applications and Technology.Passionate about solving business problems for our customers to deliver the Customer for Life mantra, He drive san inclusive culture of innovation and excellence, ensuring execution of adaptive strategies to realize our vision
+                    through enduring partnerships to collaboratively create success for customers to be our advocates. He has been instrumental in driving transformation for several marquee organizations across North America, South America, EMEA and APAC, helping them realize value through business led technology innovation and transformation. Successful in multiple leadership positions with Oracle over 20 years, He is leading Oracle’s Cloud portfolio
+                    over the past 10 years from inception, guiding customers across FSI, Public Sector, Health, Retail, Manufacturing and Higher Ed Globally to transform their business with Oracle Cloud.
+                    His prime drivers for the team are to :
+                    1. Solve Business problems for our customers and make them Advocates for Oracle, thereby
+                    2. Growing Oracle ERP- Fusion , E-Business Suite , JD Edwards ,OTM.
+                    </p>
                 </div>
               </div>
             </div>
           </div>
         </section>
+
       </div>
 
       <footer class="bg-white border-black border-t-2 w-full">
