@@ -8,8 +8,54 @@
     />
     <title>Call for Papers</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      /* Loading animation styles */
+      .loading {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(255, 255, 255, 0.8);
+        z-index: 1000;
+      }
+
+      .loading div {
+        width: 30px;
+        height: 30px;
+        margin: 5px;
+        background: #3498db;
+        animation: bounce 1.2s infinite ease-in-out;
+      }
+
+      .loading div:nth-child(1) {
+        animation-delay: -0.32s;
+      }
+      .loading div:nth-child(2) {
+        animation-delay: -0.16s;
+      }
+
+      @keyframes bounce {
+        0%,
+        80%,
+        100% {
+          transform: scale(0);
+        }
+        40% {
+          transform: scale(1);
+        }
+      }
+    </style>
   </head>
   <body>
+    <div class="loading" id="loading">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
     <div id="root">
       <div class="flex flex-col md:flex-row items-center p-4">
         <img
@@ -30,7 +76,9 @@
           <h2 class="text-md font-semibold sm:text-xl mt-1 text-gray-600">
             19<sup>th</sup> - 21<sup>st</sup> March, 2025
           </h2>
-          <h2 class="text-md font-semibold sm:text-2xl mt-1 text-green-800">
+          <h2
+            class="text-md capitalize font-semibold sm:text-2xl mt-1 text-green-800"
+          >
             An international conference organized by
           </h2>
           <h2 class="text-md font-semibold sm:text-2xl mt-1 text-red-500">
@@ -78,7 +126,7 @@
 
           <!-- Mobile Menu -->
           <div
-            class="hidden w-full flex items-start flex-col space-y-2 md:hidden"
+            class="hidden w-full flex items-start flex-col space-y-2 md:hidden mt-4"
             id="navbar-default"
           >
             <a
@@ -241,10 +289,10 @@
             through the Conference Management ToolKit (CMT) Online Submission
             Portal. Please ensure that the paper is original and has not been
             submitted or published elsewhere. The conference features seven
-            different symposiums to choose from. All accepted and presented papers
-            from the conference are planned to be published as scopus indexed
-            proceedings, with a few selected papers to be submitted in scopus
-            indexed journals.
+            different symposiums to choose from. All accepted and presented
+            papers from the conference are planned to be published as scopus
+            indexed proceedings, with a few selected papers to be submitted in
+            scopus indexed journals.
           </p>
         </center>
         <div
@@ -295,7 +343,9 @@
                 aria-labelledby="accordion-vlsi-heading-1"
               >
                 <div class="p-5 border border-b-0 border-gray-200">
-                  <h3 class="text-2xl font-normal text-center">Symposium Chairs</h3>
+                  <h3 class="text-2xl font-normal text-center">
+                    Symposium Chairs
+                  </h3>
                   <div
                     class="flex flex-row flex-wrap mt-5 justify-around items-center w-full border-2 border-black"
                   >
@@ -434,7 +484,9 @@
                 aria-labelledby="accordion-magnet-heading-2"
               >
                 <div class="p-5 border border-b-0 border-gray-200">
-                  <h3 class="text-2xl font-normal text-center">Symposium Chairs</h3>
+                  <h3 class="text-2xl font-normal text-center">
+                    Symposium Chairs
+                  </h3>
                   <div
                     class="flex flex-row flex-wrap mt-5 justify-around items-center w-full border-2 border-black"
                   >
@@ -596,7 +648,9 @@
                 aria-labelledby="accordion-photonics-heading-3"
               >
                 <div class="p-5 border border-b-0 border-gray-200">
-                  <h3 class="text-2xl font-normal text-center">Symposium Chairs</h3>
+                  <h3 class="text-2xl font-normal text-center">
+                    Symposium Chairs
+                  </h3>
                   <div
                     class="flex flex-row flex-wrap mt-5 justify-around items-center w-full border-2 border-black"
                   >
@@ -752,7 +806,9 @@
                 aria-labelledby="accordion-signal-image-heading-4"
               >
                 <div class="p-5 border border-b-0 border-gray-200">
-                  <h3 class="text-2xl font-normal text-center">Symposium Chairs</h3>
+                  <h3 class="text-2xl font-normal text-center">
+                    Symposium Chairs
+                  </h3>
                   <div
                     class="flex flex-row flex-wrap mt-5 justify-around items-center w-full border-2 border-black"
                   >
@@ -883,7 +939,9 @@
                 aria-labelledby="accordion-sustainable-intelligent-heading-5"
               >
                 <div class="p-5 border border-b-0 border-gray-200">
-                  <h3 class="text-2xl font-normal text-center">Symposium Chairs</h3>
+                  <h3 class="text-2xl font-normal text-center">
+                    Symposium Chairs
+                  </h3>
                   <div
                     class="flex flex-row flex-wrap mt-5 justify-around items-center w-full border-2 border-black"
                   >
@@ -1018,7 +1076,9 @@
                 aria-labelledby="accordion-intelligent-wireless-heading-6"
               >
                 <div class="p-5 border border-b-0 border-gray-200">
-                  <h3 class="text-2xl font-normal text-center">Symposium Chairs</h3>
+                  <h3 class="text-2xl font-normal text-center">
+                    Symposium Chairs
+                  </h3>
                   <div
                     class="flex flex-row flex-wrap mt-5 justify-around items-center w-full border-2 border-black"
                   >
@@ -1153,7 +1213,9 @@
                 aria-labelledby="accordion-data-driven-innovations-heading-7"
               >
                 <div class="p-5 border border-b-0 border-gray-200">
-                  <h3 class="text-2xl font-normal text-center">Symposium Chairs</h3>
+                  <h3 class="text-2xl font-normal text-center">
+                    Symposium Chairs
+                  </h3>
                   <div
                     class="flex flex-row flex-wrap mt-5 justify-around items-center w-full border-2 border-black"
                   >
@@ -1421,5 +1483,14 @@
       });
     </script>
     <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.js"></script>
+    <script>
+      // JavaScript to manage loading animation
+      window.addEventListener("load", () => {
+        // Hide the loading animation
+        document.getElementById("loading").style.display = "none";
+        // Show the root content
+        document.getElementById("root").style.display = "block";
+      });
+    </script>
   </body>
 </html>
