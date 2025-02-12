@@ -237,54 +237,402 @@
 
       <!-- App -->
       <div class="App">
-        <div class="w-full mx-auto py-12 px-8">
+        <div class="w-full mx-auto pt-12 px-8">
           <div class="max-w-6xl mx-auto">
             <h2
               class="mt-10 scroll-m-20 border-b border-[#35575a] pb-2 text-3xl font-bold tracking-tight transition-colors first:mt-0 w-[50%] mx-auto text-[#35575a] text-center mb-8"
             >
               KEYNOTE SPEAKER
             </h2>
+            <table
+              class="table-auto max-w-screen-xl mx-auto border-collapse border border-gray-300 bg-white shadow-md overflow-x-auto"
+            >
+              <thead class="bg-[#addfca]">
+                <tr>
+                  <th class="p-4">Photo</th>
+                  <th class="p-4">Name</th>
+                  <th class="p-4">Credentials</th>
+                  <th class="p-4">Symposium</th>
+                  <th class="p-4">About</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="border-b border-gray-300 text-center">
+                  <td class="p-4">
+                    <img
+                      src="./images/speakers/alphones.png"
+                      alt="Dr. A Alphones"
+                      class="w-20 h-24 mx-auto rounded-lg"
+                    />
+                  </td>
+                  <td class="p-4 font-semibold text-gray-800">
+                    Dr. A Alphones
+                  </td>
+                  <td class="p-4">
+                    Professor, Nanyang Technological University
+                  </td>
+                  <td class="p-4">KEYNOTE SPEAKER</td>
+                  <td class="p-4">
+                    <button
+                      class="bg-green-600 px-4 py-2 text-white rounded-lg hover:bg-green-800"
+                      onclick="toggleModal('modal-alphones')"
+                    >
+                      Know More
+                    </button>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
           </div>
         </div>
 
-
-        <div
-        class="container mx-auto py-16 flex flex-col lg:flex-row gap-8 bg-[#dff2ea]"
-      >
-        <!-- Sustainable Innovations in VLSI Devices Section -->
-        <section class="flex-1 text-center">
-          <!-- Container for Speaker Cards -->
-          <div class="flex flex-wrap justify-center gap-4">
-            <!-- Speaker Card for Alphones -->
-            <div
-              class="sm:w-1/6 shadow-md shadow-gray-500 p-4 bg-white rounded-lg cursor-pointer"
+        <div class="container mx-auto pt-20">
+          <table
+            class="table-auto max-w-screen-xl mx-auto border-collapse border border-gray-300 my-8"
+          >
+            <h2
+              class="my-10 scroll-m-20 border-b border-[#35575a] pb-2 text-3xl font-bold tracking-tight transition-colors first:mt-0 w-[50%] mx-auto text-[#35575a] text-center mb-8 uppercase"
             >
-              <div class="overflow-hidden rounded-t-lg">
-                <img
-                  src="./images/speakers/alphones.png"
-                  alt="Dr. A Alphones"
-                  class="w-52 h-56 rounded-t-lg mx-auto"
-                />
-              </div>
-              <div class="text-left px-4 py-4">
-                <h3 class="text-lg font-semibold text-gray-800">
-                  Dr. A Alphones
-                </h3>
-                <p class="text-sm text-gray-600">Professor</p>
-                <p class="text-sm text-gray-600">Nanyang Technological University</p>
-                <button
-                  class="bg-green-600 px-4 py-2 mt-4 text-white rounded-lg hover:bg-green-800"
-                  onclick="toggleModal('modal-alphones')"
-                >
-                  Know More
-                </button>
-              </div>
-            </div>
-          </div>
-        </section>
-      </div>
+              Invited International SPEAKERS
+            </h2>
+            <thead>
+              <tr class="bg-[#addfca]">
+                <th class="border border-gray-300 px-4 py-2">Photo</th>
+                <th class="border border-gray-300 px-4 py-2">Name</th>
+                <th class="border border-gray-300 px-4 py-2">Credentials</th>
+                <th class="border border-gray-300 px-4 py-2">Symposium</th>
+                <th class="border border-gray-300 px-4 py-2">About</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="border border-gray-300 px-4 py-2">
+                  <img
+                    src="./images/speakers/malkan.png"
+                    alt="Dr Malka N. Halgamuge"
+                    class="w-24 h-28 mx-auto"
+                  />
+                </td>
+                <td class="border border-gray-300 px-4 py-2">
+                  Dr Malka N. Halgamuge
+                </td>
+                <td class="border border-gray-300 px-4 py-2">
+                  RMIT University, Melbourne, Australia
+                </td>
+                <td class="border border-gray-300 px-4 py-2">
+                  Intelligent Wireless Communication Networks
+                </td>
+                <td class="border border-gray-300 px-4 py-2">
+                  <button
+                    class="bg-green-600 px-4 py-2 text-white rounded-lg hover:bg-green-800"
+                    onclick="toggleModal('modal-malka')"
+                  >
+                    Know More
+                  </button>
+                </td>
+              </tr>
+              <tr>
+                <td class="border border-gray-300 px-4 py-2">
+                  <img
+                    src="./images/speakers/saravanabalaji.png"
+                    alt="Dr. Saravana Balaji B"
+                    class="w-24 h-28 mx-auto"
+                  />
+                </td>
+                <td class="border border-gray-300 px-4 py-2">
+                  Dr. Saravana Balaji B
+                </td>
+                <td class="border border-gray-300 px-4 py-2">
+                  Department of Computing, De Montfort University Kazakhstan,
+                  Almaty, Kazakhstan
+                </td>
+                <td class="border border-gray-300 px-4 py-2">
+                  Intelligent Wireless Communication Networks
+                </td>
+                <td class="border border-gray-300 px-4 py-2">
+                  <button
+                    class="bg-green-600 px-4 py-2 text-white rounded-lg hover:bg-green-800"
+                    onclick="toggleModal('modal-balaji')"
+                  >
+                    Know More
+                  </button>
+                </td>
+              </tr>
+              <tr>
+                <td class="border border-gray-300 px-4 py-2">
+                  <img
+                    src="./images/speakers/gunasekaran.png"
+                    alt="Dr. Gunasekaran Thangavel"
+                    class="w-24 h-28 mx-auto"
+                  />
+                </td>
+                <td class="border border-gray-300 px-4 py-2">
+                  Dr. Gunasekaran Thangavel
+                </td>
+                <td class="border border-gray-300 px-4 py-2">
+                  Deputy Program Director, University of Technology and Applied
+                  Sciences, Muscat, Oman
+                </td>
+                <td class="border border-gray-300 px-4 py-2">
+                  Data Driven Innovations in Electronics Engineering
+                </td>
+                <td class="border border-gray-300 px-4 py-2">
+                  <button
+                    class="bg-green-600 px-4 py-2 text-white rounded-lg hover:bg-green-800"
+                    onclick="toggleModal('modal-guna')"
+                  >
+                    Know More
+                  </button>
+                </td>
+              </tr>
+              <tr>
+                <td class="border border-gray-300 px-4 py-2">
+                  <img
+                    src="./images/speakers/leeyong.png"
+                    alt="Dr. Lee Yong Hong"
+                    class="w-24 h-28 mx-auto"
+                  />
+                </td>
+                <td class="border border-gray-300 px-4 py-2">
+                  Dr. Lee Yong Hong
+                </td>
+                <td class="border border-gray-300 px-4 py-2">
+                  Assistant Professor, Universiti Tunku Abdul Rahman (UTAR)
+                </td>
+                <td class="border border-gray-300 px-4 py-2">
+                  Microwave and Antenna Green Networks and Emerging Technologies
+                </td>
+                <td class="border border-gray-300 px-4 py-2">
+                  <button
+                    class="bg-green-600 px-4 py-2 text-white rounded-lg hover:bg-green-800"
+                    onclick="toggleModal('modal-hong')"
+                  >
+                    Know More
+                  </button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <table
+            class="table-auto max-w-screen-xl mx-auto border-collapse border border-gray-300 mt-8"
+          >
+            <h2
+              class="mt-10 scroll-m-20 border-b border-[#35575a] pb-2 text-3xl font-bold tracking-tight transition-colors first:mt-0 w-[50%] mx-auto text-[#35575a] text-center mb-8 uppercase"
+            >
+              Invited National SPEAKERS
+            </h2>
+            <thead>
+              <tr class="bg-[#addfca]">
+                <th class="border border-gray-300 p-2">Photo</th>
+                <th class="border border-gray-300 p-2">Name</th>
+                <th class="border border-gray-300 p-2">Credentials</th>
+                <th class="border border-gray-300 p-2">Symposium</th>
+                <th class="border border-gray-300 p-2">About</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="border border-gray-300 p-2">
+                  <img
+                    src="./images/speakers/meenakshim.png"
+                    alt="Dr. M. Meenakshi"
+                    class="w-32 h-32 rounded-lg"
+                  />
+                </td>
+                <td class="border border-gray-300 p-2">Dr. M. Meenakshi</td>
+                <td class="border border-gray-300 p-2">
+                  Professor & Director, Centre for Wireless System Design, ECE
+                  Engineering, CEG, Anna University
+                </td>
+                <td class="border border-gray-300 p-2">
+                  Green Innovations in Photonics and Optical Communication
+                </td>
+                <td class="border border-gray-300 p-2">
+                  <button
+                    class="bg-green-600 px-4 py-2 text-white rounded-lg hover:bg-green-800"
+                    onclick="toggleModal('modal-meenakshi')"
+                  >
+                    Know More
+                  </button>
+                </td>
+              </tr>
+              <tr>
+                <td class="border border-gray-300 p-2">
+                  <img
+                    src="./images/speakers/sreenathreddy.png"
+                    alt="Dr. Sreenath Reddy Thummaluru"
+                    class="w-32 h-32 rounded-lg"
+                  />
+                </td>
+                <td class="border border-gray-300 p-2">
+                  Dr. Sreenath Reddy Thummaluru
+                </td>
+                <td class="border border-gray-300 p-2">
+                  Assistant Professor, IIITDM Kancheepuram, Chennai, India
+                </td>
+                <td class="border border-gray-300 p-2">
+                  Microwave and Antenna Green Networks and Emerging Technologies
+                </td>
+                <td class="border border-gray-300 p-2">
+                  <button
+                    class="bg-green-600 px-4 py-2 text-white rounded-lg hover:bg-green-800"
+                    onclick="toggleModal('modal-reddy')"
+                  >
+                    Know More
+                  </button>
+                </td>
+              </tr>
+              <tr>
+                <td class="border border-gray-300 p-2">
+                  <img
+                    src="./images/speakers/sakthivel.png"
+                    alt="Dr. S. Sakthivel Murugan"
+                    class="w-32 h-32 rounded-lg"
+                  />
+                </td>
+                <td class="border border-gray-300 p-2">
+                  Dr. S. Sakthivel Murugan
+                </td>
+                <td class="border border-gray-300 p-2">
+                  Professor, ECE Engineering, NITTTR, Chennai
+                </td>
+                <td class="border border-gray-300 p-2">
+                  Signal and Image Processing for Sustainable Development
+                </td>
+                <td class="border border-gray-300 p-2">
+                  <button
+                    class="bg-green-600 px-4 py-2 text-white rounded-lg hover:bg-green-800"
+                    onclick="toggleModal('modal-murugan')"
+                  >
+                    Know More
+                  </button>
+                </td>
+              </tr>
+              <tr>
+                <td class="border border-gray-300 p-2">
+                  <img
+                    src="./images/speakers/pethuru.png"
+                    alt="Dr. Pethuru Raj"
+                    class="w-32 h-32 rounded-lg"
+                  />
+                </td>
+                <td class="border border-gray-300 p-2">Dr. Pethuru Raj</td>
+                <td class="border border-gray-300 p-2">
+                  Reliance Jio Platforms Ltd, Bangalore, India
+                </td>
+                <td class="border border-gray-300 p-2">
+                  Sustainable Intelligent Systems
+                </td>
+                <td class="border border-gray-300 p-2">
+                  <button
+                    class="bg-green-600 px-4 py-2 text-white rounded-lg hover:bg-green-800"
+                    onclick="toggleModal('modal-pethuru')"
+                  >
+                    Know More
+                  </button>
+                </td>
+              </tr>
+              <tr>
+                <td class="border border-gray-300 p-2">
+                  <img
+                    src="./images/speakers/selvaraj.png"
+                    alt="Dr. M. D. Selvaraj"
+                    class="w-32 h-32 rounded-lg"
+                  />
+                </td>
+                <td class="border border-gray-300 p-2">Dr. M. D. Selvaraj</td>
+                <td class="border border-gray-300 p-2">
+                  Professor, IIITDM, Tamilnadu, India
+                </td>
+                <td class="border border-gray-300 p-2">
+                  Sustainable Intelligent Systems
+                </td>
+                <td class="border border-gray-300 p-2">
+                  <button
+                    class="bg-green-600 px-4 py-2 text-white rounded-lg hover:bg-green-800"
+                    onclick="toggleModal('modal-selvaraj')"
+                  >
+                    Know More
+                  </button>
+                </td>
+              </tr>
+              <tr>
+                <td class="border border-gray-300 p-2">
+                  <img
+                    src="./images/speakers/narayanan.png"
+                    alt="Srinivasan Narayanan"
+                    class="w-32 h-32 rounded-lg"
+                  />
+                </td>
+                <td class="border border-gray-300 p-2">Srinivasan Narayanan</td>
+                <td class="border border-gray-300 p-2">
+                  Sr. Director, Oracle India Pvt Ltd, Kadubeesanahalli,
+                  Bengaluru, Karnataka
+                </td>
+                <td class="border border-gray-300 p-2">
+                  Data Driven Innovations in Electronics Engineering
+                </td>
+                <td class="border border-gray-300 p-2">
+                  <button
+                    class="bg-green-600 px-4 py-2 text-white rounded-lg hover:bg-green-800"
+                    onclick="toggleModal('modal-narayanan')"
+                  >
+                    Know More
+                  </button>
+                </td>
+              </tr>
+              <tr>
+                <td class="border border-gray-300 p-2">
+                  <img
+                    src="./images/speakers/suganya.png"
+                    alt="Ms Suganya Annadurai"
+                    class="w-32 h-32 rounded-lg"
+                  />
+                </td>
+                <td class="border border-gray-300 p-2">Ms Suganya Annadurai</td>
+                <td class="border border-gray-300 p-2">
+                  Senior Scientist, SETS, Thanjavur, India
+                </td>
+                <td class="border border-gray-300 p-2">
+                  Sustainable Innovations in VLSI Devices, Circuits and Systems
+                </td>
+                <td class="border border-gray-300 p-2">
+                  <button
+                    class="bg-green-600 px-4 py-2 text-white rounded-lg hover:bg-green-800"
+                    onclick="toggleModal('modal-suganya')"
+                  >
+                    Know More
+                  </button>
+                </td>
+              </tr>
+              <tr>
+                <td class="border border-gray-300 p-2">
+                  <img
+                    src="./images/speakers/prabhu.png"
+                    alt="Dr. Prabu K"
+                    class="w-32 h-32 rounded-lg"
+                  />
+                </td>
+                <td class="border border-gray-300 p-2">Dr. Prabu K</td>
+                <td class="border border-gray-300 p-2">
+                  Associate Professor, ECE Engineering, NIT Suratkal, India
+                </td>
+                <td class="border border-gray-300 p-2">
+                  Green Innovations in Photonics and Optical Communication
+                </td>
+                <td class="border border-gray-300 p-2">
+                  <button
+                    class="bg-green-600 px-4 py-2 text-white rounded-lg hover:bg-green-800"
+                    onclick="toggleModal('modal-prabhuk')"
+                  >
+                    Know More
+                  </button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
 
-      
         <!-- Modals remain unchanged -->
         <div
           id="modal-alphones"
@@ -316,16 +664,39 @@
               <div class="p-4 sm:w-1/2 w-full">
                 <h3 class="text-xl font-semibold mb-3">About Speaker</h3>
                 <p class="text-gray-800 text-justify">
-                  A Alphones received his B.Tech. from Madras Institute of Technology in 1982, M.Tech. from Indian Institute of Technology Kharagpur in 1984 and Ph.D. degree in Optically Controlled Millimeter wave Circuits from Kyoto Institute of Technology (Japan) in 1992. He was a JSPS visiting fellow from 1996-97 at Japan. During 1997-2001, he was with Centre for Wireless Communications, National University of Singapore involved in the teaching and research on optically controlled passive/active devices. Since 2001 he is Professor with the School of Electrical and Electronic Engineering, Nanyang Technological University, Singapore. He has 35 years of research experience. He has published and presented over 350 technical papers in peer reviewed International Journals/ Conferences. His current interests are electro-magnetic analysis on planar RF circuits and integrated optics, microwave photonics, visible light communication and positioning, metamaterial based leaky wave antennas, THz transceiver for 6G Systems and wireless power transfer technologies. He was involved many IEEE flagship conferences held in Singapore and General Chair of APMC 2009, MWP 2011, TENCON 2016, APMC 2019 and TENCON 2024. He was the chairman of IEEE Singapore section during 2015-2016, 2018, 2023 and a senior member of IEEE. He is Singapore representative of IEICE(Japan). He is also the panel member of IEEE Conference Application Review Committee. He is also R10 coordinator for IEEE MTT-S MGA member.
+                  A Alphones received his B.Tech. from Madras Institute of
+                  Technology in 1982, M.Tech. from Indian Institute of
+                  Technology Kharagpur in 1984 and Ph.D. degree in Optically
+                  Controlled Millimeter wave Circuits from Kyoto Institute of
+                  Technology (Japan) in 1992. He was a JSPS visiting fellow from
+                  1996-97 at Japan. During 1997-2001, he was with Centre for
+                  Wireless Communications, National University of Singapore
+                  involved in the teaching and research on optically controlled
+                  passive/active devices. Since 2001 he is Professor with the
+                  School of Electrical and Electronic Engineering, Nanyang
+                  Technological University, Singapore. He has 35 years of
+                  research experience. He has published and presented over 350
+                  technical papers in peer reviewed International Journals/
+                  Conferences. His current interests are electro-magnetic
+                  analysis on planar RF circuits and integrated optics,
+                  microwave photonics, visible light communication and
+                  positioning, metamaterial based leaky wave antennas, THz
+                  transceiver for 6G Systems and wireless power transfer
+                  technologies. He was involved many IEEE flagship conferences
+                  held in Singapore and General Chair of APMC 2009, MWP 2011,
+                  TENCON 2016, APMC 2019 and TENCON 2024. He was the chairman of
+                  IEEE Singapore section during 2015-2016, 2018, 2023 and a
+                  senior member of IEEE. He is Singapore representative of
+                  IEICE(Japan). He is also the panel member of IEEE Conference
+                  Application Review Committee. He is also R10 coordinator for
+                  IEEE MTT-S MGA member.
                 </p>
               </div>
             </div>
           </div>
         </div>
-      
 
-
-        <div class="w-full mx-auto py-12 px-8">
+        <!-- <div class="w-full mx-auto py-12 px-8">
           <div class="max-w-6xl mx-auto">
             <h2
               class="mt-10 scroll-m-20 border-b border-[#35575a] pb-2 text-3xl font-bold tracking-tight transition-colors first:mt-0 w-[50%] mx-auto text-[#35575a] text-center mb-8"
@@ -333,19 +704,16 @@
               INVITED SPEAKERS
             </h2>
           </div>
-        </div>
-        <div
+        </div> -->
+        <!-- <div
           class="container mx-auto py-16 flex flex-col lg:flex-row gap-8 bg-[#dff2ea]"
         >
-          <!-- Sustainable Innovations in VLSI Devices Section -->
           <section class="flex-1 text-center">
             <h2 class="text-xl font-bold text-gray-800 mb-6">
               Sustainable Innovations in VLSI Devices, Circuits and Systems
             </h2>
 
-            <!-- Container for Speaker Cards -->
             <div class="flex flex-wrap justify-center gap-4">
-              <!-- Speaker Card for Suganya -->
               <div
                 class="w-1/2 sm:w-1/2 lg:w-1/2 xl:w-1/3 shadow-md shadow-gray-500 p-2 bg-white rounded-lg cursor-pointer"
               >
@@ -370,15 +738,12 @@
               </div>
             </div>
           </section>
-          <!-- Sustainable Intelligent Systems Section -->
           <section class="flex-1 text-center">
             <h2 class="text-xl font-bold text-gray-800 mb-6">
               Sustainable Intelligent Systems
             </h2>
 
-            <!-- Container for Speaker Cards -->
             <div class="flex mx-1 sm:mx-0 justify-center gap-4">
-              <!-- Speaker Card for MD Selvaraj -->
               <div
                 class="w-full sm:w-1/2 lg:w-1/2 xl:w-1/3 shadow-md shadow-gray-500 p-4 bg-white rounded-lg cursor-pointer"
               >
@@ -399,8 +764,6 @@
                   </button>
                 </div>
               </div>
-
-              <!-- Speaker Card for Dr. Pethuru -->
               <div
                 class="w-full sm:w-1/2 lg:w-1/2 xl:w-1/3 shadow-md shadow-gray-500 p-4 bg-white rounded-lg cursor-pointer"
               >
@@ -425,7 +788,7 @@
               </div>
             </div>
           </section>
-        </div>
+        </div> -->
 
         <!-- Modals remain unchanged -->
         <div
@@ -593,14 +956,12 @@
         </div>
 
         <section class="text-center">
-          <div class="flex flex-wrap lg:flex-nowrap gap-6 justify-center py-24">
-            <!-- Section: Signal and Image Processing for Sustainable Development -->
+          <!-- <div class="flex flex-wrap lg:flex-nowrap gap-6 justify-center py-24">
             <div class="flex-1 rounded-lg p-4">
               <h2 class="text-xl font-bold text-gray-800 mb-6">
                 Signal and Image Processing for Sustainable Development
               </h2>
               <div class="flex flex-wrap justify-center gap-4">
-                <!-- Speaker Card for Dr. S. Sakthivel Murugan -->
                 <div
                   class="w-1/2 sm:w-1/2 lg:w-1/2 xl:w-1/3 shadow-md shadow-gray-500 p-2 bg-white rounded-lg cursor-pointer"
                 >
@@ -627,13 +988,11 @@
               </div>
             </div>
 
-            <!-- Section: Microwave and Antenna Green Networks and Emerging Technologies -->
             <div class="flex-1 rounded-lg p-4">
               <h2 class="text-xl font-bold text-gray-800 mb-6">
                 Microwave and Antenna Green Networks and Emerging Technologies
               </h2>
               <div class="flex justify-center gap-4">
-                <!-- Speaker Card for Dr. Lee Yong Hong -->
                 <div
                   class="w-1/2 sm:w-1/2 lg:w-1/2 xl:w-1/3 shadow-md shadow-gray-500 p-2 bg-white rounded-lg cursor-pointer"
                 >
@@ -656,7 +1015,6 @@
                   </div>
                 </div>
 
-                <!-- Speaker Card for Dr. Sreenath Reddy Thummaluru -->
                 <div
                   class="w-1/2 sm:w-1/2 lg:w-1/2 xl:w-1/3 shadow-md shadow-gray-500 p-2 bg-white rounded-lg cursor-pointer"
                 >
@@ -681,7 +1039,7 @@
                 </div>
               </div>
             </div>
-          </div>
+          </div> -->
 
           <!-- Modals -->
           <!-- Modal for Dr. S. Sakthivel Murugan -->
@@ -921,16 +1279,14 @@
         </section>
 
         <section class="text-center">
-          <div
+          <!-- <div
             class="flex flex-wrap lg:flex-nowrap gap-6 justify-center bg-[#dff2ea] py-24"
           >
-            <!-- Section: Microwave and Antenna Green Networks and Emerging Technologies -->
             <div class="flex-1 rounded-lg p-4">
               <h2 class="text-xl font-bold text-gray-800 mb-6">
                 Intelligent Wireless Communication Networks
               </h2>
               <div class="flex justify-center gap-4">
-                <!-- Speaker Card for Dr. Malka -->
                 <div
                   class="w-1/2 sm:w-1/2 lg:w-1/2 xl:w-1/3 shadow-md shadow-gray-500 p-2 bg-white rounded-lg cursor-pointer"
                 >
@@ -955,7 +1311,6 @@
                   </div>
                 </div>
 
-                <!-- Speaker Card for Dr. Sarvana Balaji -->
                 <div
                   class="w-1/2 sm:w-1/2 lg:w-1/2 xl:w-1/3 shadow-md shadow-gray-500 p-2 bg-white rounded-lg cursor-pointer"
                 >
@@ -982,13 +1337,11 @@
               </div>
             </div>
 
-            <!-- Section: Microwave and Antenna Green Networks and Emerging Technologies -->
             <div class="flex-1 rounded-lg p-4">
               <h2 class="text-xl font-bold text-gray-800 mb-6">
                 Green Innovations in Photonics and Optical Communication
               </h2>
               <div class="flex justify-center gap-4 mx-auto">
-                <!-- Speaker Card for Dr. Prabhu K-->
                 <div
                   class="w-1/2 sm:w-1/2 lg:w-1/2 xl:w-1/3 shadow-md shadow-gray-500 p-2 bg-white rounded-lg cursor-pointer"
                 >
@@ -1012,8 +1365,6 @@
                     </button>
                   </div>
                 </div>
-
-                <!-- Speaker Card for Dr. M Meenakshi -->
                 <div
                   class="w-1/2 sm:w-1/2 lg:w-1/2 xl:w-1/3 shadow-md shadow-gray-500 p-2 bg-white rounded-lg cursor-pointer"
                 >
@@ -1041,7 +1392,7 @@
                 </div>
               </div>
             </div>
-          </div>
+          </div> -->
 
           <!-- Modals -->
           <!-- Modal for Dr. S. Sakthivel Murugan -->
@@ -1329,13 +1680,11 @@
         </section>
 
         <section class="text-center sm:pt-24 pt-16 sm:w-1/2 mx-2">
-          <h2 class="text-xl font-bold text-gray-800 mb-6">
+          <!-- <h2 class="text-xl font-bold text-gray-800 mb-6">
             Data Driven Innovations in Electronics Engineering
-          </h2>
+          </h2> -->
 
-          <!-- Container for Speaker Cards -->
-          <div class="flex justify-center gap-4 mb-28">
-            <!-- Speaker Card for Dr. Gunasekaran Thangavel -->
+          <!-- <div class="flex justify-center gap-4 mb-28">
             <div
               class="w-1/2 lg:w-1/2 xl:w-1/3 shadow-md shadow-gray-500 p-2 bg-white rounded-lg cursor-pointer"
             >
@@ -1359,8 +1708,6 @@
                 </button>
               </div>
             </div>
-
-            <!-- Speaker Card for Srinivasan Narayanan -->
             <div
               class="w-1/2 sm:w-1/2 lg:w-1/2 xl:w-1/3 shadow-md shadow-gray-500 p-2 bg-white rounded-lg cursor-pointer"
             >
@@ -1384,7 +1731,7 @@
                 </button>
               </div>
             </div>
-          </div>
+          </div> -->
 
           <!-- Modal -->
           <!-- Modals -->
