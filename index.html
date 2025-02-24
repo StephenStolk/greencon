@@ -545,31 +545,36 @@
               >
                 <h2 class="text-lg font-bold text-[#2b4a4d]">IMPORTANT</h2>
               </div>
-              <div
-                class="bg-white text-black p-4 rounded-b-lg overflow-hidden h-80 relative border dotted"
-                style="position: relative; overflow: hidden"
-              >
-                <div
-                  class="marquee h-80"
-                  style="
-                    position: absolute;
-                    inset: 0px;
-                    display: flex;
-                    flex-direction: column;
-                  "
-                >
-                  <ul class="list-decimal ms-4 p-2 leading-relaxed space-y-2">
-                    <li class="font-semibold text-red-500">
-                      <a href="./PaperSubmission.html"
-                        >Paper Submission link is now Closed.</a
-                      >
-                    </li>
-                    <li class="font-semibold text-red-500">
-                      A few selected papers will be published in Proceedings on
-                      Engineering Sciences (a scopus indexed journal).
-                    </li>
-                  </ul>
-                </div>
+              <div class="marquee h-80 overflow-hidden relative bg-white" style="position: relative;">
+                <ul class="list-disc ms-4 p-2 leading-relaxed space-y-4 animate-scroll">
+                  <li class="font-semibold text-red-500">
+                    <a href="./PaperSubmission.html">Paper Submission link is now Closed.</a>
+                  </li>
+                  <li class="font-semibold text-red-500">
+                    A few selected papers will be published in Proceedings on Engineering Sciences (a Scopus indexed journal).
+                  </li>
+                  <li class="font-semibold text-red-500">
+                    Online presentation option will be made available based on requests from registered participants.
+                  </li>
+                </ul>
+              </div>
+              
+              <style>
+                @keyframes scroll {
+                  0% {
+                    transform: translateY(100%);
+                  }
+                  100% {
+                    transform: translateY(-100%);
+                  }
+                }
+              
+                .animate-scroll {
+                  display: inline-block;
+                  animation: scroll 10s linear infinite;
+                }
+              </style>
+              
               </div>
             </div>
           </div>
