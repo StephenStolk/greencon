@@ -96,6 +96,30 @@
           transform: scale(1);
         }
       }
+      @keyframes marquee {
+        0% {
+          transform: translateX(100%);
+        }
+        100% {
+          transform: translateX(-50%);
+        }
+      }
+
+      .marquee-container {
+        overflow: hidden;
+        white-space: nowrap;
+        position: relative;
+        width: 100%;
+        padding: 5px 0;
+      }
+
+      .marquee-text {
+        display: inline-block;
+        font-size: 1rem;
+        font-weight: bold;
+        color: #d10000; /* Red text */
+        animation: marquee 25s linear infinite;
+      }
     </style>
   </head>
   <body>
@@ -330,6 +354,14 @@
           </div>
         </div>
       </div>
+      <div class="marquee-container w-full">
+        <span class="marquee-text w-full"
+          >Early Bird Registration is now open
+          <a class="" href="https://vitchennaievents.com/conf1/"
+            >(Click Here)</a
+          ></span
+        >
+      </div>
       <div class="App">
         <section
           class="flex flex-col sm:flex-row justify-around mx-auto bg-[#dff2ea]"
@@ -465,8 +497,11 @@
                 addresses and invited lectures. Proceedings on Engineering
                 Sciences, a Scopus-indexed journal, have agreed to publish
                 papers from GREENCON 2025, subject to meeting their quality
-                requirements. Furthermore, some selected papers will be
-                submitted for publication as chapters in Scopus-indexed books.
+                requirements. A select number of papers will be published in a
+                special issue of Talanta Open (a Scopus-indexed journal with an
+                impact factor of 4.2), provided they meet the journal's quality
+                standards and fall within its scope. The APC charges will be in
+                accordance with the journal's guidelines.
               </p>
               <div
                 class="w-full flex flex-col md:flex-row justify-center mt-8 space-y-3 md:space-y-0 md:space-x-4"
@@ -545,20 +580,43 @@
               >
                 <h2 class="text-lg font-bold text-[#2b4a4d]">IMPORTANT</h2>
               </div>
-              <div class="marquee h-80 overflow-hidden relative bg-white" style="position: relative;">
-                <ul class="list-disc ms-4 p-2 leading-relaxed space-y-4 animate-scroll">
-                  <li class="font-semibold text-red-500">
-                    <a href="./PaperSubmission.html">Paper Submission link is now Closed.</a>
+              <div
+                class="marquee h-80 overflow-hidden relative bg-white"
+                style="position: relative"
+              >
+                <ul
+                  class="list-disc ms-4 p-2 leading-relaxed space-y-4 animate-scroll"
+                >
+                  <li class="font-semibold">
+                    Early bird registration is now open
                   </li>
-                  <li class="font-semibold text-red-500">
-                    A few selected papers will be published in Proceedings on Engineering Sciences (a Scopus indexed journal).
+                  <li class="font-semibold">
+                    <a href="./PaperSubmission.html"
+                      >Paper Submission link is now closed.</a
+                    >
                   </li>
-                  <li class="font-semibold text-red-500">
-                    Online presentation option will be made available based on requests from registered participants.
+                  <li class="font-semibold">
+                    A few selected papers will be published in
+                    <span class="text-red-500"
+                      >Proceedings on Engineering Sciences</span
+                    >
+                    (a Scopus indexed journal).
+                  </li>
+                  <li class="font-semibold">
+                    A select number of papers will be published in a special
+                    issue of <span class="text-red-500">Talanta Open</span> (a
+                    Scopus-indexed journal with an impact factor of 4.2),
+                    provided they meet the journal's quality standards and fall
+                    within its scope. The APC charges will be in accordance with
+                    the journal's guidelines.
+                  </li>
+                  <li class="font-semibold">
+                    Online presentation option will be made available based on
+                    requests from registered participants.
                   </li>
                 </ul>
               </div>
-              
+
               <style>
                 @keyframes scroll {
                   0% {
@@ -568,16 +626,15 @@
                     transform: translateY(-100%);
                   }
                 }
-              
+
                 .animate-scroll {
                   display: inline-block;
                   animation: scroll 10s linear infinite;
                 }
               </style>
-              
-              </div>
             </div>
           </div>
+          <!-- </div> -->
         </section>
         <div class="w-full md:w-[80%] px-10 mx-auto my-12">
           <table class="table-auto w-full text-left text-sm border-green-900">
