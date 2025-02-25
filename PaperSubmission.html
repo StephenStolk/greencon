@@ -65,6 +65,21 @@
           transform: scale(1);
         }
       }
+      @keyframes blink {
+        0% {
+          opacity: 1;
+        }
+        75% {
+          opacity: 0.3;
+        }
+        100% {
+          opacity: 1;
+        }
+      }
+
+      .blinking-text {
+        animation: blink 2s infinite;
+      }
     </style>
   </head>
   <body>
@@ -306,25 +321,30 @@
             <h1
               class="mb-8 border-b-2 border-[#35575a] w-[50%] pb-2 text-base md:text-3xl font-bold text-[#35575a] text-center mx-auto uppercase"
             >
-              Paper Submission
+              Publication Details
             </h1>
             <!-- <p class="text-center font-normal text-lg mb-6">
               All selected and presented papers at the conference are planned to
               be published in Scopus-indexed publications.
             </p> -->
-            <p class="text-center font-normal text-lg mb-6">
+            <p
+              class="text-justify text-red-500 font-normal text-lg mb-6 blinking-text"
+            >
               Proceedings on Engineering Sciences, a Scopus-indexed journal,
               have agreed to publish papers from GREENCON 2025, subject to
-              meeting their quality requirements. Furthermore, some selected
-              papers will be submitted for publication as chapters in
-              Scopus-indexed books.
+              meeting their quality requirements. <br />
+              A select number of papers will be published in a special issue of
+              Talanta Open (a Scopus-indexed journal with an impact factor of
+              4.2), provided they meet the journal's quality standards and fall
+              within its scope. The APC charges will be in accordance with the
+              journal's guidelines.
             </p>
 
-            <h2
+            <!-- <h2
               class="mb-8 border-b-2 border-[#35575a] w-[50%] pb-2 text-base md:text-3xl font-bold text-[#35575a] text-center mx-auto uppercase"
             >
               Publication Details
-            </h2>
+            </h2> -->
             <div
               class="text-justify text-sm md:text-lg font-medium rounded-lg border-2 border-black px-10 py-4"
             >
