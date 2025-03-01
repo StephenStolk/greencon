@@ -1,15 +1,77 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
       href="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.css"
       rel="stylesheet"
     />
+    <title>Greencon-2025</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Advisory Board</title>
+    <script>
+      function updateCountdown() {
+        const deadline = new Date("March 19, 2025 00:00:00").getTime();
+        const now = new Date().getTime();
+        const timeRemaining = deadline - now;
+
+        const days = Math.floor(timeRemaining / (1000 * 60 * 60 * 24));
+        const hours = Math.floor(
+          (timeRemaining % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+        );
+        const minutes = Math.floor(
+          (timeRemaining % (1000 * 60 * 60)) / (1000 * 60)
+        );
+        const seconds = Math.floor((timeRemaining % (1000 * 60)) / 1000);
+
+        document.getElementById("days").innerText = days;
+        document.getElementById("hours").innerText = hours;
+        document.getElementById("minutes").innerText = minutes;
+        document.getElementById("seconds").innerText = seconds;
+
+        if (timeRemaining < 0) {
+          clearInterval(countdownInterval);
+          document.getElementById("days").innerText = "0";
+          document.getElementById("hours").innerText = "0";
+          document.getElementById("minutes").innerText = "0";
+          document.getElementById("seconds").innerText = "0";
+        }
+      }
+
+      const countdownInterval = setInterval(updateCountdown, 1000);
+    </script>
     <style>
-      /* Loading animation styles */
+      @keyframes fadeOut {
+        0% {
+          opacity: 1;
+        }
+        100% {
+          opacity: 0;
+        }
+      }
+
+      @keyframes scroll {
+        0% {
+          transform: translateY(100%);
+        }
+        100% {
+          transform: translateY(-100%);
+        }
+      }
+
+      .animate-scroll {
+        display: inline-block;
+        animation: scroll 10s linear infinite;
+      }
+
+      .fade-animation {
+        animation: fadeOut 1s linear infinite;
+      }
+
+      .fade-animation:hover {
+        animation: none;
+        opacity: 1;
+      }
+
       .loading {
         position: fixed;
         top: 0;
@@ -47,6 +109,30 @@
         40% {
           transform: scale(1);
         }
+      }
+      @keyframes marquee {
+        0% {
+          transform: translateX(100%);
+        }
+        100% {
+          transform: translateX(-50%);
+        }
+      }
+
+      .marquee-container {
+        overflow: hidden;
+        white-space: nowrap;
+        position: relative;
+        width: 100%;
+        padding: 5px 0;
+      }
+
+      .marquee-text {
+        display: inline-block;
+        font-size: 1rem;
+        font-weight: bold;
+        color: #d10000; /* Red text */
+        animation: marquee 25s linear infinite;
       }
     </style>
   </head>
@@ -98,7 +184,7 @@
           style="cursor: pointer"
         />
       </div>
-      
+
       <nav class="bg-[#addfca] border-gray-200">
         <div
           class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4 md:px-8"
@@ -136,7 +222,7 @@
           >
             <a
               href="./index.html"
-              class="block text-gray-700 hover:text-[#3c5a96] hover:bg-gray-200 px-1 py-1 transition-colors duration-300 font-medium"
+              class="block text-gray-700 hover:text-[#3c5a96] hover:bg-gray-200 px-1 py-1 transition-colors duration-300 font-medium bg-gray-200 rounded-lg border-2 border-black"
               >Home</a
             >
             <a
@@ -151,7 +237,7 @@
             >
             <a
               href="./AdvisoryBoard.html"
-              class="block text-gray-700 hover:text-[#3c5a96] hover:bg-gray-200 px-1 py-1 transition-colors duration-300 font-medium bg-gray-200 rounded-lg border-2 border-black"
+              class="block text-gray-700 hover:text-[#3c5a96] hover:bg-gray-200 px-1 py-1 transition-colors duration-300 font-medium"
               >Advisory Board</a
             >
             <a
@@ -195,7 +281,7 @@
           >
             <a
               href="./index.html"
-              class="block text-gray-700 hover:text-[#3c5a96] hover:bg-gray-200 px-1 py-1 transition-colors duration-300 font-medium  "
+              class="text-gray-700 hover:text-[#3c5a96] transition-colors duration-300 font-medium hover:bg-gray-200 px-1 py-1"
               >Home</a
             >
             <a
@@ -210,7 +296,7 @@
             >
             <a
               href="./AdvisoryBoard.html"
-              class="text-gray-700 hover:text-[#3c5a96] bg-gray-200 rounded-lg border-2 border-black hover:bg-gray-200 px-1 py-1 transition-colors duration-300 font-medium"
+              class="block text-gray-700 hover:text-[#3c5a96] hover:bg-gray-200 px-1 py-1 transition-colors duration-300 font-medium "
               >Advisory Board</a
             >
             <a
@@ -235,7 +321,7 @@
             >
             <a
             href="./Accommodation.html"
-            class="text-gray-700 hover:text-[#3c5a96] transition-colors duration-300 font-medium hover:bg-gray-200 px-1 py-1"
+            class="text-gray-700 hover:text-[#3c5a96] bg-gray-200 rounded-lg border-2 border-black hover:bg-gray-200 px-1 py-1 transition-colors duration-300 font-medium "
             >Accommodation</a
           >
             <a
@@ -243,12 +329,11 @@
               class="text-gray-700 hover:text-[#3c5a96] transition-colors duration-300 font-medium hover:bg-gray-200 px-1 py-1"
               >Contact Us</a
             >
-           
+         
             
           </div>
         </div>
       </nav>
-
 
       <div
         id="default-modal"
@@ -296,239 +381,52 @@
           </div>
         </div>
       </div>
-      <div class="px-4 py-8">
-        <!-- International Advisory Speakers -->
-        <h2
-          class="mt-10 scroll-m-20 border-b border-[#2b4a4d] pb-2 text-3xl font-bold tracking-tight transition-colors first:mt-0 w-[50%] mx-auto text-[#2b4a4d] text-center uppercase"
-        >
-          International Advisory Committee
-        </h2>
-        <div class="w-full mx-auto flex justify-center items-center mt-6 px-4">
-          <div class="w-full lg:w-2/3 md:w-4/5 bg-[#dff2ea] p-4 rounded-lg">
-            <table class="min-w-full text-[#2b4a4d]">
-              <thead>
-                <tr>
-                  <th class="py-2 px-4 text-left font-semibold">Name</th>
-                  <th class="py-2 px-4 text-left font-semibold">Institution</th>
-                </tr>
-              </thead>
-              <tbody class="divide-y divide-gray-200">
-                <tr>
-                  <td class="py-2 px-4">Dr. Arokiaswami Alphones</td>
-                  <td class="py-2 px-4">NTU Singapore</td>
-                </tr>
-                <tr>
-                  <td class="py-2 px-4">Dr. Prasad N. Shastry</td>
-                  <td class="py-2 px-4">Bradley University, USA</td>
-                </tr>
-                <tr>
-                  <td class="py-2 px-4">Dr. Ali Kashif Bashir</td>
-                  <td class="py-2 px-4">
-                    Manchester Metropolitan University, UK
-                  </td>
-                </tr>
-                <tr>
-                  <td class="py-2 px-4">Dr. T. Nandhakumar</td>
-                  <td class="py-2 px-4">
-                    The University of Nottingham, Malaysia
-                  </td>
-                </tr>
-                <tr>
-                  <td class="py-2 px-4">Dr. Ronald Tetzlaff</td>
-                  <td class="py-2 px-4">
-                    Technische Universität Dresden, Germany
-                  </td>
-                </tr>
-                <tr>
-                  <td class="py-2 px-4">Dr. Rezaul Hasan S M</td>
-                  <td class="py-2 px-4">
-                    Massey University, Auckland, New Zealand
-                  </td>
-                </tr>
-                <tr>
-                  <td class="py-2 px-4">Dr. Pua Chang Hong</td>
-                  <td class="py-2 px-4">
-                    Universiti Tunku Abdul Rahman, Malaysia
-                  </td>
-                </tr>
-                <tr>
-                  <td class="py-2 px-4">Dr. Stella Morri</td>
-                  <td class="py-2 px-4">
-                    Universiti Tunku Abdul Rahman, Malaysia
-                  </td>
-                </tr>
-                <tr>
-                  <td class="py-2 px-4">Dr. Adeline Sneha J</td>
-                  <td class="py-2 px-4">
-                    Asia Pacific University of Technology and Innovation,
-                    Malaysia
-                  </td>
-                </tr>
-                <tr>
-                  <td class="py-2 px-4">Mr. Sabarinathan</td>
-                  <td class="py-2 px-4">Industry: Couger Inc., Japan</td>
-                </tr>
-                <tr>
-                  <td class="py-2 px-4">
-                    Dr. Nabihah @ Noranabihah Binti Ahmad
-                  </td>
-                  <td class="py-2 px-4">
-                    Universiti Tun Hussein Onn Malaysia (UTHM), Malaysia
-                  </td>
-                </tr>
-                <tr>
-                  <td class="py-2 px-4">Dr. Thangavel Murugan</td>
-                  <td class="py-2 px-4">
-                    United Arab Emirates University, Saudi Arabia
-                  </td>
-                </tr>
-                <tr>
-                  <td class="py-2 px-4">Dr. Abdul Rahim Sadiq Batcha</td>
-                  <td class="py-2 px-4">MAHSA University, Malaysia</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-        </div>
 
-        <!-- National Advisory Committee -->
-        <h2
-          class="mt-10 scroll-m-20 border-b border-[#2b4a4d] pb-2 text-3xl font-bold tracking-tight transition-colors first:mt-0 w-[50%] mx-auto text-[#2b4a4d] text-center uppercase"
-        >
-          National Advisory Committee
-        </h2>
-        <div class="w-full mx-auto flex justify-center items-center mt-6 px-4">
-          <div class="w-full lg:w-2/3 md:w-4/5 bg-[#dff2ea] p-4 rounded-lg">
-            <table class="min-w-full text-[#2b4a4d]">
-              <thead>
-                <tr>
-                  <th class="py-2 px-4 text-left font-semibold">Name</th>
-                  <th class="py-2 px-4 text-left font-semibold">Institution</th>
-                </tr>
-              </thead>
-              <tbody class="divide-y divide-gray-200">
-                <tr>
-                  <td class="py-2 px-4">Dr. Dhalia Sweetlin J.</td>
-                  <td class="py-2 px-4">
-                    Madras Institute of Technology Chennai
-                  </td>
-                </tr>
-                <tr>
-                  <td class="py-2 px-4">Dr. P. Prakash</td>
-                  <td class="py-2 px-4">Anna University MIT Campus Chennai</td>
-                </tr>
-                <tr>
-                  <td class="py-2 px-4">Dr. Asutosh Kar</td>
-                  <td class="py-2 px-4">
-                    National Institute of Technology Jalandhar
-                  </td>
-                </tr>
-                <tr>
-                  <td class="py-2 px-4">Dr. Rajib Bandyopadhyay</td>
-                  <td class="py-2 px-4">Jadavpur University Kolkata</td>
-                </tr>
-                <tr>
-                  <td class="py-2 px-4">Dr. Amalin Prince A</td>
-                  <td class="py-2 px-4">BITS Pilani Goa Campus</td>
-                </tr>
-                <tr>
-                  <td class="py-2 px-4">Dr. Shyam Lal</td>
-                  <td class="py-2 px-4">
-                    National Institute of Technology Surathkal
-                  </td>
-                </tr>
-                <tr>
-                  <td class="py-2 px-4">Dr. Anusudha</td>
-                  <td class="py-2 px-4">Pondicherry University Pondicherry</td>
-                </tr>
-                <tr>
-                  <td class="py-2 px-4">Dr. Syamal Kumar Dana</td>
-                  <td class="py-2 px-4">
-                    CSIR-Indian Institute of Chemical Biology Kolkata
-                  </td>
-                </tr>
-                <tr>
-                  <td class="py-2 px-4">Dr. Koushik Guha</td>
-                  <td class="py-2 px-4">
-                    National Institute of Technology Silchar
-                  </td>
-                </tr>
-                <tr>
-                  <td class="py-2 px-4">Dr. M. Meenakshi</td>
-                  <td class="py-2 px-4">
-                    College of Engineering Guindy Anna University Chennai
-                  </td>
-                </tr>
-                <tr>
-                  <td class="py-2 px-4">Dr. K. Prabu</td>
-                  <td class="py-2 px-4">
-                    National Institute of Technology Surathkal
-                  </td>
-                </tr>
-                <tr>
-                  <td class="py-2 px-4">Dr. Swades De</td>
-                  <td class="py-2 px-4">IIT Delhi</td>
-                </tr>
-                <tr>
-                  <td class="py-2 px-4">Dr. Selvaraj M.D</td>
-                  <td class="py-2 px-4">IITDM Kanchipuram</td>
-                </tr>
-                <tr>
-                  <td class="py-2 px-4">Dr. Deepa Venkitesh</td>
-                  <td class="py-2 px-4">IIT Madras</td>
-                </tr>
-                <tr>
-                  <td class="py-2 px-4">Dr. Manpreet Singh Manna</td>
-                  <td class="py-2 px-4">
-                    Director AICTE, Vice Chancellor @ Chandigarh University
-                  </td>
-                </tr>
-                <tr>
-                  <td class="py-2 px-4">Dr. Abhishek Dixit</td>
-                  <td class="py-2 px-4">IIT Delhi</td>
-                </tr>
-                <tr>
-                  <td class="py-2 px-4">Dr. S.S. Karthikeyan</td>
-                  <td class="py-2 px-4">
-                    National Institute of Technology Trichy
-                  </td>
-                </tr>
-                <tr>
-                  <td class="py-2 px-4">Dr. Sriramkumar</td>
-                  <td class="py-2 px-4">
-                    National Institute of Technology Trichy
-                  </td>
-                </tr>
-                <tr>
-                  <td class="py-2 px-4">Dr. Balaji</td>
-                  <td class="py-2 px-4">IIT Madras</td>
-                </tr>
-                <tr>
-                  <td class="py-2 px-4">Dr. T.Srinivas</td>
-                  <td class="py-2 px-4">IISc Bangalore</td>
-                </tr>
-                <tr>
-                  <td class="py-2 px-4">Dr. T.G.Venkatesh</td>
-                  <td class="py-2 px-4">IIT Madras</td>
-                </tr>
-                <tr>
-                  <td class="py-2 px-4">Dr. Brijesh Lal</td>
-                  <td class="py-2 px-4">IIT Delhi</td>
-                </tr>
-                <tr>
-                  <td class="py-2 px-4">Dr. Manav Bhatnagar</td>
-                  <td class="py-2 px-4">IIT Delhi</td>
-                </tr>
-                <tr>
-                  <td class="py-2 px-4">Dr. K.Giridhar</td>
-                  <td class="py-2 px-4">IIT Madras</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
+      <div class="App">
+        
+        <div class="w-full mx-auto justify-around flex flex-col md:flex-row bg-white shadow-lg rounded-lg p-6 w-full">
+            <!-- Left Section (Text Content) -->
+            <div class="md:w-1/2 p-4">
+                <h1 class="text-2xl font-bold text-green-900">Hostel Accommodation</h1>
+                <p class="text-gray-600 mt-4">We offer a comfortable and convenient living space for students and professionals. Our hostel provides a warm and welcoming environment, making you feel right at home.</p>
+    
+                <h2 class="text-xl text-green-900 font-semibold mt-6">Features</h2>
+                <ul class="list-disc pl-6 text-gray-600">
+                    <li class="mt-2">Rooms with shared facilities</li>
+                    <li class="mt-2">Female-only and male-only available</li>
+                    <li class="mt-2">Room rent Rs.1100 per day including food</li>
+                </ul>
+    
+                <div class="mt-16">
+                    <button class="bg-[#62b895] text-white flex items-center justify-center text-center px-6 py-2 h-12 w-1/2 md:w-1/4 rounded-md hover:bg-[#49886e] font-semibold text-sm transition-colors capitalize">
+                        <a href="https://vitchennaievents.com/conf1/" target="_blank">Book Your Stay</a>
+                    </button>
+                    
+                </div>
+    
+                <p class="text-red-600 mt-8">After registration, contact us at 
+                    <a href="mailto:raviprakash.dwivedi@vit.ac.in" class="text-blue-500 hover:underline">raviprakash.dwivedi@vit.ac.in</a> 
+                    to report your accommodation booking details. We look forward to welcoming you to our hostel.
+                </p>
+            </div>
+    
+            <!-- Right Section (Google Map) -->
+            <div class="md:w-1/2 p-4">
+                <h2 class="text-xl font-semibold text-green-900">Our Location</h2>
+                <div class="mt-4">
+                    <iframe 
+                        class="w-full h-96 rounded-lg" 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3890.3381728354396!2d79.15845067411278!3d12.971598987343858!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bad4761c274d1cf%3A0x3e08c9613f5f5d1b!2sVIT%20University!5e0!3m2!1sen!2sin!4v1709214623523!5m2!1sen!2sin" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
         </div>
+    
+
       </div>
- 
       <footer class="bg-white border-black border-t-2 w-full">
         <div class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
           <div
@@ -612,7 +510,6 @@
           >. All Rights Reserved.</span
         >
       </div>
-
       <div
         id="default-modal"
         tabindex="-1"
@@ -660,7 +557,6 @@
         </div>
       </div>
     </div>
-
     <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.js"></script>
     <script>
       // JavaScript to manage loading animation
