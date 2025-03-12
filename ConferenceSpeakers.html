@@ -253,7 +253,51 @@
             <h2
               class="mt-10 scroll-m-20 border-b border-[#35575a] pb-2 text-3xl font-bold tracking-tight transition-colors first:mt-0 w-[50%] mx-auto text-[#35575a] text-center mb-8"
             >
-              KEYNOTE SPEAKER
+              PLENARY SPEAKER
+            </h2>
+            <table
+              class="table-auto max-w-screen-xl mx-auto border-collapse border border-gray-300 bg-white shadow-md overflow-x-auto"
+            >
+              <thead class="bg-[#addfca]">
+                <tr>
+                  <th class="p-4">Photo</th>
+                  <th class="p-4">Name</th>
+                  <th class="p-4">Credentials</th>
+                  <th class="p-4">Symposium</th>
+                  <th class="p-4">About</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="border-b border-gray-300 text-center">
+                  <td class="p-4">
+                    <img
+                      src="./images/speakers/alphones.png"
+                      alt="Dr. A Alphones"
+                      class="w-20 h-24 mx-auto rounded-lg"
+                    />
+                  </td>
+                  <td class="p-4 font-semibold text-gray-800">
+                    Dr. A Alphones
+                  </td>
+                  <td class="p-4">
+                    Professor, Nanyang Technological University
+                  </td>
+                  <td class="p-4 uppercase">Plenary SPEAKER</td>
+                  <td class="p-4">
+                    <button
+                      class="bg-green-600 px-4 py-2 text-white rounded-lg hover:bg-green-800"
+                      onclick="toggleModal('modal-alphones')"
+                    >
+                      Know More
+                    </button>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <h2
+              class="mt-10 scroll-m-20 border-b border-[#35575a] pb-2 text-3xl font-bold tracking-tight transition-colors first:mt-0 w-[50%] mx-auto text-[#35575a] text-center mb-8"
+            >
+              KEYNOTE SPEAKERS
             </h2>
             <table
               class="table-auto max-w-screen-xl mx-auto border-collapse border border-gray-300 bg-white shadow-md overflow-x-auto"
@@ -279,10 +323,8 @@
                   <td class="p-4 font-semibold text-gray-800">
                     Ms. Suganya Annadurai
                   </td>
-                  <td class="p-4">
-                    Senior Scientist, SETS, Thanjavur, India
-                  </td>
-                  <td class="p-4">PLENARY SPEAKER</td>
+                  <td class="p-4">Senior Scientist, SETS, Thanjavur, India</td>
+                  <td class="p-4">KEYNOTE SPEAKER</td>
                   <td class="p-4">
                     <button
                       class="bg-green-600 px-4 py-2 text-white rounded-lg hover:bg-green-800"
@@ -295,29 +337,25 @@
                 <tr class="border-b border-gray-300 text-center">
                   <td class="p-4">
                     <img
-                      src="./images/speakers/alphones.png"
-                      alt="Dr. A Alphones"
+                      src="./images/speakers/hiram.jpeg"
+                      alt="Mr. Hiram Prasanna Samuel"
                       class="w-20 h-24 mx-auto rounded-lg"
                     />
                   </td>
                   <td class="p-4 font-semibold text-gray-800">
-                    Dr. A Alphones
+                    Mr. Hiram Prasanna Samuel
                   </td>
-                  <td class="p-4">
-                    Professor, Nanyang Technological University
-                  </td>
-                  <td class="p-4 uppercase">Plenary SPEAKER</td>
+                  <td class="p-4">Founder & CEO, Struent Semiconductors, Chennai</td>
+                  <td class="p-4">KEYNOTE SPEAKER</td>
                   <td class="p-4">
                     <button
                       class="bg-green-600 px-4 py-2 text-white rounded-lg hover:bg-green-800"
-                      onclick="toggleModal('modal-alphones')"
+                      onclick="toggleModal('modal-hiram')"
                     >
                       Know More
                     </button>
                   </td>
                 </tr>
-
-                
               </tbody>
             </table>
           </div>
@@ -718,32 +756,6 @@
                   <button
                     class="bg-green-600 px-4 py-2 text-white rounded-lg hover:bg-green-800"
                     onclick="toggleModal('modal-prabhuk')"
-                  >
-                    Know More
-                  </button>
-                </td>
-              </tr>
-              <tr>
-                <td class="border border-gray-300 px-4 py-2">
-                  <img
-                    src="./images/speakers/hiram.jpeg"
-                    alt="Mr. Hiram Prasanna Samuel"
-                    class="w-24 h-24 mx-auto"
-                  />
-                </td>
-                <td class="border border-gray-300 px-4 py-2">
-                  Mr. Hiram Prasanna Samuel
-                </td>
-                <td class="border border-gray-300 px-4 py-2">
-                  Founder & CEO, Struent Semiconductors, Chennai.
-                </td>
-                <td class="border border-gray-300 px-4 py-2">
-                  Sustainable Innovations in VLSI Devices, Circuits and Systems
-                </td>
-                <td class="border border-gray-300 px-4 py-2">
-                  <button
-                    class="bg-green-600 px-4 py-2 text-white rounded-lg hover:bg-green-800"
-                    onclick="toggleModal('modal-hiram')"
                   >
                     Know More
                   </button>
@@ -1980,8 +1992,25 @@
                     process. Close cooperation with Fab, clients, and
                     technological development. Comprehensive knowledge of TCAD
                     and compact modeling.
-                    <br><br>
-                    <span class="font-bold">Bio:</span> As a Principal Engineer at GlobalFoundries, Dr. Siddhanta Roy presently works on the modeling and design of GaN-based power and radiofrequency devices as well as advanced node semiconductor devices including FinFET and FDSOI. In close cooperation with the fab, clients, and technology development, he is in charge of overseeing the entire model creation and delivery process. In 2022, he graduated from the Indian Institute of Technology, Guwahati, with a PhD in the department of nanotechnological and electrical engineering. He worked on low power devices including FinFETs, FDSOIs, and others, using TCAD for device modeling and simulation. He has practical expertise with microfabrication technology and have run and maintained a few high-end microfabrication devices, including the Dilase 250 Mask writer for optical lithography, thermal and e-beam deposition system, and Keithley AC-DC Probe station for electrical characterization.
+                    <br /><br />
+                    <span class="font-bold">Bio:</span> As a Principal Engineer
+                    at GlobalFoundries, Dr. Siddhanta Roy presently works on the
+                    modeling and design of GaN-based power and radiofrequency
+                    devices as well as advanced node semiconductor devices
+                    including FinFET and FDSOI. In close cooperation with the
+                    fab, clients, and technology development, he is in charge of
+                    overseeing the entire model creation and delivery process.
+                    In 2022, he graduated from the Indian Institute of
+                    Technology, Guwahati, with a PhD in the department of
+                    nanotechnological and electrical engineering. He worked on
+                    low power devices including FinFETs, FDSOIs, and others,
+                    using TCAD for device modeling and simulation. He has
+                    practical expertise with microfabrication technology and
+                    have run and maintained a few high-end microfabrication
+                    devices, including the Dilase 250 Mask writer for optical
+                    lithography, thermal and e-beam deposition system, and
+                    Keithley AC-DC Probe station for electrical
+                    characterization.
                   </p>
                 </div>
               </div>
