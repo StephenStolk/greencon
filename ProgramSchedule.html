@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -6,8 +7,8 @@
       href="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.css"
       rel="stylesheet"
     />
-    <title>Registration</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <title>Program Schedule</title>
     <style>
       @keyframes fadeOut {
         0% {
@@ -16,6 +17,20 @@
         100% {
           opacity: 0;
         }
+      }
+
+      @keyframes scroll {
+        0% {
+          transform: translateY(100%);
+        }
+        100% {
+          transform: translateY(-100%);
+        }
+      }
+
+      .animate-scroll {
+        display: inline-block;
+        animation: scroll 10s linear infinite;
       }
 
       .fade-animation {
@@ -65,14 +80,38 @@
           transform: scale(1);
         }
       }
+      @keyframes marquee {
+        0% {
+          transform: translateX(100%);
+        }
+        100% {
+          transform: translateX(-50%);
+        }
+      }
+
+      .marquee-container {
+        overflow: hidden;
+        white-space: nowrap;
+        position: relative;
+        width: 100%;
+        padding: 5px 0;
+      }
+
+      .marquee-text {
+        display: inline-block;
+        font-size: 1rem;
+        font-weight: bold;
+        color: #d10000; /* Red text */
+        animation: marquee 25s linear infinite;
+      }
     </style>
   </head>
   <body>
-    <div class="loading" id="loading">
+    <!-- <div class="loading" id="loading">
       <div></div>
       <div></div>
       <div></div>
-    </div>
+    </div> -->
     <div id="root">
       <div class="flex flex-col md:flex-row items-center p-4">
         <a href="https://chennai.vit.ac.in/" target="_blank">
@@ -163,7 +202,7 @@
             >
             <a
               href="./Registration.html"
-              class="block text-gray-700 hover:text-[#3c5a96] hover:bg-gray-200 px-1 py-1 transition-colors duration-300 font-medium bg-gray-200 rounded-lg border-2 border-black"
+              class="block text-gray-700 hover:text-[#3c5a96] hover:bg-gray-200 px-1 py-1 transition-colors duration-300 font-medium"
               >Registration</a
             >
             <a
@@ -194,7 +233,7 @@
             >
             <a
               href="./ProgramSchedule.html"
-              class="block text-gray-700 hover:text-[#3c5a96] transition-colors duration-300 font-medium hover:bg-gray-200 px-1 py-1"
+              class="block text-gray-700 hover:text-[#3c5a96] hover:bg-gray-200 px-1 py-1 transition-colors duration-300 font-medium bg-gray-200 rounded-lg border-2 border-black"
               >Program Schedule</a
             >
             <a
@@ -216,7 +255,7 @@
           >
             <a
               href="./index.html"
-              class="text-gray-700 hover:text-[#3c5a96] hover:bg-gray-200 px-1 py-1 transition-colors duration-300 font-medium"
+              class="text-gray-700 hover:text-[#3c5a96] transition-colors duration-300 font-medium hover:bg-gray-200 px-1 py-1"
               >Home</a
             >
             <a
@@ -226,7 +265,7 @@
             >
             <a
               href="./Registration.html"
-              class="text-gray-700 hover:text-[#3c5a96] bg-gray-200 rounded-lg border-2 border-black hover:bg-gray-200 px-1 py-1 transition-colors duration-300 font-medium"
+              class="text-gray-700 hover:text-[#3c5a96] hover:bg-gray-200 px-1 py-1 transition-colors duration-300 font-medium"
               >Registration</a
             >
             <a
@@ -255,8 +294,9 @@
               >Organizing Committee</a
             >
             <a
-              href="./ProgramSchedule.html"
-              class="text-gray-700 hover:text-[#3c5a96] transition-colors duration-300 font-medium hover:bg-gray-200 px-1 py-1"
+              href="./public/Overall_Schedule-GREENCON_2025.pdf"
+              target="_blank"
+              class="text-gray-700 hover:text-[#3c5a96] bg-gray-200 rounded-lg border-2 border-black hover:bg-gray-200 px-1 py-1 transition-colors duration-300 font-medium"
               >Program Schedule</a
             >
             <a
@@ -272,166 +312,24 @@
           </div>
         </div>
       </nav>
-
-      <div
-        id="default-modal"
-        tabindex="-1"
-        aria-hidden="true"
-        class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full"
-      >
-        <div class="relative p-4 w-full max-w-2xl max-h-full">
-          <div class="relative bg-white rounded-lg shadow dark:bg-gray-900">
-            <div
-              class="flex items-center justify-between p-4 md:p-5 border-b rounded-t dark:border-gray-600"
-            >
-              <h3 class="text-xl font-semibold text-gray-900 dark:text-white">
-                Pages
-              </h3>
-              <button
-                type="button"
-                class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white"
-                data-modal-hide="default-modal"
-              >
-                <svg
-                  class="w-3 h-3"
-                  aria-hidden="true"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 14 14"
-                >
-                  <path
-                    stroke="currentColor"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"
-                  ></path></svg
-                ><span class="sr-only">Close modal</span>
-              </button>
-            </div>
-            <div class="p-4 md:p-5 space-y-4">
-              <p
-                class="text-base leading-relaxed text-black dark:text-gray-200"
-              >
-                Updating soon......
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="App">
-        <div class="w-full md:w-[80%] px-10 mx-auto my-12">
-          <table class="table-auto w-full text-left text-sm border-green-900">
-            <thead>
-              <tr class="bg-[#87cbb3] text-white">
-                <th class="px-4 py-2">Registration Fee</th>
-                <th class="px-4 py-2">Indian (INR)</th>
-                <th class="px-4 py-2">Foreign (USD)</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr class="bg-blue-100 text-black">
-                <td class="border px-4 py-2 font-bold" colspan="3">
-                  Last date for Registration (5<sup>th</sup>
-                  March, 2025)
-                </td>
-              </tr>
-              <tr class="bg-white text-black">
-                <td class="border px-4 py-2">Student</td>
-                <td class="border px-4 py-2">Rs. 5900*</td>
-                <td class="border px-4 py-2">150 USD</td>
-              </tr>
-              <tr class="bg-blue-50 text-black">
-                <td class="border px-4 py-2">Faculty & Industry</td>
-                <td class="border px-4 py-2">Rs. 7080*</td>
-                <td class="border px-4 py-2">200 USD</td>
-              </tr>
-              <tr class="bg-white text-black">
-                <td class="border px-4 py-2">Co Authors (Participants)</td>
-                <td class="border px-4 py-2">Rs. 4720*</td>
-                <td class="border px-4 py-2">100 USD</td>
-              </tr>
-
-              <!-- <tr class="bg-blue-100 text-black">
-                <td class="border px-4 py-2 font-bold" colspan="3">
-                  Regular Registration (on or before 10<sup>th</sup> March,
-                  2025)
-                </td>
-              </tr> -->
-              <!-- <tr class="bg-white text-black">
-                <td class="border px-4 py-2">Student</td>
-                <td class="border px-4 py-2">Rs. 7080*</td>
-                <td class="border px-4 py-2">200 USD</td>
-              </tr> -->
-              <!-- <tr class="bg-blue-50 text-black">
-                <td class="border px-4 py-2">Faculty & Industry</td>
-                <td class="border px-4 py-2">Rs. 8260*</td>
-                <td class="border px-4 py-2">250 USD</td>
-              </tr> -->
-              <!-- <tr class="bg-white text-black">
-                <td class="border px-4 py-2">Co Authors (Participants)</td>
-                <td class="border px-4 py-2">Rs. 5900*</td>
-                <td class="border px-4 py-2">150 USD</td>
-              </tr> -->
-              <tr class="bg-white text-black">
-                <td class="border px-4 py-2">* Inclusive of 18% GST</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-        <!-- <h2
-          class="w-full flex justify-center mx-auto mt-4 mb-20 font-semibold md:font-normal text-md md:text-xl md:text-start text-center"
-        >
-          Online presentation option will be made available based on requests
-          from registered participants.
-        </h2> -->
+      <div class="App my-20">
         <center
           class="my-8 flex flex-col sm:flex-row justify-center items-center space-y-3 md:space-y-0 md:space-x-4"
         >
           <a
-            class="bg-[#62b895] text-white text-center px-6 py-2 w-56 font-semibold rounded-md hover:bg-[#49886e] transition-colors"
-            href="./public/Registration_steps.pdf"
+            class="bg-[#62b895] text-white text-center px-6 py-2 font-semibold rounded-md hover:bg-[#49886e] transition-colors"
+            href="./public/Overall Schedule-GREENCON2025.docx"
             target="_blank"
-            >Steps to Register &#8599;</a
+            >Overall Schedule &#8599;</a
           >
           <a
-            class="bg-[#62b895] text-white text-center px-6 py-2 w-56 font-semibold rounded-md hover:bg-[#49886e] transition-colors"
-            href="https://vitchennaievents.com"
+            class="bg-[#62b895] text-white text-center px-6 py-2 font-semibold rounded-md hover:bg-[#49886e] transition-colors"
+            href="./public/Updated_Schedule _participants.docx"
             target="_blank"
-            >Registration Link &#8599;</a
+            >Participants Schedule &#8599;</a
           >
         </center>
-        <!-- <div
-          class="flex flex-col items-center justify-center bg-white rounded-xl shadow-lg border border-gray-200 w-11/12 sm:w-1/2 mx-auto mt-8 mb-28"
-        >
-          <h1
-            class="w-full text-lg md:text-2xl font-bold mb-16 bg-[#62b895] text-[#2b4a4d] text-center py-4"
-          >
-            GREENCON 2025
-          </h1>
-          <div class="flex space-x-4 sm:space-x-8 text-xl font-semibold mb-8">
-            <div class="flex flex-col items-center bg-gray-100 p-4 rounded-xl">
-              <span id="days" class="text-4xl text-[#3c5a96]">176</span>
-              <span class="text-gray-500 mt-2 text-sm">Days</span>
-            </div>
-            <div
-              class="flex flex-col items-center bg-gray-100 px-4 py-4 rounded-xl"
-            >
-              <span id="hours" class="text-4xl text-[#3c5a96]">13</span>
-              <span class="text-gray-500 mt-2 text-sm">Hours</span>
-            </div>
-            <div class="flex flex-col items-center bg-gray-100 p-4 rounded-xl">
-              <span id="minutes" class="text-4xl text-[#3c5a96]">53</span>
-              <span class="text-gray-500 mt-2 text-sm">Minutes</span>
-            </div>
-            <div class="flex flex-col items-center bg-gray-100 p-4 rounded-xl">
-              <span id="seconds" class="text-4xl text-[#3c5a96]">40</span>
-              <span class="text-gray-500 mt-2 text-sm">Seconds</span>
-            </div>
-          </div>
-        </div> -->
       </div>
-
       <footer class="bg-white border-black border-t-2 w-full">
         <div class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
           <div
@@ -493,11 +391,6 @@
                     >Contact Us</a
                   >
                 </li>
-                <li>
-                  <a href="./Accommodation.html" class="hover:underline"
-                    >Accommodation</a
-                  >
-                </li>
               </ul>
             </div>
           </div>
@@ -515,62 +408,7 @@
           >. All Rights Reserved.</span
         >
       </div>
-      <div
-        id="default-modal"
-        tabindex="-1"
-        aria-hidden="true"
-        class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full"
-      >
-        <div class="relative p-4 w-full max-w-2xl max-h-full">
-          <div class="relative bg-white rounded-lg shadow dark:bg-gray-900">
-            <div
-              class="flex items-center justify-between p-4 md:p-5 border-b rounded-t dark:border-gray-600"
-            >
-              <h3 class="text-xl font-semibold text-gray-900 dark:text-white">
-                Pages
-              </h3>
-              <button
-                type="button"
-                class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white"
-                data-modal-hide="default-modal"
-              >
-                <svg
-                  class="w-3 h-3"
-                  aria-hidden="true"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 14 14"
-                >
-                  <path
-                    stroke="currentColor"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"
-                  ></path></svg
-                ><span class="sr-only">Close modal</span>
-              </button>
-            </div>
-            <div class="p-4 md:p-5 space-y-4">
-              <p
-                class="text-base leading-relaxed text-gray-200 dark:text-gray-200"
-              >
-                Updating soon......
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.js"></script>
-    <script>
-      // JavaScript to manage loading animation
-      window.addEventListener("load", () => {
-        // Hide the loading animation
-        document.getElementById("loading").style.display = "none";
-        // Show the root content
-        document.getElementById("root").style.display = "block";
-      });
-    </script>
   </body>
 </html>
